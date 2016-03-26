@@ -1,0 +1,21 @@
+<IfVersion < 2.4>
+    Order Deny,Allow
+    Satisfy All
+    Deny from all
+</IfVersion>
+<IfVersion >= 2.4>
+   #Require host localhost
+    Require all denied
+</IfVersion>
+
+<FilesMatch "^error\.php$">
+    <IfVersion < 2.4>
+        #Allow from local
+        #Allow from localhost
+        Allow from 127.0.0.1
+    </IfVersion>
+    <IfVersion >= 2.4>
+       #Require host localhost
+        Require all granted
+    </IfVersion>
+</FilesMatch>

@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Authentication for private area needed"
+AuthUserFile /rcl/www/rcl/.htusers
+Require valid-user

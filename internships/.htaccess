@@ -1,0 +1,26 @@
+RewriteEngine on
+RewriteOptions Inherit
+
+RewriteCond %{HTTPS} off
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+AuthName "Authentication for private area needed"
+AuthType Basic
+AuthUserFile /rcl/www/rcl/.htusers
+#AuthType Digest
+#AuthDigestProvider file
+#AuthUserFile /rcl/www/rcl/.htdigest
+
+<IfVersion < 2.4>
+    Order Deny,Allow
+    Deny from all
+    Satisfy Any
+    Allow from env=!HTTPS
+    Require valid-user
+</IfVersion>
+<IfVersion >= 2.4>
+    <If "%{HTTPS} == 'on'">
+        AuthMerging And
+        Require valid-user
+    </If>
+</IfVersion>

@@ -1,0 +1,190 @@
+#.html dateien als php auswerten
+#<Files *.html>
+#  AddType application/x-httpd-php .html
+#</Files>
+
+# nicht imports direkt aufrufen können
+<FilesMatch "^(include1|include2)\.php$">
+    <IfVersion < 2.4>
+        Order Deny,Allow
+        Satisfy All
+        Allow from local
+        Deny from all
+    </IfVersion>
+    <IfVersion >= 2.4>
+       #Require host localhost
+        Require all denied
+    </IfVersion>
+</FilesMatch>
+
+RewriteEngine On
+#RewriteBase /
+
+Redirect /DeathStarPD      /proj/DeathStarPD
+Redirect /DeathStarPD/     /proj/DeathStarPD
+Redirect /BrainOfTehZwarm  /proj/BrainOfTehZwarm
+Redirect /BrainOfTehZwarm/ /proj/BrainOfTehZwarm
+Redirect /DarkSideOfMorra  /proj/DarkSideOfMorra
+Redirect /DarkSideOfMorra/ /proj/DarkSideOfMorra
+
+
+#############################################
+#############################################
+#### .hml = .html = .php = ''
+
+# nix -> html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.html$
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# nix -> htm
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.htm$
+RewriteCond %{REQUEST_FILENAME}\.htm -f
+RewriteRule ^(.+)$ $1.htm [L]
+
+# nix -> php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.php$
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# html -> php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.html$
+RewriteCond %1\.php -f
+RewriteRule ^(.+)\.html$ $1.php [L]
+
+# html -> htm
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.html$
+RewriteCond %1\.htm -f
+RewriteRule ^(.+)\.html$ $1.htm [L]
+
+# htm -> php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.htm$
+RewriteCond %1\.php -f
+RewriteRule ^(.+)\.htm$ $1.php [L]
+
+# htm -> html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.htm$
+RewriteCond %1\.html -f
+RewriteRule ^(.+)\.htm$ $1.html [L]
+
+# php -> html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.php$
+RewriteCond %1\.html -f
+RewriteRule ^(.+)\.php$ $1.html [L]
+
+# php -> htm
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} ^(.+)\.php$
+RewriteCond %1\.htm -f
+RewriteRule ^(.+)\.php$ $1.htm [L]
+
+#### .hml = .html = .php = ''
+#############################################
+#############################################
+#### Umzug von blackpinguin.de -> www.blackpinguin.de
+
+# /l/
+RewriteCond %{HTTP_HOST} ^blackpinguin.de$
+RewriteCond %{REQUEST_URI} ^/l/(.*)$
+RewriteRule ^l/(.*)$ https://ext.blackpinguin.de/$1 [R,L]
+
+# /l
+RewriteCond %{HTTP_HOST} ^blackpinguin.de$
+RewriteCond %{REQUEST_URI} ^/l$
+RewriteRule ^.*$ https://ext.blackpinguin.de/ [R,L]
+
+# s a b
+RewriteCond %{HTTP_HOST} ^blackpinguin.de$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} ^.*s=([a-zA-Z]+).*$
+RewriteCond %{QUERY_STRING} ^.*a=([a-zA-Z0-9]+).*$
+RewriteCond %{QUERY_STRING} ^.*b=([a-zA-Z0-9]+).*$
+RewriteRule ^.*$ https://www.blackpinguin.de [R,L]
+
+# s a
+RewriteCond %{HTTP_HOST} ^blackpinguin.de$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} ^.*s=([a-zA-Z]+).*$
+RewriteCond %{QUERY_STRING} ^.*a=([a-zA-Z0-9]+).*$
+RewriteRule ^.*$ https://www.blackpinguin.de [R,L]
+
+# s
+RewriteCond %{HTTP_HOST} ^blackpinguin.de$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} ^s=([a-zA-Z]+)$
+RewriteRule ^.*$ https://www.blackpinguin.de [R,L]
+
+#############################################
+#############################################
+### Caching (images: 1d, html/css/js: 1h)
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresByType text/css "access plus 1 hour"
+ ExpiresByType text/javascript "access plus 1 hour"
+#ExpiresByType text/html "access plus 1 hour"
+ ExpiresByType application/javascript "access plus 1 hour"
+ ExpiresByType image/gif "access plus 1 day"
+ ExpiresByType image/jpeg "access plus 1 day"
+ ExpiresByType image/png "access plus 1 day"
+ ExpiresByType image/x-icon "access plus 1 day"
+</IfModule>
+<ifmodule mod_headers.c>
+ <filesmatch "\\.(ico|jpe?g|png|gif|swf)$">
+  Header set Cache-Control "max-age=86400, public"
+ </filesmatch>
+ <filesmatch "\\.(css)$">
+  Header set Cache-Control "max-age=3600, public"
+ </filesmatch>
+ <filesmatch "\\.(js)$">
+  Header set Cache-Control "max-age=3600, private"
+ </filesmatch>
+</ifmodule>
+
+#############################################
+#############################################
+### Error Messages
+RewriteRule ^dsbguvawetvwa-error$ /php/error.php [L]
+
+#400 unknown
+ErrorDocument 400 /dsbguvawetvwa-error
+ErrorDocument 402 /dsbguvawetvwa-error
+ErrorDocument 405 /dsbguvawetvwa-error
+ErrorDocument 406 /dsbguvawetvwa-error
+ErrorDocument 408 /dsbguvawetvwa-error
+
+#custom
+ErrorDocument 401 /dsbguvawetvwa-error
+ErrorDocument 403 /dsbguvawetvwa-error
+ErrorDocument 404 /dsbguvawetvwa-error
+
+#500
+ErrorDocument 500 /dsbguvawetvwa-error
+ErrorDocument 501 /dsbguvawetvwa-error
+ErrorDocument 502 /dsbguvawetvwa-error
+ErrorDocument 503 /dsbguvawetvwa-error
+ErrorDocument 504 /dsbguvawetvwa-error
+ErrorDocument 505 /dsbguvawetvwa-error
+ErrorDocument 506 /dsbguvawetvwa-error
+ErrorDocument 507 /dsbguvawetvwa-error
+ErrorDocument 508 /dsbguvawetvwa-error
+ErrorDocument 510 /dsbguvawetvwa-error
