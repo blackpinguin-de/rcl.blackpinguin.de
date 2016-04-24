@@ -63,6 +63,11 @@ function externStr($url, $de, $en = NULL){
 }
 function extern($url, $de, $en = NULL){ echo externStr($url, $de, $en); }
 
+function youtubeStr($video, $de, $en = NULL){
+    return aclass("https://youtu.be/$video", "youtube"."' target='_blank", $de, $en);
+}
+function youtube($video, $de, $en = NULL){ echo youtubeStr($video, $de, $en); }
+
 
 function sizeclass($url, $class, $de, $en = NULL, $size = NULL){
     if(isset($size)){

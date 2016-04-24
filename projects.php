@@ -50,7 +50,7 @@
 <div><span><?php echo $rcl->lang("Webseite: ", "Website: "); intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?></span></div>
 <div><span>App: <?php intern("/proj/SindWirSchonDa/", "Sind wir schon da?", "Are we there yet?"); ?></span></div>
 <div><span><?php echo $rcl->lang("Kurzfilm: ", "Short film: "); intern("/proj/Gefahrengebiete/", "Gefahrengebiete"); ?></span></div>
-<div><span>Map: <?php extern("https://steamcommunity.com/sharedfiles/filedetails/?id=284923613", "Inferno Chamber (Portal 2)"); ?></span></div>
+<div><span>Map: <?php extern("https://steamcommunity.com/sharedfiles/filedetails/?id=284923613", "Inferno Chamber (Portal 2)"); echo " "; youtube("_nFEOg_hOBU", "Playthrough"); ?></span></div>
 </td> </tr>
 
 <tr> <th>2013</th>
