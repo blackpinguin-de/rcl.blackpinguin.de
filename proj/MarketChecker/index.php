@@ -9,7 +9,7 @@
 , 'SQL' => 1267
 , 'XSD' => 545
 , 'DTD' => 185
-, 'CSS' => 38Suchbegriffe
+, 'CSS' => 38
 )); ?>
 
 <a href="mc1.png"><img src="mc1.thumb.png" alt="App Screenshot" title="App Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>

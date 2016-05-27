@@ -38,5 +38,9 @@ $(function(){
         .css({resize: 'none', 'overflow-y': 'auto', 'overflow-x': 'hidden'})
         .each(init) // initialization
         .on('input', onChange) // add onChange listener
+        .on('change', onChange) // add onChange listener
     ;
+    $(window).resize(function(){
+        $('textarea.autoheight').trigger('change');
+    });
 });
