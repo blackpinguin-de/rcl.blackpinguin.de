@@ -8,13 +8,13 @@ table#literature > tbody > tr > td:nth-of-type(5) { color: black; text-align: ce
 table#literature > tbody > tr > td.c200 { background-color: #00cc00; }
 table#literature > tbody > tr > td.c170 { background-color: #00db00; }
 table#literature > tbody > tr > td.c100 { background-color: #00ff00; }
-table#literature > tbody > tr > td.c95  { background-color: #19ff00; }
-table#literature > tbody > tr > td.c90  { background-color: #32ff00; }
-table#literature > tbody > tr > td.c85  { background-color: #4cff00; }
-table#literature > tbody > tr > td.c80  { background-color: #65ff00; }
-table#literature > tbody > tr > td.c75  { background-color: #7fff00; }
+table#literature > tbody > tr > td.c95  { background-color: #1aff00; }
+table#literature > tbody > tr > td.c90  { background-color: #33ff00; }
+table#literature > tbody > tr > td.c85  { background-color: #4dff00; }
+table#literature > tbody > tr > td.c80  { background-color: #66ff00; }
+table#literature > tbody > tr > td.c75  { background-color: #80ff00; }
 table#literature > tbody > tr > td.c70  { background-color: #99ff00; }
-table#literature > tbody > tr > td.c65  { background-color: #b2ff00; }
+table#literature > tbody > tr > td.c65  { background-color: #b3ff00; }
 table#literature > tbody > tr > td.c60  { background-color: #ccff00; }
 table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 </style>
