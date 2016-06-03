@@ -44,7 +44,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		[
 		'book' => [ "EN", "Modern Operating Systems", "Andrew S. Tanenbaum" ],
 		'desc' => [ "ISBN 978-0-13-813459-4", "Thema: Betriebssysteme", "" ],
-		'prog' => [ [341, 1072], "75%" ],
+		'prog' => [ [341, 1072, false], "75%" ],
 		],
 		[
 		'book' => [ "EN", "Computer Networks", "Andrew S. Tanenbaum, David J. Wetherall" ],
@@ -94,7 +94,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		[
 		'book' => [ "EN", "AI for Game Developers", "David M. Bourg, Glenn Seemann" ],
 		'desc' => [ "ISBN 978-0-596-00555-9", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
-		'prog' => [ [288, 379], null ],
+		'prog' => [ [288, 379, false], null ],
 		],
 		[
 		'book' => [ "DE", "Grundkurs Künstliche Intelligenz", "Wolfgang Ertel" ],
@@ -129,7 +129,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		[
 		'book' => [ "EN", "Programming in Scala", "Martin Odersky, Lex Spoon, Bill Venners" ],
 		'desc' => [ "ISBN 978-0-98153-164-9", "", "" ],
-		'prog' => [ [98, 812], null /* 80% */ ],
+		'prog' => [ [98, 812, true], null /* 80% */ ],
 		],
 		[
 		'book' => [ "DE", "Grenzen des Wachstums - das 30-Jahre-Update", "Donella Meadows, Jørgen Randers, Dennis Meadows" ],
@@ -155,15 +155,19 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 			echo "  <td class='c$x'";
 			if ($x == 200) { echo " title='" . $rcl->lang("zweimal gelesen", "read twice") . "'" ; }
 			echo ">$prog</td>";
-		} else if (is_array($prog) && count($prog) >= 2) {
+		} else if (is_array($prog) && count($prog) >= 3) {
 			$a = $prog[0];
 			$b = $prog[1];
+			$reading = $prog[2];
 			if (is_int($a) && is_int($b)) {
 				$p = (double) $a /  (double) $b;
 				$out = (int) round($p * 100.0);
 				$col = prgr2clr($p);
 				echo "  <td style='background-color: $col;' title='$a / $b ";
-				echo $rcl->lang("Seiten", "pages") . "'>$out%</td>";
+				echo $rcl->lang("Seiten", "pages");
+				if ($reading) { echo $rcl->lang(", momentan am lesen.", ", currently reading."); }
+				else { echo $rcl->lang(" gelesen.", " read."); }
+				echo "'>$out%</td>";
 			}
 		}
 	};
