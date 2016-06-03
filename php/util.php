@@ -36,6 +36,14 @@ google.setOnLoadCallback(function(){
 <?php
 }
 
+function prgr2clr($p) {
+    $r = dechex(max(0, min(255, round((2.0 - $p * 2.0) * 255.0))));
+    $g = dechex(max(0, min(255, round($p * 2 * 255.0))));
+    if (strlen($r) === 1) { $r = "0" . $r; }
+    if (strlen($g) === 1) { $g = "0" . $g; }
+    return "#" . $r . $g . "00";
+}
+
 function langUrl($url){
     global $rcl;
     return ($rcl->langEqual ? $url : $url.$rcl->lang("?lang=de","?lang=en"));
