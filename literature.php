@@ -29,29 +29,166 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
     <?php } ?>
 </thead>
 <tbody>
-<tr>  <td>EN</td>  <td>Design Patterns<?php isbn("ISBN 978-0-201-63361-0", "Thema: Entwurfsmuster", ""); ?></td>  <td>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</td>  <td class="c200">200%</td>  <td class="c100">100%</td>  </tr>
-<tr>  <td>EN</td>  <td>Understanding Cryptography<?php isbn("ISBN 978-3-642-04100-6", "Thema: Kryptografie", ""); ?></td>  <td>Christof Paar, Jan Pelzl</td>  <td class="c200">200%</td>  <td class="c95">95%</td>  </tr>
-<tr>  <td>EN</td>  <td>Modern Operating Systems<?php isbn("ISBN 978-0-13-813459-4", "Thema: Betriebssysteme", ""); ?></td>  <td>Andrew S. Tanenbaum</td>  <td style="background-color: <?= prgr2clr(341.0/1072.0) ?>;">32%<!--(341/1072)--></td>  <td class="c75">75%</td>  </tr>
-<tr>  <td>EN</td>  <td>Computer Networks<?php isbn("ISBN 978-0-13-212695-3", "Thema: Netzwerke", ""); ?></td>  <td>Andrew S. Tanenbaum, David J. Wetherall</td>  <td>100%</td>  <td class="c80">80%</td>  </tr>
-<tr>  <td>EN</td>  <td>Distributed Systems<?php isbn("ISBN 978-0-13-613553-1", "Thema: Verteilte Systeme", ""); ?></td>  <td>Andrew S. Tanenbaum, Maarten Van Steen</td>  <td>100%</td>  <td class="c85">85%</td>  </tr>
-<tr>  <td>EN</td>  <td>Introduction to Automata Theory, Languages, and Computation<?php isbn("ISBN 978-0-321-47617-3", "Themen: Automatentheorie, Sprachen, Berechenbarkeit", ""); ?></td>  <td>John E. Hopcroft, Rajeev Motwani, Jeffrey D. Ullman</td>  <td>100%</td>  <td class="c70">70%</td>  </tr>
-<tr>  <td>EN</td>  <td>Software Engineering and Computer Games<?php isbn("ISBN 978-0-20176-791-9", "Themen: Softwareentwicklung, Spieleentwicklung", ""); ?></td>  <td>Rudy Rucker</td>  <td>100%</td>  <td class="c85">85%</td>  </tr>
-<tr>  <td>DE</td>  <td>Inside Microsoft DirectX 9 - Spieleprogrammierung<?php isbn("ISBN 978-3-86063-096-9", "", "Subjects: DirectX 9, Game Development"); ?></td>  <td>Uwe Kettermann, Andreas Rohde</td>  <td>100%</td>  <td class="c85">85%</td>  </tr>
-<tr>  <td>DE</td>  <td>Computergrafik und Bildverarbeitung: Band I: Computergrafik<?php isbn("ISBN 978-3-83481-304-6", "Themen: Computergrafik, OpenGL", "Subjects: Computer Graphics, OpenGL"); ?></td>  <td>Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher</td>  <td>100%</td>  <td class="c80">80%</td>  </tr>
-<tr>  <td>DE</td>  <td>Computergrafik und Bildverarbeitung: Band II: Bildverarbeitung<?php isbn("ISBN 978-3-83481-712-9 ", "", ""); ?></td>  <td>Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher</td>  <td style="background-color: <?= prgr2clr(470.0/588.0) ?>;">80%<!--(470/588)--></td>  <td class="c70">70%</td>  </tr>
-<tr>  <td>EN</td>  <td>Programming Game AI by Example<?php isbn("ISBN 978-1-55622-078-4", "Themen: Künstliche Intelligenz, Spieleentwicklung", ""); ?></td>  <td>Mat Buckland</td>  <td class="c200">200%</td>  <td class="c100">100%</td>  </tr>
-<tr>  <td>EN</td>  <td>AI Techniques for Game Programming<?php isbn("ISBN 978-1-93184-108-5", "Themen: Künstliche Intelligenz, Spieleentwicklung", ""); ?></td>  <td>Mat Buckland</td>  <td>100%</td>  <td class="c90">90%</td>  </tr>
-<tr>  <td>EN</td>  <td>AI for Game Developers<?php isbn("ISBN 978-0-596-00555-9", "Themen: Künstliche Intelligenz, Spieleentwicklung", ""); ?></td>  <td>David M. Bourg, Glenn Seemann</td>  <td style="background-color: <?= prgr2clr(288.0/379.0) ?>;">76%<!-- 288/379 --></td>  </tr>
-<tr>  <td>DE</td>  <td>Grundkurs Künstliche Intelligenz<?php isbn("ISBN 978-3-8348-0783-0", "", "Subject: Artificial Intelligence"); ?></td>  <td>Wolfgang Ertel</td>  <td>100%</td>  <td class="c90">90%</td>  </tr>
-<tr>  <td>DE</td>  <td>Mathematik für Informatiker<?php isbn("ISBN 978-3-8348-0096-1", "", "Subject: Mathematics"); ?></td>  <td>Peter Hartmann</td>  <td>100%</td>  <td class="c60">60%</td>  </tr>
-<tr>  <td>DE</td>  <td>Logik für Informatiker<?php isbn("ISBN 978-3-8273-7215-4", "", "Subject: Logic"); ?></td>  <td>Martin Kreuzer, Stefan Kühling</td>  <td>100%</td>  <td class="c65">65%</td>  </tr>
-<tr>  <td>DE</td>  <td>Graphentheoretische Konzepte und Algorithmen<?php isbn("ISBN 978-3-8348-0629-1", "", "Subject: Graph Theory"); ?></td>  <td>Sven Oliver Krumke, Hartmut Noltemeier</td>  <td>100%</td>  <td class="c75">75%</td>  </tr>
-<tr>  <td>EN</td>  <td>The Mythical Man-Month<?php isbn("ISBN 978-0-201-83595-3", "Thema: Softwareentwicklung", "Subject: Software-Engineering"); ?></td>  <td>Frederick P. Brooks, Jr.</td>  <td class="c200">200%</td>  <td class="c90">90%</td>  </tr>
-<tr>  <td>DE</td>  <td>Assembler<?php isbn("ISBN 978-3-499-61224-4", "", "Subject: Assembly language"); ?></td>  <td>Reiner Backer</td>  <td>100%</td>  <td class="c95">95%</td>  </tr>
-<tr>  <td>EN</td>  <td>Programming in Scala<?php isbn("ISBN 978-0-98153-164-9", "", ""); ?></td>  <td>Martin Odersky, Lex Spoon, Bill Venners</td>  <td style="background-color: <?= prgr2clr(98.0/812.0) ?>;">12%<!-- (98/812) --></td>  <!--<td class="c80">80%</td>-->  </tr>
-<tr>  <td>DE</td>  <td>Grenzen des Wachstums - das 30-Jahre-Update<?php isbn("ISBN 978-3-7776-2228-6", "", "English: Limits to Growth: The 30-Year Update"); ?></td>  <td>Donella Meadows, Jørgen Randers, Dennis Meadows</td>  <td class="c200">200%</td>  </tr>
-<tr>  <td>EN</td>  <td>Delusions of Gender<?php isbn("ISBN 978-184831-220-3", "Thema: Geschlechterforschung", "Subject: Gender studies"); ?></td>  <td>Cordelia Fine</td>  <td>100%</td>  </tr>
-<tr>  <td>EN</td>  <td>The God Delusion<?php isbn("ISBN 978-0-618-91824-9", "Thema: Religionskritik", "Subject: Criticism of religion"); ?></td>  <td>Richard Dawkins</td>  <td class="c200">200%</td>  </tr>
+<?php
+	$books = [
+		[
+		'book' => [ "EN", "Design Patterns", "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides" ],
+		'desc' => [ "ISBN 978-0-201-63361-0", "Thema: Entwurfsmuster", "" ],
+		'prog' => [ "200%", "100%" ],
+		],
+		[
+		'book' => [ "EN", "Understanding Cryptography", "Christof Paar, Jan Pelzl" ],
+		'desc' => [ "ISBN 978-3-642-04100-6", "Thema: Kryptografie", "" ],
+		'prog' => [ "200%", "95%" ],
+		],
+		[
+		'book' => [ "EN", "Modern Operating Systems", "Andrew S. Tanenbaum" ],
+		'desc' => [ "ISBN 978-0-13-813459-4", "Thema: Betriebssysteme", "" ],
+		'prog' => [ [341, 1072], "75%" ],
+		],
+		[
+		'book' => [ "EN", "Computer Networks", "Andrew S. Tanenbaum, David J. Wetherall" ],
+		'desc' => [ "ISBN 978-0-13-212695-3", "Thema: Netzwerke", "" ],
+		'prog' => [ "100%", "80%" ],
+		],
+		[
+		'book' => [ "EN", "Distributed Systems", "Andrew S. Tanenbaum, Maarten Van Steen" ],
+		'desc' => ["ISBN 978-0-13-613553-1", "Thema: Verteilte Systeme", "" ],
+		'prog' => [ "100%", "85%" ],
+		],
+		[
+		'book' => [ "EN", "Introduction to Automata Theory, Languages, and Computation", "John E. Hopcroft, Rajeev Motwani, Jeffrey D. Ullman"],
+		'desc' => [ "ISBN 978-0-321-47617-3", "Themen: Automatentheorie, Sprachen, Berechenbarkeit", "" ],
+		'prog' => [ "100%", "70%" ],
+		],
+		[
+		'book' => [ "EN", "Software Engineering and Computer Games", "Rudy Rucker" ],
+		'desc' => [ "ISBN 978-0-20176-791-9", "Themen: Softwareentwicklung, Spieleentwicklung", "" ],
+		'prog' => [ "100%", "85%" ],
+		],
+		[
+		'book' => [ "DE", "Inside Microsoft DirectX 9 - Spieleprogrammierung", "Uwe Kettermann, Andreas Rohde" ],
+		'desc' => [ "ISBN 978-3-86063-096-9", "", "Subjects: DirectX 9, Game Development" ],
+		'prog' => [ "100%", "85%" ],
+		],
+		[
+		'book' => [ "DE", "Computergrafik und Bildverarbeitung: Band I: Computergrafik", "Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher" ],
+		'desc' => [ "ISBN 978-3-83481-304-6", "Themen: Computergrafik, OpenGL", "Subjects: Computer Graphics, OpenGL" ],
+		'prog' => [ "100%", "80%" ]
+		],
+		[
+		'book' => [ "DE", "Computergrafik und Bildverarbeitung: Band II: Bildverarbeitung", "Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher" ],
+		'desc' => [ "ISBN 978-3-83481-712-9 ", "", "" ],
+		'prog' => [ "100%", "70%" ],
+		],
+		[
+		'book' => [ "EN", "Programming Game AI by Example", "Mat Buckland" ],
+		'desc' => [ "ISBN 978-1-55622-078-4", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
+		'prog' => [ "200%", "100%" ],
+		],
+		[
+		'book' => [ "EN", "AI Techniques for Game Programming", "Mat Buckland" ],
+		'desc' => [ "ISBN 978-1-93184-108-5", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
+		'prog' => [ "100%", "90%" ],
+		],
+		[
+		'book' => [ "EN", "AI for Game Developers", "David M. Bourg, Glenn Seemann" ],
+		'desc' => [ "ISBN 978-0-596-00555-9", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
+		'prog' => [ [288, 379], null ],
+		],
+		[
+		'book' => [ "DE", "Grundkurs Künstliche Intelligenz", "Wolfgang Ertel" ],
+		'desc' => [ "ISBN 978-3-8348-0783-0", "", "Subject: Artificial Intelligence" ],
+		'prog' => [ "100%", "90%" ],
+		],
+		[
+		'book' => [ "DE", "Mathematik für Informatiker", "Peter Hartmann" ],
+		'desc' => [ "ISBN 978-3-8348-0096-1", "", "Subject: Mathematics" ],
+		'prog' => [ "100%", "60%" ],
+		],
+		[
+		'book' => [ "DE", "Logik für Informatiker", "Martin Kreuzer, Stefan Kühling" ],
+		'desc' => [ "ISBN 978-3-8273-7215-4", "", "Subject: Logic" ],
+		'prog' => [ "100%", "65%" ],
+		],
+		[
+		'book' => [ "DE", "Graphentheoretische Konzepte und Algorithmen", "Sven Oliver Krumke, Hartmut Noltemeier" ],
+		'desc' => [ "ISBN 978-3-8348-0629-1", "", "Subject: Graph Theory" ],
+		'prog' => [ "100%", "75%" ],
+		],
+		[
+		'book' => [ "EN", "The Mythical Man-Month", "Frederick P. Brooks, Jr." ],
+		'desc' => [ "ISBN 978-0-201-83595-3", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
+		'prog' => [ "200%", "90%" ],
+		],
+		[
+		'book' => [ "DE", "Assembler", "Reiner Backer" ],
+		'desc' => [ "ISBN 978-3-499-61224-4", "", "Subject: Assembly language" ],
+		'prog' => [ "100%", "95%" ],
+		],
+		[
+		'book' => [ "EN", "Programming in Scala", "Martin Odersky, Lex Spoon, Bill Venners" ],
+		'desc' => [ "ISBN 978-0-98153-164-9", "", "" ],
+		'prog' => [ [98, 812], null /* 80% */ ],
+		],
+		[
+		'book' => [ "DE", "Grenzen des Wachstums - das 30-Jahre-Update", "Donella Meadows, Jørgen Randers, Dennis Meadows" ],
+		'desc' => [ "ISBN 978-3-7776-2228-6", "", "English: Limits to Growth: The 30-Year Update" ],
+		'prog' => [ "200%", null ],
+		],
+		[
+		'book' => [ "EN", "Delusions of Gender", "Cordelia Fine" ],
+		'desc' => [ "ISBN 978-184831-220-3", "Thema: Geschlechterforschung", "Subject: Gender studies" ],
+		'prog' => [ "100%", null ],
+		],
+		[
+		'book' => [ "EN", "The God Delusion", "Richard Dawkins" ],
+		'desc' => [ "ISBN 978-0-618-91824-9", "Thema: Religionskritik", "Subject: Criticism of religion" ],
+		'prog' => [ "200%", null ],
+		],
+	];
+	
+	$color = function ($prog) {
+		global $rcl;
+		if (is_string($prog)) {
+			$x = str_replace("%", "", $prog);
+			echo "  <td class='c$x'";
+			if ($x == 200) { echo " title='" . $rcl->lang("zweimal gelesen", "read twice") . "'" ; }
+			echo ">$prog</td>";
+		} else if (is_array($prog) && count($prog) >= 2) {
+			$a = $prog[0];
+			$b = $prog[1];
+			if (is_int($a) && is_int($b)) {
+				$p = (double) $a /  (double) $b;
+				$out = (int) round($p * 100.0);
+				$col = prgr2clr($p);
+				echo "  <td style='background-color: $col;' title='$a / $b ";
+				echo $rcl->lang("Seiten", "pages") . "'>$out%</td>";
+			}
+		}
+	};
+	
+	foreach ($books as $b) {
+		echo "\n<tr>";
+		
+		// language
+		echo "  <td>".$b['book'][0]."</td>";
+		
+		// title
+		echo "  <td>".$b['book'][1];
+		isbn($b['desc'][0], $b['desc'][1], $b['desc'][2]);
+		echo "</td>";
+		
+		// author
+		echo "  <td>".$b['book'][2]."</td>";
+		
+		// progress
+		$color($b['prog'][0]);
+		$color($b['prog'][1]);
+		
+		echo "  </tr>";
+	}
+?>
 </tbody>
 </table>
 
