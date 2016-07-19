@@ -129,7 +129,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		[
 		'book' => [ "EN", "Programming in Scala", "Martin Odersky, Lex Spoon, Bill Venners" ],
 		'desc' => [ "ISBN 978-0-98153-164-9", "", "" ],
-		'prog' => [ [98, 812, true], null /* 80% */ ],
+		'prog' => [ "100%", "95%" ],
 		],
 		[
 		'book' => [ "DE", "Grenzen des Wachstums - das 30-Jahre-Update", "Donella Meadows, Jørgen Randers, Dennis Meadows" ],
@@ -159,6 +159,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 			$a = $prog[0];
 			$b = $prog[1];
 			$reading = $prog[2];
+			if ($a === $b) { echo "  <td class='c100'>100%</td>"; return; }
 			if (is_int($a) && is_int($b)) {
 				$p = (double) $a /  (double) $b;
 				$out = (int) round($p * 100.0);
