@@ -132,6 +132,11 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		'prog' => [ "100%", "95%" ],
 		],
 		[
+		'book' => [ "DE", "Computerforensik", "Alexander Geschonneck" ],
+		'desc' => [ "ISBN 978-3-86490-133-1", "", "Subject: computer forensics" ],
+		'prog' => [ "100%", "85%" ],
+		],
+		[
 		'book' => [ "DE", "Grenzen des Wachstums - das 30-Jahre-Update", "Donella Meadows, Jørgen Randers, Dennis Meadows" ],
 		'desc' => [ "ISBN 978-3-7776-2228-6", "", "English: Limits to Growth: The 30-Year Update" ],
 		'prog' => [ "200%", null ],
@@ -181,7 +186,7 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 		
 		// title
 		echo "  <td>".$b['book'][1];
-		isbn($b['desc'][0], $b['desc'][1], $b['desc'][2]);
+		isbn($b['desc'][0], $b['desc'][1], $b['desc'][2], $b['book'][0]);
 		echo "</td>";
 		
 		// author

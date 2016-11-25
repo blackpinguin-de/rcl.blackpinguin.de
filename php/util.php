@@ -96,10 +96,11 @@ function privateaStr($url, $de, $en = NULL, $size = NULL){
 }
 function privatea($url, $de, $en = NULL, $size = NULL){ echo privateaStr($url, $de, $en, $size); }
 
-function isbn($str, $de, $en){
+function isbn($str, $de, $en, $book_lang){
     global $rcl;
     $lang = $rcl->lang;
-    $body = $str." ".externStr("http://www.amazon.de/s/?field-keywords=".str_replace(" ", "+", $str), "(amazon.de)");
+    $body = $str."<br/>".externStr("https://www.amazon.de/s/?field-keywords=".str_replace(" ", "+", $str), "(amazon.de)");
+    if($book_lang === "EN") $body .= " ".externStr("https://www.amazon.com/s/?field-keywords=".str_replace(" ", "+", $str), "(amazon.com)");
     if($lang === "de" && $de !== "") $body .= "<br/>".$de;
     else if($lang === "en" && $en !== "") $body .= "<br/>".$en;
     $rcl->newFoot($body);
