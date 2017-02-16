@@ -2,6 +2,15 @@
 <?php $title = "Events";  $path = "/events"; ?>
 <?php include("include1.php"); ?>
 
+<div>
+<?php if($rcl->lang === "de") { ?>
+Diese Seite listet Veranstaltungen auf an denen ich teilgenommen habe oder teilnehmen werde.
+<?php } else { ?>
+This site lists events that I attended, or am going to attend.
+<?php }?>
+</div>
+<br/>
+
 <table id="events">
 <thead>
     <?php if($rcl->lang === "de") { ?>
@@ -84,6 +93,12 @@
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2016-12-27 - 2016-12-30</td>
+</tr>
+<tr>
+  <td><?php extern("http://www.hamburger-tactica.de/?p=11651".$rcl->lang("","&lang=en"),"Hamburger Tactica 2017"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2017-02-18 - 2017-02-19</td>
 </tr>
 </tbody>
 </table>

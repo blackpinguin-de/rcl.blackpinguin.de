@@ -49,14 +49,15 @@
   <?php extern("http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html", "Implementation einer Hash-Collision-Attacke gegen PHP", "Implementation of an hash collision attack against PHP"); ?>,
   <?php intern("/proj/DarkSideOfMorra/","Dark Side of Morra"); ?>,
   <?php intern("/proj/BrainOfTehZwarm/","Brain of teh Zwarm"); ?>,
-  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>
+  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>,
+  <?php extern("https://github.com/Istador/HsvScreensaver/","HsvScreensaver"); ?>
 </td>  </tr>
 
 <tr>  <th>COMAL</th>  <td>2004</td>  <td>
   <?php privatea("/spr/","R8b/Inform."); ?>
 </td>  </tr>
 
-<tr>  <th>CSS</th>  <td>2007 - 2016</td>  <td>
+<tr>  <th>CSS</th>  <td>2007 - 2017</td>  <td>
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
@@ -75,7 +76,11 @@
   <?php privatea("/haw/bai/11ws/VS/","VS"); ?>
 </td>  </tr>
 
-<tr>  <th>HTML</th>  <td>2003 - 2016</td>  <td>
+<tr>  <th>GLSL</th>  <td>2016</td>  <td>
+  <?php extern("https://github.com/Istador/HsvScreensaver/","HsvScreensaver"); ?>
+</td>  </tr>
+
+<tr>  <th>HTML</th>  <td>2003 - 2017</td>  <td>
   <?php privatea("/spr/","R10b/Alt.Inform."); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
@@ -106,7 +111,7 @@
   <?php privatea("/haw/bms/13ws/P2/","P2"); ?>
 </td>  </tr>
 
-<tr>  <th>JavaScript</th>  <td>2007 - 2016</td>  <td>
+<tr>  <th>JavaScript</th>  <td>2007 - 2017</td>  <td>
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
@@ -114,7 +119,7 @@
   <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>
 </td>  </tr>
 
-<tr>  <th>JSON</th>  <td>2014</td>  <td>
+<tr>  <th>JSON</th>  <td>2014 - 2017</td>  <td>
     <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
   <?php privatea("/haw/bms/14ss/MINF/","MINF"); ?>,
   <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>
@@ -133,7 +138,7 @@
   <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>
 </td>  </tr>
 
-<tr>  <th>PHP</th>  <td>2005 - 2016</td>  <td>
+<tr>  <th>PHP</th>  <td>2005 - 2017</td>  <td>
   <?php privatea("/spr/","R10b/Alt.Inform."); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
@@ -162,7 +167,7 @@
   <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>
 </td>  </tr>
 
-<tr>  <th>SQL</th>  <td>2007 - 2016</td>  <td>
+<tr>  <th>SQL</th>  <td>2007 - 2017</td>  <td>
   <?php privatea("/g10/tai/AeSQL/","AeSQL"); ?>,
   <?php privatea("/g10/tai/AeOffice/","AeOffice"); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
@@ -197,14 +202,14 @@
   <?php privatea("/g10/tai/AeOffice/","AeOffice"); ?>
 </td>  </tr>
 
-<tr>  <th>XML</th>  <td>2011 - 2016</td>  <td>
+<tr>  <th>XML</th>  <td>2011 - 2017</td>  <td>
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
   <?php privatea("/haw/bai/12ss/WP_ITS/","WP3:ITS"); ?>,
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>
 </td>  </tr>
 
-<tr>  <th>XSLT</th>  <td>2013 - 2016</td>  <td>
+<tr>  <th>XSLT</th>  <td>2013 - 2017</td>  <td>
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>
 </td>  </tr>
@@ -213,9 +218,9 @@
 </table>
 
 <?php if($rcl->lang === "de") { ?>
-<p>Ohne (bisherige) praktische Anwendung<?php $rcl->newFoot("Durch Behandlung in Vorlesungen, Fachbüchern und/oder Onlinekursen."); ?>: Fortran, GLSL, LISP, Objective-C, Python, Smalltalk</p>
+<p>Ohne (bisherige) praktische Anwendung<?php $rcl->newFoot("Durch Behandlung in Vorlesungen, Fachbüchern und/oder Onlinekursen."); ?>: Fortran, LISP, Objective-C, Python, Smalltalk</p>
 <?php } else { ?>
-<p>Without practical usage (yet)<?php $rcl->newFoot("My knowledge of these is only based on lectures, textbooks and/or online courses."); ?>: Fortran, GLSL, LISP, Objective-C, Python, Smalltalk</p>
+<p>Without practical usage (yet)<?php $rcl->newFoot("My knowledge of these is only based on lectures, textbooks and/or online courses."); ?>: Fortran, LISP, Objective-C, Python, Smalltalk</p>
 <?php } ?>
 
 <?php include("include2.php"); ?>

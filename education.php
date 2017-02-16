@@ -54,13 +54,16 @@ table#education > tbody > tr > th { white-space: nowrap; padding-right: 10px; ve
 
 
 <p>
-<script type="text/javascript" src="/scripts/grades.js"></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
-lang = '<?php echo $rcl->lang; ?>';
-google.load("visualization", "1", {packages:["corechart"]});
-google.setOnLoadCallback(function(){createChart(); drawChart();});
+function load_charts(){
+  lang = '<?php echo $rcl->lang; ?>';
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(function(){createChart(); drawChart();});
+};
 </script>
+<script type="text/javascript" src="/scripts/grades.js" defer></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer onload="load_charts()"></script>
+
 <?php if($rcl->lang === "de") { ?>
 <h4 class="c">Diagramm: Notendurschnitt über die Zeit
 <?php $rcl->newFoot("Die Fehlerbalken bis 2009 stellen die Ungenauigkeit der Zeugnis-Bewertungsskala dar, die dadurch entsteht, dass Noten ohne + und - eingetragen werden. Ab 2009 stellen die Fehlerbalken das Intervall zwischen bester und schlechtester noch zu erreichender Endnote dar.<br/><br/>Sterne heben Abschluss- oder Abgangszeugnisse hervor."); ?>

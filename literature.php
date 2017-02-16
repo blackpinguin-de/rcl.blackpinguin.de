@@ -20,6 +20,17 @@ table#literature > tbody > tr > td.c0   { background-color: #ff0000; }
 <?php /* prgr2clr(0.6); */ ?>
 </style>
 
+<div>
+<?php if($rcl->lang === "de") { ?>
+Diese Seite listet Fachbücher auf die ich gelesen habe,
+und bietet eine Selbsteinschätzung von mir darüber wieviel ich meine vom Inhalt verstanden zu haben.
+<?php } else { ?>
+This site lists text books that I have read.
+It also shows an self-evaluation of how much I think I have grasped of their content.
+<?php }?>
+</div>
+<br/>
+
 <table id="literature">
 <thead>
     <?php if($rcl->lang === "de") { ?>
