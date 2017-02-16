@@ -18,21 +18,23 @@ function locdiv(){ global $rcl;
 function loc($data){
     arsort($data);
 ?>
-<script type='text/javascript' src='https://www.google.com/jsapi'></script>
 <script type='text/javascript'>
-google.load('visualization', '1', {packages:['corechart']});
-google.setOnLoadCallback(function(){
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
     var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code']<?php
-        foreach($data as $name => $loc){
-            echo ", ['".$name."', ".$loc."]";
-        }
+      foreach($data as $name => $loc){
+        echo ", ['".$name."', ".$loc."]";
+      }
     ?>]);
     var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
     var chart = new google.visualization.PieChart(document.getElementById('loc'));
     window.onresize = function(){chart.draw(data, options);};
     window.onresize();
-});
+  });
+};
 </script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
 <?php
 }
 
