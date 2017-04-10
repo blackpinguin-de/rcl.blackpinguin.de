@@ -397,18 +397,21 @@ input, textarea {
 #profiles > div:nth-of-type(1) > div > div:nth-of-type(4):before { background-position: -192px    0px; }
 #profiles > div:nth-of-type(1) > div > div:nth-of-type(5):before { background-position: -256px    0px; }
 #profiles > div:nth-of-type(1) > div > div:nth-of-type(6):before { background-position: -320px    0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(7):before { background-position: -384px    0px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(1):before { background-position:    0px  -64px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(2):before { background-position:  -64px  -64px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(3):before { background-position: -128px  -64px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(4):before { background-position: -192px  -64px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(5):before { background-position: -256px  -64px; }
 #profiles > div:nth-of-type(2) > div > div:nth-of-type(6):before { background-position: -320px  -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(7):before { background-position: -384px  -64px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(1):before { background-position:    0px -128px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(2):before { background-position:  -64px -128px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(3):before { background-position: -128px -128px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(4):before { background-position: -192px -128px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(5):before { background-position: -256px -128px; }
 #profiles > div:nth-of-type(3) > div > div:nth-of-type(6):before { background-position: -320px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(7):before { background-position: -384px -128px; }
 /* CSS 4.0 *//*
 #profiles > div:nth-of-type(1) > div > div:before { background-position-y:    0px; }
 #profiles > div:nth-of-type(2) > div > div:before { background-position-y:  -64px; }
@@ -418,7 +421,8 @@ input, textarea {
 #profiles > div > div > div:nth-of-type(3):before { background-position-x: -128px; }
 #profiles > div > div > div:nth-of-type(4):before { background-position-x: -192px; }
 #profiles > div > div > div:nth-of-type(5):before { background-position-x: -256px; }
-#profiles > div > div > div:nth-of-type(6):before { background-position-x: -320px; }*/
+#profiles > div > div > div:nth-of-type(6):before { background-position-x: -320px; }
+#profiles > div > div > div:nth-of-type(7):before { background-position-x: -384px; }*/
 
 
 /* error page */
