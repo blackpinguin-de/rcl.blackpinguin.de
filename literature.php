@@ -143,6 +143,11 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		'prog' => [ "100%", "95%" ],
 		],
 		[
+		'book' => [ "EN", "JavaScript Patterns", "Stoyan Stefanov" ],
+		'desc' => [ "ISBN 978-0-59680-675-0", "", "" ],
+		'prog' => [ [9 + (87 - 57), 236, true], "100%" ],
+		],
+		[
 		'book' => [ "DE", "Computerforensik", "Alexander Geschonneck" ],
 		'desc' => [ "ISBN 978-3-86490-133-1", "", "Subject: computer forensics" ],
 		'prog' => [ "100%", "85%" ],

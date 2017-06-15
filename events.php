@@ -100,6 +100,18 @@ This site lists events that I attended, or am going to attend.
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2017-02-18 - 2017-02-19</td>
 </tr>
+<tr>
+  <td><?php extern("http://magnology.de/","Hamburg MaGnology 2017"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2017-06-09 - 2017-06-10</td>
+</tr>
+<tr>
+  <td><?php extern("https://www.hsh-nordbank-run.de/","HSH Nordbank Run 2017"); ?></td>
+  <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2017-07-01</td>
+</tr>
 </tbody>
 </table>
 
