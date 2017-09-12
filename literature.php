@@ -145,7 +145,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "JavaScript Patterns", "Stoyan Stefanov" ],
 		'desc' => [ "ISBN 978-0-59680-675-0", "", "" ],
-		'prog' => [ [162, 207, true], "100%" ],
+		'prog' => [ "100%", "100%" ],
 		],
 		[
 		'book' => [ "DE", "Computerforensik", "Alexander Geschonneck" ],
