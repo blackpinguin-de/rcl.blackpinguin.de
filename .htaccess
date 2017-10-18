@@ -32,6 +32,27 @@ Redirect /DarkSideOfMorra/ /proj/DarkSideOfMorra
 #############################################
 #### .hml = .html = .php = ''
 
+# dir -> html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.html$
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+)/+$ $1.html [L]
+
+# dir -> htm
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.htm$
+RewriteCond %{REQUEST_FILENAME}\.htm -f
+RewriteRule ^(.+)/+$ $1.htm [L]
+
+# dir -> php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.php$
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)/+$ $1.php [L]
+
 # nix -> html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
