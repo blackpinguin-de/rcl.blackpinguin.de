@@ -69,12 +69,12 @@ function intern($url, $de, $en = NULL){ echo internStr($url, $de, $en); }
 
 
 function externStr($url, $de, $en = NULL){
-    return aclass($url, "extern"."' target='_blank", $de, $en);
+    return aclass($url, "extern' target='_blank' rel='noopener", $de, $en);
 }
 function extern($url, $de, $en = NULL){ echo externStr($url, $de, $en); }
 
 function youtubeStr($video, $de, $en = NULL){
-    return aclass("https://youtu.be/$video", "youtube"."' target='_blank", $de, $en);
+    return aclass("https://youtu.be/$video", "youtube' target='_blank' rel='noopener", $de, $en);
 }
 function youtube($video, $de, $en = NULL){ echo youtubeStr($video, $de, $en); }
 
