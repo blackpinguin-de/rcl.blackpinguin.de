@@ -31,7 +31,7 @@ if(!isset($path)) $path = ".";
 
 <link rel="stylesheet" type="text/css" href="/style/basic.css" title="Default (blue / orange)" />
 <link rel="stylesheet" type="text/css" href="/style/reference.css" />
-<script type="text/javascript" src="/scripts/jquery-3.2.1.slim.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/scripts/reference.js" defer async></script>
 <script type="text/javascript" src="/scripts/textarea-autoheight.js" defer async></script>
 <noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
