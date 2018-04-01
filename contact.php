@@ -220,7 +220,7 @@ $msg   = isset($_SESSION['RCL::contact-msg'])   ? $_SESSION['RCL::contact-msg'] 
         <h3><?=i18n('gaming');?></h3>
         <div>Battle.net<br/><div>D3: <?php extern('https://eu.battle.net/d3/de/profile/BlackPinguin-2234/','BlackPinguin#2234');?></div></div>
         <div>Steam<div><?php extern('https://steamcommunity.com/id/blackpinguin/','blackpinguin');?><br/><?php extern('https://steamcommunity.com/id/istador/','istador');?></div></div>
-        <div>PSN<div><?php extern('https://www.playstation.com/en-us/my/public-trophies/?onlineId=BlackPinguin89','BlackPinguin89');?></div></div>
+        <div>PSN<div><?php extern('https://my.playstation.com/profile/BlackPinguin89/','BlackPinguin89');?></div></div>
         <div class="fade">Origin<div><a class="private">RCLadiges</a></div></div>
         <div class="fade">UPlay<div><a class="private">Istador89</a></div></div>
     </div></div>
