@@ -38,6 +38,11 @@
 
 <table id="projects"><tbody>
 
+<tr class="y2018"> <th>2018</th>
+<td>
+<div><span><?php echo $rcl->lang("Add-on: ", "Add-on: "); extern("https://github.com/Istador/old-search-fixed/","Old Search Fixed 3 (Firefox)"); ?></span></div>
+</td> </tr>
+
 <tr class="y2016"> <th>2016</th>
 <td>
 <div><span><?php echo $rcl->lang("Programm: ", "Program: "); extern("https://github.com/Istador/HsvScreensaver/","HsvScreensaver"); ?></span></div>
