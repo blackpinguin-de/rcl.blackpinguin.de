@@ -133,6 +133,11 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		'prog' => [ "200%", "90%" ],
 		],
 		[
+		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
+		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
+		'prog' => [ [106, 941, '2018-10-31'], null ],
+		],
+		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
 		'desc' => [ "ISBN 978-3-499-61224-4", "", "Subject: Assembly language" ],
 		'prog' => [ "100%", "95%" ],
@@ -187,7 +192,13 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 				$col = prgr2clr($p);
 				echo "  <td style='background-color: $col;' title='$a / $b ";
 				echo $rcl->lang("Seiten", "pages");
-				if ($reading) { echo $rcl->lang(", momentan am lesen.", ", currently reading."); }
+				if ($reading) {
+					echo $rcl->lang(", momentan am lesen", ", currently reading");
+					if (is_string($reading) && strtotime($reading) !== false) {
+						echo $rcl->lang(", letzte Aktualisierung: $reading", ", last update: $reading");
+					}
+					else { echo "."; }
+				}
 				else { echo $rcl->lang(" gelesen.", " read."); }
 				echo "'>$out%</td>";
 			}
