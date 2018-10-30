@@ -89,7 +89,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		],
 		[
 		'book' => [ "DE", "Computergrafik und Bildverarbeitung: Band II: Bildverarbeitung", "Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher" ],
-		'desc' => [ "ISBN 978-3-83481-712-9 ", "", "" ],
+		'desc' => [ "ISBN 978-3-83481-712-9", "", "" ],
 		'prog' => [ "100%", "70%" ],
 		],
 		[
