@@ -27,6 +27,11 @@
   <?php privatea("/haw/bms/13ws/INF3/","INF3"); ?>
 </td>  </tr>
 
+<tr>  <th>Bash</th>  <td>? - 2018</td>  <td>
+  <?= $rcl->lang("persönliche Nutzung", "personal use"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
+</td>  </tr>
+
 <tr>  <th>C</th>  <td>2010 - 2013</td>  <td>
   <?php privatea("/haw/bai/10ss/RMP/","RMP"); ?>,
   <?php privatea("/haw/bai/10ws/BS/","BS"); ?>,
@@ -45,8 +50,8 @@
 <tr>  <th>C#</th>  <td>2012 - 2016</td>  <td>
   <?php privatea("/haw/bai/12ss/IS/","IS"); ?>,
   <?php extern("http://www.cocktailsandcode.de/2012/05/workshop-c-fur-java-entwickler/","Workshop: C# für Java Entwickler","Workshop: C# for Java Developers"); ?>,
-  <?php extern("http://msdn.microsoft.com/en-us/library/bb200104.aspx","XNA Tutorials"); ?>,
-  <?php extern("http://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html", "Implementation einer Hash-Collision-Attacke gegen PHP", "Implementation of an hash collision attack against PHP"); ?>,
+  <?php extern("https://msdn.microsoft.com/en-us/library/bb200104.aspx","XNA Tutorials"); ?>,
+  <?php extern("https://events.ccc.de/congress/2011/Fahrplan/events/4680.en.html", "Implementation einer Hash-Collision-Attacke gegen PHP", "Implementation of an hash collision attack against PHP"); ?>,
   <?php intern("/proj/DarkSideOfMorra/","Dark Side of Morra"); ?>,
   <?php intern("/proj/BrainOfTehZwarm/","Brain of teh Zwarm"); ?>,
   <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>,
@@ -57,12 +62,13 @@
   <?php privatea("/spr/","R8b/Inform."); ?>
 </td>  </tr>
 
-<tr>  <th>CSS</th>  <td>2007 - 2017</td>  <td>
+<tr>  <th>CSS</th>  <td>2007 - 2018</td>  <td>
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
-  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>
+  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 <tr>  <th>Delphi</th>  <td>2008 - 2009</td>  <td>
@@ -80,7 +86,11 @@
   <?php extern("https://github.com/Istador/HsvScreensaver/","HsvScreensaver"); ?>
 </td>  </tr>
 
-<tr>  <th>HTML</th>  <td>2003 - 2017</td>  <td>
+<tr>  <th>GraphQL</th>  <td>2018</td>  <td>
+  <?php privatea("/job/2015/", "Job #1"); ?>
+</td>  </tr>
+
+<tr>  <th>HTML</th>  <td>2003 - 2018</td>  <td>
   <?php privatea("/spr/","R10b/Alt.Inform."); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
@@ -89,7 +99,8 @@
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
-  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>
+  <?php intern("/proj/DeathStarPD/","Death Star PD"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 <tr>  <th>Java</th>  <td>2010 - 2013</td>  <td>
@@ -111,21 +122,24 @@
   <?php privatea("/haw/bms/13ws/P2/","P2"); ?>
 </td>  </tr>
 
-<tr>  <th>JavaScript</th>  <td>2007 - 2017</td>  <td>
+<tr>  <th>JavaScript</th>  <td>2007 - 2018</td>  <td>
   <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
   <?php privatea("/haw/bms/14ss/MINF/","MINF"); ?>,
-  <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>
+  <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>,
+  <?php extern("https://github.com/Istador/old-search-fixed/", "Old Search Fixed 3"); ?>
 </td>  </tr>
 
-<tr>  <th>JSON</th>  <td>2014 - 2017</td>  <td>
-    <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
+<tr>  <th>JSON</th>  <td>2014 - 2018</td>  <td>
+  <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
   <?php privatea("/haw/bms/14ss/MINF/","MINF"); ?>,
-  <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>
+  <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
-<tr>  <th>LaTeX</th>  <td>2010 - 2016</td>  <td>
+<tr>  <th>LaTeX</th>  <td>2010 - 2018</td>  <td>
   <?php privatea("/haw/bai/10ss/DB/","DB"); ?>,
   <?php privatea("/haw/bai/10ss/LB/","LB"); ?>,
   <?php privatea("/haw/bai/10ws/AD/","AD"); ?>,
@@ -135,14 +149,16 @@
   <?php privatea("/haw/bai/11ss/WP_SG/","WP1:SG"); ?>,
   <?php intern("/proj/AIS/", "KI-Simulation in Computerspielen", "Simulation of AI in computer games"); ?>,
   <?php privatea("/haw/bai/11ws/WP_QrQk/","WP2:QrQk"); ?>,
-  <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>
+  <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>,
+  <?= $rcl->lang("persönlicher Schriftverkehr", "personal correspondence"); ?>
 </td>  </tr>
 
-<tr>  <th>PHP</th>  <td>2005 - 2017</td>  <td>
+<tr>  <th>PHP</th>  <td>2005 - 2018</td>  <td>
   <?php privatea("/spr/","R10b/Alt.Inform."); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
   <?php intern("/proj/GameZ4you", "GameZ4you"); ?>,
-  <?php intern("/proj/MarketChecker/", "Market Checker"); ?>
+  <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 <tr>  <th>Prolog</th>  <td>2009 - 2012</td>  <td>
@@ -157,17 +173,22 @@
   <?php privatea("/haw/bms/13ss/PRG/","PRG"); ?>
 </td>  </tr>
 
-<tr>  <th>Scala</th>  <td>2012 - 2015</td>  <td>
+<tr>  <th>Scala</th>  <td>2012 - 2018</td>  <td>
   <?php privatea("/haw/bai/12ws/WP_Scala/","WP4:Scala"); ?>,
   <?php extern("https://www.coursera.org/course/progfun","Coursera:FP"); ?>,
   <?php extern("https://www.coursera.org/course/reactive","Coursera:RP"); ?>,
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
   <?php intern("/proj/SindWirSchonDa/","Sind wir schon da?", "Are we there yet?"); ?>,
   <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
-  <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>
+  <?php privatea("/haw/bms/14ws/IMP/","IMP"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
-<tr>  <th>SQL</th>  <td>2007 - 2017</td>  <td>
+<tr>  <th>SCSS</th>  <td>2015 - 2018</td>  <td>
+  <?php privatea("/job/2015/", "Job #1"); ?>
+</td>  </tr>
+
+<tr>  <th>SQL</th>  <td>2007 - 2018</td>  <td>
   <?php privatea("/g10/tai/AeSQL/","AeSQL"); ?>,
   <?php privatea("/g10/tai/AeOffice/","AeOffice"); ?>,
   <?php privatea("/internships/KOGS/","KOGS"); ?>,
@@ -177,7 +198,8 @@
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
   <?php privatea("/haw/bms/13ss/RDB/","RDB"); ?>,
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
-  <?php privatea("/haw/bms/13ws/INF2/","INF2"); ?>
+  <?php privatea("/haw/bms/13ws/INF2/","INF2"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 <tr>  <th>SVG</th>  <td>2014</td>  <td>
@@ -185,7 +207,11 @@
   <?php intern("/proj/dHeap/", "dHeap-Visualisierung", "dHeap visualization"); ?>
 </td>  </tr>
 
-<tr>  <th>UML</th>  <td>2010 - 2015</td>  <td>
+<tr>  <th>TypeScript</th>  <td>2017 - 2018</td>  <td>
+  <?php privatea("/job/2015/", "Job #1"); ?>
+</td>  </tr>
+
+<tr>  <th>UML</th>  <td>2010 - 2018</td>  <td>
   <?php privatea("/haw/bai/10ss/DB/","DB"); ?>,
   <?php privatea("/haw/bai/10ws/SE1/","SE1"); ?>,
   <?php privatea("/haw/bai/11ss/SE2/","SE2"); ?>,
@@ -195,23 +221,30 @@
   <?php intern("/proj/RLVierGewinnt/", "RL: Vier Gewinnt", "RL: Connect Four"); ?>,
   <?php privatea("/haw/bms/13ss/P1/","P1"); ?>,
   <?php intern("/proj/SindWirSchonDa/","Sind wir schon da?", "Are we there yet?"); ?>,
-  <?php intern("/proj/SonicGuessture/","Sonic Guessture"); ?>
+  <?php intern("/proj/SonicGuessture/","Sonic Guessture"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 <tr>  <th>VBA</th>  <td>2007</td>  <td>
   <?php privatea("/g10/tai/AeOffice/","AeOffice"); ?>
 </td>  </tr>
 
-<tr>  <th>XML</th>  <td>2011 - 2017</td>  <td>
+<tr>  <th>XML</th>  <td>2011 - 2018</td>  <td>
   <?php intern("/proj/MarketChecker/", "Market Checker"); ?>,
   <?php privatea("/haw/bai/12ss/WP_ITS/","WP3:ITS"); ?>,
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
-  <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>
+  <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
-<tr>  <th>XSLT</th>  <td>2013 - 2017</td>  <td>
+<tr>  <th>XSLT</th>  <td>2013 - 2018</td>  <td>
   <?php intern("/proj/MinimalisticShop/", "Minimalistic Shop"); ?>,
-  <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>
+  <?php intern("/proj/MediaIndexer/","Media Indexer"); ?>,
+  <?php privatea("/job/2015/", "Job #1"); ?>
+</td>  </tr>
+
+<tr>  <th>YML</th>  <td>2017 - 2018</td>  <td>
+  <?php privatea("/job/2015/", "Job #1"); ?>
 </td>  </tr>
 
 </tbody>
