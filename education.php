@@ -30,13 +30,13 @@ table#education > tbody > tr > th { white-space: nowrap; padding-right: 10px; ve
 
 <tbody>
 <?php if($rcl->lang === "de") { ?>
-<tr>  <th>2004-08</th>  <td><?php privatea("/internships/Stilke/", "Stilke Buch- und Zeitschriftenhandelsgesellschaft GmbH"); ?>, Einzelhandelskaufmann</td>  </tr>
-<tr>  <th>2005-02</th>  <td><?php privatea("/internships/Reset/", "Reset Grafische Medien GmbH"); ?>, Mediengestalter für Digital- und Printmedien</td>  </tr>
-<tr>  <th>2007-10 &ndash; 2007-11</th>  <td><?php privatea("/internships/KOGS/","Arbeitsbereich Kognitive Systeme");?> des <?php extern("https://www.inf.uni-hamburg.de/","Fachbereiches Informatik"); ?> der <?php extern("https://www.uni-hamburg.de/","Universität Hamburg"); ?>, inklusive einwöchigem <?php extern("https://www.inf.uni-hamburg.de/studies/prospective-students/schnupperstudium.html","Schnupperstudium"); ?> in der Projektgruppe Asymmetrische Verschlüsselung</td>  </tr>
+<tr>  <th>2004&#8209;08</th>  <td><?php privatea("/internships/Stilke/", "Stilke Buch- und Zeitschriftenhandelsgesellschaft GmbH"); ?>, Einzelhandelskaufmann</td>  </tr>
+<tr>  <th>2005&#8209;02</th>  <td><?php privatea("/internships/Reset/", "Reset Grafische Medien GmbH"); ?>, Mediengestalter für Digital- und Printmedien</td>  </tr>
+<tr>  <th>2007&#8209;10 &ndash; 2007&#8209;11</th>  <td><?php privatea("/internships/KOGS/","Arbeitsbereich Kognitive Systeme");?> des <?php extern("https://www.inf.uni-hamburg.de/","Fachbereiches Informatik"); ?> der <?php extern("https://www.uni-hamburg.de/","Universität Hamburg"); ?>, inklusive einwöchigem <?php extern("https://www.inf.uni-hamburg.de/studies/prospective-students/schnupperstudium.html","Schnupperstudium"); ?> in der Projektgruppe Asymmetrische Verschlüsselung</td>  </tr>
 <?php } else { ?>
-<tr>  <th>2004-08</th>  <td><?php privatea("/internships/Stilke/", "Stilke Buch- und Zeitschriftenhandelsgesellschaft GmbH"); ?> (trading company for books and magazines), salesman</td>  </tr>
-<tr>  <th>2005-02</th>  <td><?php privatea("/internships/Reset/", "Reset Grafische Medien GmbH"); ?>, digital and print media designer</td>  </tr>
-<tr>  <th>2007-10 &ndash; 2007-11</th>  <td><?php privatea("/internships/KOGS/","Cognitive Systems Laboratory"); ?>, <?php extern("https://www.inf.uni-hamburg.de/","Department of Informatics"); ?><?php $rcl->newFoot("'Informatics' is a bad translation for the german word 'Informatik', because the german word means Computer Science and not the different academic field of Informatics. But sadly, the Universität Hamburg decided to use 'Department of Informatics' as its official translation."); ?>, <?php extern("https://www.uni-hamburg.de/","Universität Hamburg"); ?> (University of Hamburg), internship and an one-week <?php extern("https://www.inf.uni-hamburg.de/studies/prospective-students/schnupperstudium.html","trial study"); ?> with the project topic: asymmetric encryption</td>  </tr>
+<tr>  <th>2004&#8209;08</th>  <td><?php privatea("/internships/Stilke/", "Stilke Buch- und Zeitschriftenhandelsgesellschaft GmbH"); ?> (trading company for books and magazines), salesman</td>  </tr>
+<tr>  <th>2005&#8209;02</th>  <td><?php privatea("/internships/Reset/", "Reset Grafische Medien GmbH"); ?>, digital and print media designer</td>  </tr>
+<tr>  <th>2007&#8209;10 &ndash; 2007&#8209;11</th>  <td><?php privatea("/internships/KOGS/","Cognitive Systems Laboratory"); ?>, <?php extern("https://www.inf.uni-hamburg.de/","Department of Informatics"); ?><?php $rcl->newFoot("'Informatics' is a bad translation for the german word 'Informatik', because the german word means Computer Science and not the different academic field of Informatics. But sadly, the Universität Hamburg decided to use 'Department of Informatics' as its official translation."); ?>, <?php extern("https://www.uni-hamburg.de/","Universität Hamburg"); ?> (University of Hamburg), internship and an one-week <?php extern("https://www.inf.uni-hamburg.de/studies/prospective-students/schnupperstudium.html","trial study"); ?> with the project topic: asymmetric encryption</td>  </tr>
 <?php } ?>
 </tbody>
 
@@ -44,9 +44,9 @@ table#education > tbody > tr > th { white-space: nowrap; padding-right: 10px; ve
 <thead><tr><th><?php echo $rcl->lang("Zertifikate", "Certificates"); ?></th></tr></thead>
 
 <tbody>
-<tr>  <th>2010-01-10</th>  <td>Certified <?php extern("https://cacert.org/", "CAcert"); ?> Assurer - <?php pdf("Anhang/20100110_CAcert.pdf","Zertifikat","Certificate", "68&nbsp;KiB"); ?></td>  </tr>
-<tr>  <th>2012-12-04</th>  <td><?php extern("https://www.coursera.org/course/progfun", "Functional Programming Principles in Scala"); ?> - <?php pdf("Anhang/20121204_FunctionalProgramming.pdf", "Leistungsnachweis", "Statement of Accomplishment", "295&nbsp;KiB"); ?></td>  </tr>
-<tr>  <th>2014-01-21</th>  <td><?php extern("https://www.coursera.org/course/reactive", "Principles of Reactive Programming"); ?> - <?php pdf("Anhang/20140121_ReactiveProgramming.pdf", "Leistungsnachweis", "Statement of Accomplishment", "85&nbsp;KiB"); ?></td>  </tr>
+<tr>  <th>2010&#8209;01&#8209;10</th>  <td>Certified <?php extern("https://cacert.org/", "CAcert"); ?> Assurer - <?php pdf("Anhang/20100110_CAcert.pdf","Zertifikat","Certificate", "68&nbsp;KiB"); ?></td>  </tr>
+<tr>  <th>2012&#8209;12&#8209;04</th>  <td><?php extern("https://www.coursera.org/course/progfun", "Functional Programming Principles in Scala"); ?> - <?php pdf("Anhang/20121204_FunctionalProgramming.pdf", "Leistungsnachweis", "Statement of Accomplishment", "295&nbsp;KiB"); ?></td>  </tr>
+<tr>  <th>2014&#8209;01&#8209;21</th>  <td><?php extern("https://www.coursera.org/course/reactive", "Principles of Reactive Programming"); ?> - <?php pdf("Anhang/20140121_ReactiveProgramming.pdf", "Leistungsnachweis", "Statement of Accomplishment", "85&nbsp;KiB"); ?></td>  </tr>
 </tbody>
 
 

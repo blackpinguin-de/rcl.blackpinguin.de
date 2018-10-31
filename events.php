@@ -26,86 +26,86 @@ This site lists events that I attended, or am going to attend.
   <td><?php extern("https://play.eslgaming.com/news/39977/Blizzard-Intel-Warcraft-Weekend-Seedings/","Blizzard &amp; Intel Warcraft Weekend"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2007-06-23</td>
+  <td>2007&#8209;06&#8209;23</td>
 </tr>
 <tr>
   <td><?php extern("http://www.wowwiki.com/BlizzCon_2007","BlizzCon 2007"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Anaheim, <?= $rcl->lang("Kalifornien", "California") ?>, USA</td>
-  <td>2007-08-03 - 2007-08-04</td>
+  <td>2007&#8209;08&#8209;03 &ndash; 2007&#8209;08&#8209;04</td>
 </tr>
 <tr>
   <td><?php extern("https://events.ccc.de/congress/2009","26th Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Berlin, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2009-12-29</td>
+  <td>2009&#8209;12&#8209;29</td>
 </tr>
 <tr>
   <td><?php extern("https://wiki.cacert.org/events/2010-11-05-ATE-Hamburg","CAcert Assurer Training Event Hamburg"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2010-11-05</td>
+  <td>2010&#8209;11&#8209;05</td>
 </tr>
 <tr>
   <td><?php extern("https://events.ccc.de/congress/2012/","29th Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2012-12-27 - 2012-12-30</td>
+  <td>2012&#8209;12&#8209;27 &ndash; 2012&#8209;12&#8209;30</td>
 </tr>
 <tr>
   <td><?php extern("https://events.ccc.de/congress/2014/wiki/Main_Page","31st Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2014-12-27 - 2014-12-30</td>
+  <td>2014&#8209;12&#8209;27 &ndash; 2014&#8209;12&#8209;30</td>
 </tr>
 <tr>
   <td><?php extern("http://www.creative-gaming.eu/blog/2015/01/21/%E2%80%9Epong-invaders-reality%E2%80%9C-in-hamburg/","Creative Gaming Show"); ?> <?= $rcl->lang("mit ", "with ") . internStr("/proj/DeathStarPD/","Death Star PD")?></td>
   <td><?= $rcl->lang("Aussteller", "Exhibitor") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2015-01-31</td>
+  <td>2015&#8209;01&#8209;31</td>
 </tr>
 <tr>
   <!-- dead link: http://www.hh-mag.net/mag2015 -->
   <td><?php extern("https://en.wikipedia.org/wiki/Magnology","Hamburg MaGnology 2015"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2015-06-06 - 2015-06-07</td>
+  <td>2015&#8209;06&#8209;06 &ndash; 2015&#8209;06&#8209;07</td>
 </tr>
 <tr>
   <td><?php extern("https://events.ccc.de/congress/2015/","32nd Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2015-12-27 - 2015-12-30</td>
+  <td>2015&#8209;12&#8209;27 &ndash; 2015&#8209;12&#8209;30</td>
 </tr>
 <tr>
   <td><?php extern("https://www.hsh-nordbank-run.de/","HSH Nordbank Run 2016"); ?></td>
   <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2016-06-18</td>
+  <td>2016&#8209;06&#8209;18</td>
 </tr>
 <tr>
   <td><?php extern("https://events.ccc.de/congress/2016/","33rd Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2016-12-27 - 2016-12-30</td>
+  <td>2016&#8209;12&#8209;27 &ndash; 2016&#8209;12&#8209;30</td>
 </tr>
 <tr>
   <td><?php extern("http://www.hamburger-tactica.de/?p=11651".$rcl->lang("","&lang=en"),"Hamburger Tactica 2017"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2017-02-18 - 2017-02-19</td>
+  <td>2017&#8209;02&#8209;18 &ndash; 2017&#8209;02&#8209;19</td>
 </tr>
 <tr>
   <td><?php extern("https://en.wikipedia.org/wiki/Magnology","Hamburg MaGnology 2017"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2017-06-09 - 2017-06-10</td>
+  <td>2017&#8209;06&#8209;09 &ndash; 2017&#8209;06&#8209;10</td>
 </tr>
 <tr>
   <td><?php extern("https://www.hsh-nordbank-run.de/","HSH Nordbank Run 2017"); ?></td>
   <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2017-07-01</td>
+  <td>2017&#8209;07&#8209;01</td>
 </tr>
 </tbody>
 </table>

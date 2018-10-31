@@ -132,7 +132,7 @@ public $_technologies = NULL;
 public $_tools = NULL;
 public $_ide = NULL;
 
-public function date($d){$this->_date = $d; }
+public function date($d){$this->_date = str_replace("-", "&#8209;", $d); }
 public function school($de, $en = NULL){global $rcl; $this->_school = $rcl->lang($de, $en); }
 public function schooltype($de, $en = NULL){global $rcl; $this->_schooltype = $rcl->lang($de, $en); }
 public function studium($de, $en = NULL){global $rcl; $this->_studium = $rcl->lang($de, $en); }
