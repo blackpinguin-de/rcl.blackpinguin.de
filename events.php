@@ -20,16 +20,10 @@ This site lists events that I attended, or am going to attend.
     <?php } ?>
 </thead>
 <tbody>
-<!--
+
 <tr>
-  <td>Einstieg Hamburg 2007</td>
-  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
-  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
-  <td>2007-??-??</td>
-</tr>
--->
-<tr>
-  <td><?php extern("http://www.giga.de/unternehmen/intel/leserartikel/blizzard-amp-intel-warcraft-weekend-ende-von-tag-2/","Blizzard &amp; Intel Warcraft Weekend"); ?></td>
+  <!-- dead link: http://www.giga.de/unternehmen/intel/leserartikel/blizzard-amp-intel-warcraft-weekend-ende-von-tag-2/ -->
+  <td><?php extern("https://play.eslgaming.com/news/39977/Blizzard-Intel-Warcraft-Weekend-Seedings/","Blizzard &amp; Intel Warcraft Weekend"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2007-06-23</td>
@@ -71,7 +65,8 @@ This site lists events that I attended, or am going to attend.
   <td>2015-01-31</td>
 </tr>
 <tr>
-  <td><?php extern("http://www.hh-mag.net/mag2015","Hamburg MaGnology 2015"); ?></td>
+  <!-- dead link: http://www.hh-mag.net/mag2015 -->
+  <td><?php extern("https://en.wikipedia.org/wiki/Magnology","Hamburg MaGnology 2015"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2015-06-06 - 2015-06-07</td>
@@ -101,7 +96,7 @@ This site lists events that I attended, or am going to attend.
   <td>2017-02-18 - 2017-02-19</td>
 </tr>
 <tr>
-  <td><?php extern("http://magnology.de/","Hamburg MaGnology 2017"); ?></td>
+  <td><?php extern("https://en.wikipedia.org/wiki/Magnology","Hamburg MaGnology 2017"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2017-06-09 - 2017-06-10</td>

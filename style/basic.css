@@ -232,8 +232,8 @@ h5 .ref, h4 .ref, h3 .ref, h2 .ref, h1 .ref, th .ref, table.courses > tbody > tr
 /* flags to change language */
 #lang {
     position: absolute;
-    /* top: calc(140px + 6 * 35px) */
-    top: 350px;
+    /* top: calc(140px + 7 * 35px) */
+    top: 385px;
     /*left: calc(138px - 86px - 5px);*/
     left: 47px;
 }

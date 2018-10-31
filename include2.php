@@ -9,7 +9,7 @@
         <br/><?php intern("/languages", "Sprachen", "Languages"); ?>
         <br/><?php intern("/literature", "Literatur", "Literature"); ?>
         <!-- <br/><?php intern("/technics", "Technik", "Technics"); ?> -->
-        <!-- <br/><?php intern("/events", "Events"); ?> -->
+        <br/><?php intern("/events", "Events"); ?>
         <br/><?php intern("/contact", "Impressum", "Contact"); ?>
     </nav></div></div>
 
