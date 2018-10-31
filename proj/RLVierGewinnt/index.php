@@ -27,6 +27,7 @@ Dabei wurde das RL-Framework von Patrick Boekhoven verwendet, welches im Rahmen 
 <tr> <th>Technologien</th> <td>JADE, Verstärkendes Lernen, Q-Learning, SARSA, Temporal difference learning</td> </tr>
 <tr> <th>Tools</th> <td>Dia, MediaWiki, Libre Office Impress</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Beteiligte</th> <td>1 (2 gesamt)</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <a href="vg.png"><img src="vg.png" alt="Screenshot" title="Screenshot of the state 6AAAF00C9B158599" style="width: 25%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
@@ -49,6 +50,7 @@ He used the RL framework by Patrick Boekhoven, that was developed as part of his
 <tr> <th>Technologies</th> <td>JADE, Reinforcment Learning, Q-Learning, SARSA, Temporal difference learning</td> </tr>
 <tr> <th>Tools</th> <td>Dia, MediaWiki, Libre Office Impress</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>1 (2 total)</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

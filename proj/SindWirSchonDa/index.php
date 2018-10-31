@@ -30,6 +30,7 @@ Die APK von Sind wir schon da? für Android 4.0 oder höher kann <a href="SindWi
 <tr> <th>Technologien</th> <td>Android, AndroidScalaProguard, Google Play Fused Location Provider, Activities, eigene Views, SI-Einheiten</td> </tr>
 <tr> <th>Tools</th> <td>Dia</td> </tr>
 <tr> <th>IDE</th> <td>ADT Eclipse mit Scala IDE</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Are we there yet? is an Android-App that was created in the summer semester 2014 at the <?php privatea("/haw/bms/14ss/MOSY/","Mobile Systems"); ?> compulsory elective course of <?php echo (new BMSCourse())->_studium; ?>.</p>
@@ -53,6 +54,7 @@ The APK of Are we there yet? for Android 4.0 or higher can be downloaded by <a h
 <tr> <th>Technologies</th> <td>Android, AndroidScalaProguard, Google Play Fused Location Provider, Activities, Custom Views, SI-Units</td> </tr>
 <tr> <th>Tools</th> <td>Dia</td> </tr>
 <tr> <th>IDE</th> <td>ADT Eclipse with Scala IDE</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

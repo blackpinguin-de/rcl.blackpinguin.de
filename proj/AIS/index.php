@@ -24,6 +24,7 @@ During the semester break I read two <?php intern("/literature","text books"); $
 <table><tbody>
 <tr> <th><?php echo $rcl->lang("Sprachen","Languages"); ?></th> <td>LaTeX</td> </tr>
 <tr> <th>Tools</th> <td>LibreOffice Impress</td> </tr>
+<tr> <th><?= $rcl->lang("Beteiligte", "Participants"); ?></th> <td>1</td> </tr>
 </tbody></table>
 <div style="clear: both;"></div>
 

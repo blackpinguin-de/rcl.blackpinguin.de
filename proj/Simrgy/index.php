@@ -37,6 +37,7 @@ Der <?php extern("http://www.morgen-in-meiner-stadt.de/","Morgen in meiner Stadt
 <tr> <th>Sprachen</th> <td>Java, HTML, PHP, JavaScript</td> </tr>
 <tr> <th>Technologien</th> <td>Java-Applet, AWT, JLayer</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Beteiligte</th> <td>2</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <a href="unfall.png"><img src="unfall.png" alt="Screenshot" title="Handeling an reactor accident" style="width: 30%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
@@ -66,6 +67,7 @@ The company <?php extern("http://www.morgen-in-meiner-stadt.de/","Morgen in mein
 <tr> <th>Languages</th> <td>Java, HTML, PHP, JavaScript</td> </tr>
 <tr> <th>Technologies</th> <td>Java applet, AWT, JLayer</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>2</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

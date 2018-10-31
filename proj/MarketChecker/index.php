@@ -44,6 +44,7 @@ Die meisten Methoden und optionalen Parameter der API werden von der App und der
 <tr> <th>Technologien</th> <td>XSD, DTD, MySQL, ProFTPD, E-Mail, bcrypt, Mersenne Twister, cURL, convert (ImageMagick)</td> </tr>
 <tr> <th>Tools</th> <td>Skype</td> </tr>
 <tr> <th>IDE</th> <td>Notepad++, Eclipse</td> </tr>
+<tr> <th>Beteiligte</th> <td>6</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Market Checker is a software project, that was created in the summer semester 2011 at the <?php privatea("/haw/bai/11ss/SE2/","Software Engineering 2"); ?> course of <?php echo (new BAICourse())->_studium; ?>.</p>
@@ -76,6 +77,7 @@ Most API methods and optional parameters aren't used by the app and website, but
 <tr> <th>Technologies</th> <td>XSD, DTD, MySQL, ProFTPD, E-Mail, bcrypt, Mersenne Twister, cURL, convert (ImageMagick)</td> </tr>
 <tr> <th>Tools</th> <td>Skype</td> </tr>
 <tr> <th>IDE</th> <td>Notepad++, Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>6</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

@@ -19,6 +19,7 @@
 <tr> <th>Sprachen</th> <td>Delphi, HTML</td> </tr>
 <tr> <th>Technologien</th> <td>Netzwerk-Sockel, DLL, CHM, INI</td> </tr>
 <tr> <th>IDE</th> <td>Turbo Delphi, HTML Help Workshop</td> </tr>
+<tr> <th>Beteiligte</th> <td>1 (2 gesamt)</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>I played the card game <?php extern("https://en.wikipedia.org/wiki/Mau_Mau_(card_game)","Mau Mau");?> excessively with my classmates during my time at the <?php extern("http://www.g10.de/","Staatliche Gewerbeschule Energietechnik - G&nbsp;10"); ?>. In 2008, when I got the task to develop a software project in Delphi for the <?php privatea("/g10/fos/TL","Techniklehre"); ?> course at the <?php privatea("/g10/fos/", "Fachoberschule (FOS)") ?>, I decided to make the game Mau Dau<?php $rcl->newFoot("DAU = \"Dümmster anzunehmender User\" (german for \"dumbest possible user\", derived from the german translation for maximum credible accident)"); ?> Mau.
@@ -31,6 +32,7 @@
 <tr> <th>Languages</th> <td>Delphi, HTML</td> </tr>
 <tr> <th>Technologies</th> <td>Network sockets, DLL, CHM, INI</td> </tr>
 <tr> <th>IDE</th> <td>Turbo Delphi, HTML Help Workshop</td> </tr>
+<tr> <th>Participants</th> <td>1 (2 total)</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

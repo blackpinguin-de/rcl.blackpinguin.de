@@ -54,6 +54,7 @@ Beide Instanzen verwenden dieselbe Software, unterscheiden sich aber etwas in de
 <tr> <th>Sprachen</th> <td>Scala, XML, XSLT, HTML, CSS, JavaScript, JSON</td> </tr>
 <tr> <th>Technologien</th> <td>Async Http Client, HtmlCleaner, Xerces, Xalan, EXSLT, Futures, Scala Regex, StringEscapeUtils, ThreadLocal, Java Properties, XPath, XSD, DTD, HTML5, jQuery, RSS</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse mit Scala IDE</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>
@@ -97,6 +98,7 @@ Both instances use the same software, but differ in the configuration files<?php
 <tr> <th>Languages</th> <td>Scala, XML, XSLT, HTML, CSS, JavaScript, JSON</td> </tr>
 <tr> <th>Technologies</th> <td>Async Http Client, HtmlCleaner, Xerces, Xalan, EXSLT, Futures, Scala Regex, StringEscapeUtils, ThreadLocal, Java Properties, XPath, XSD, DTD, HTML5, jQuery, RSS</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse with Scala IDE</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

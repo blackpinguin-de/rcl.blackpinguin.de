@@ -41,6 +41,7 @@ Der Fehler dürfte pro Besuch nur einmalig auftauchen, dann einfach die gewünsc
 <tr> <th>Sprachen</th> <td>Scala, SQL, XML, XSLT, HTML, CSS, JavaScript, Java<?php $rcl->newFoot("Die einzige Verwendung von Java-Quelltext in diesem Projekt ist in den JSP-Dateien und in den kopierten Klassen für bcrypt und Mersenne-Twister von einem älteren Projekt von mir."); ?></td> </tr>
 <tr> <th>Technologien</th> <td>XSD, DTD, MySQL, Prepared Statements, JDBC, bcrypt, Mersenne-Twister, BigDecimal, Tomcat, JSP</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse mit Scala IDE</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Minimalistic Shop is a website, that was created in the summer semester 2013 at the <?php privatea("/haw/bms/13ss/RDB/","Relational Databases"); ?> course of <?php echo (new BMSCourse())->_studium; ?>.</p>
@@ -68,6 +69,7 @@ It should only occur once per visit and is gone when the desired page is request
 <tr> <th>Languages</th> <td>Scala, SQL, XML, XSLT, HTML, CSS, JavaScript, Java<?php $rcl->newFoot("The only usage of Java source code in this project is in the JSP files and in reused bcrypt and Mersenne Twister classes from one of my older projects."); ?></td> </tr>
 <tr> <th>Technologies</th> <td>XSD, DTD, MySQL, Prepared Statements, JDBC, bcrypt, Mersenne Twister, BigDecimal, Tomcat, JSP</td> </tr>
 <tr> <th>IDE</th> <td>Eclipse with Scala IDE</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

@@ -27,6 +27,7 @@ Eine Veröffentlichung von Sonic Guessture ist aufgrund fehlender Musik- und Bil
 <tr> <th>Technologien</th> <td>Qt 5, Multithreading, OpenCV, Color Keying, Gestenerkennung</td> </tr>
 <tr> <th>Tools</th> <td>GIMP, Dia</td> </tr>
 <tr> <th>IDE</th> <td>Qt Creator</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <a href="plakat.png" style="width: 35%; float: right; margin-left: 10px; margin-bottom: 10px;"><img src="plakat.thumb.png" alt="Comic: a wrong gesture results in a turret from Portal shooting the player and a correct gesture is rewarded with cake. It's funny as a picture, I swear!" title="exhibition poster" style="width: 100%; height: auto;" /></a>
@@ -50,6 +51,7 @@ Sonic Guessture can't be released, because of missing rights of use for the musi
 <tr> <th>Technologies</th> <td>Qt 5, Multithreading, OpenCV, Color Keying, Gesture recognition</td> </tr>
 <tr> <th>Tools</th> <td>GIMP, Dia</td> </tr>
 <tr> <th>IDE</th> <td>Qt Creator</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

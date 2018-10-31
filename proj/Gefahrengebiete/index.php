@@ -26,6 +26,7 @@ Authentifizierte Besucher dieser Webseite können sich den Film in geringer Aufl
 <table><tbody>
 <tr> <th>Technologien</th> <td>H.264, 1080p, Farbkorrektur</td> </tr>
 <tr> <th>Tools</th> <td>Blender, Avidemux, VirtualDub, Audacity, Auphonic, GIMP, Trello</td> </tr>
+<tr> <th>Beteiligte</th> <td>3 (50+ gesamt)</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Gefahrengebiete<?php $rcl->newFoot("This is an allusion to Hamburg's so-called ".externStr("https://en.wikipedia.org/wiki/2013–14_Hamburg_demonstrations","'danger zones' of January 2014")."."); ?> is a german 12 minute short film that was created in the summer semester 2014 at the <?php privatea("/haw/bms/14ss/CA","Camera Acting"); ?> course of <?php echo (new BMSCourse())->_studium; ?>.
@@ -52,6 +53,7 @@ Authenticated users of this website can download the movie in low quality (H.264
 <table><tbody>
 <tr> <th>Technologies</th> <td>H.264, 1080p, Color Grading</td> </tr>
 <tr> <th>Tools</th> <td>Blender, Avidemux, VirtualDub, Audacity, Auphonic, GIMP, Trello</td> </tr>
+<tr> <th>Participants</th> <td>3 (50+ total)</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

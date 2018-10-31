@@ -33,6 +33,7 @@ Alternativ besteht dort auch die Möglichkeit, es für Windows, Mac, GNU/Linux u
 <tr> <th>Sprachen</th> <td>C#</td> </tr>
 <tr> <th>Tools</th> <td>Photoshop, MediaWiki</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Brain of teh Zwarm <?php $rcl->newFoot("Zwarm stands for zombie swarm and the 'typo' in teh / the is intended.<br/>The name is an allusion to StarCraft 2: Heart of the Swarm."); ?> is a 2D game, that was created in the winter semester 2013/14 at the <?php privatea("/haw/bms/13ws/MG1/","Media Design 1"); ?> course of <?php echo (new BMSCourse())->_studium; ?> and was extended in the summer semester 2014 at the <?php privatea("/haw/bms/14ss/MG2/","Media Design 2"); ?> course.</p>
@@ -61,6 +62,7 @@ Alternatively, it can be downloaded there for Windows, Mac, GNU/Linux and Androi
 <tr> <th>Languages</th> <td>C#</td> </tr>
 <tr> <th>Tools</th> <td>Photoshop, MediaWiki</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

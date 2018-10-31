@@ -28,6 +28,7 @@ Alternativ besteht dort auch die Möglichkeit, es für Windows, Mac und GNU/Linu
 <tr> <th>Sprachen</th> <td>C#</td> </tr>
 <tr> <th>Tools</th> <td>Skype, Trello, Photoshop</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop</td> </tr>
+<tr> <th>Beteiligte</th> <td>4</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Dark Side of Morra is a 2D game, that was created in the summer semester 2013 at the <?php privatea("/haw/bms/13ss/Proj1/","Project 1"); ?> course of <?php echo (new BMSCourse())->_studium; ?>.</p>
@@ -49,6 +50,7 @@ Alternatively, it can be downloaded there for Windows, Mac and GNU/Linux.
 <tr> <th>Languages</th> <td>C#</td> </tr>
 <tr> <th>Tools</th> <td>Skype, Trello, Photoshop</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop</td> </tr>
+<tr> <th>Participants</th> <td>4</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

@@ -27,6 +27,7 @@ Bei der Erweiterung 2010 war Dimitri Fast beteiligt.
 <tr> <th>Sprachen</th> <td>PHP, JavaScript, HTML, CSS, SQL</td> </tr>
 <tr> <th>Technologien</th> <td>Server2Go (Apache, PHP, MySQL), Google Analytics</td> </tr>
 <tr> <th>IDE</th> <td>Notepad++</td> </tr>
+<tr> <th>Beteiligte</th> <td>5</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>GameZ4you is a website, that was created in April 2008 at the <?php privatea("/g10/tai/AeHTML/","AeHTML"); ?> course of <?php echo (new TAICourse())->_schooltype; ?> and was extended in the winter semester 2010/11 at the <?php privatea("/haw/bai/10ws/BW2/","Business Studies 2"); ?> course of <?php echo (new BAICourse())->_studium; ?>.</p>
@@ -36,7 +37,7 @@ Products can be added to the shopping cart and ordered after registering or logi
 </p>
 <p>The extensions that were made in 2010 are: structural parts list, ABC analysis, primary demand analysis, purchase recommendations and Google Analytics integration (deactivated).</p>
 <p>
-The website was developed in 2008 together with Christian Stoffers (product texts and pictures), Henrik Kaese (HTML design) and Patrick Stockfisch (CSS design and logo)
+The website was developed in 2008 together with Christian Stoffers (product texts and pictures), Henrik Kaese (HTML design) and Patrick Stockfisch (CSS design and logo).
 My duties were the development of the database and the programming of the dynamic aspects of the website.
 Dimitri Fast worked together with me on the extensions of 2010.
 </p>
@@ -46,6 +47,7 @@ Dimitri Fast worked together with me on the extensions of 2010.
 <tr> <th>Languages</th> <td>PHP, JavaScript, HTML, CSS, SQL</td> </tr>
 <tr> <th>Technologies</th> <td>Server2Go (Apache, PHP, MySQL), Google Analytics</td> </tr>
 <tr> <th>IDE</th> <td>Notepad++</td> </tr>
+<tr> <th>Participants</th> <td>5</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

@@ -17,6 +17,7 @@
 <tr> <th>Sprachen</th> <td>Java, SQL</td> </tr>
 <tr> <th>Technologien</th> <td>Swing, JDBC, MySQL</td> </tr>
 <tr> <th>IDE</th> <td>Netbeans</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>GeoTweet is an Java application that was created in the summer semester 2011 at the <?php privatea("/haw/bai/10ss/DB","Databases"); ?> course of <?php echo (new BAICourse())->_studium; ?>.</p>
@@ -28,6 +29,7 @@
 <tr> <th>Languages</th> <td>Java, SQL</td> </tr>
 <tr> <th>Technologies</th> <td>Swing, JDBC, MySQL</td> </tr>
 <tr> <th>IDE</th> <td>Netbeans</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

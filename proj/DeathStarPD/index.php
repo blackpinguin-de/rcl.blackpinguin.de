@@ -33,6 +33,7 @@ Alternativ besteht dort auch die Möglichkeit, es für Windows und GNU/Linux her
 <tr> <th>Sprachen</th> <td>C#, CSS, HTML, JavaScript</td> </tr>
 <tr> <th>Tools</th> <td>Inkscape</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop, Geany</td> </tr>
+<tr> <th>Beteiligte</th> <td>4</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>Death Star PD is a 3D tower defense (TD) strategy game, that was created in the winter semester 2014/15 at the <?php privatea("/haw/bms/14ws/MG3/","Media Design 3"); ?> compulsory elective course of <?php echo (new BMSCourse())->_studium; ?>.</p>
@@ -57,6 +58,7 @@ Alternatively, it can be downloaded there for Windows and GNU/Linux.
 <tr> <th>Languages</th> <td>C#, CSS, HTML, JavaScript</td> </tr>
 <tr> <th>Tools</th> <td>Inkscape</td> </tr>
 <tr> <th>IDE</th> <td>Unity, MonoDevelop, Geany</td> </tr>
+<tr> <th>Participants</th> <td>4</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>

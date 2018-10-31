@@ -34,6 +34,7 @@ Sie funktionierte bereits wie gewünscht, aber es waren noch ein paar grafische 
 <tr> <th>Technologien</th> <td>DragonFire SDK, SQLite, Base64, E-Mail</td> </tr>
 <tr> <th>Tools</th> <td>Photoshop</td> </tr>
 <tr> <th>IDE</th> <td>Visual Studio 2012</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
 </tbody></table>
 <?php } else { ?>
 <p>From March to May 2013, I developed a iPhone app for my cousin besides my studies, which was part of a bigger order for one of his customers.</p>
@@ -60,6 +61,7 @@ It worked like wanted, but there were some graphical details, the hosting of the
 <tr> <th>Technologies</th> <td>DragonFire SDK, SQLite, Base64, E-Mail</td> </tr>
 <tr> <th>Tools</th> <td>Photoshop</td> </tr>
 <tr> <th>IDE</th> <td>Visual Studio 2012</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
 </tbody></table>
 <?php } ?>
 <div style="clear: both;"></div>
