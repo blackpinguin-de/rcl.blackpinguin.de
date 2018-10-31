@@ -305,6 +305,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => [ "Philosophie", "Philosophy" ],
 		],
 		[
+		'book' => [ "DE", "Utopia", "Thomas Morus" ],
+		'genr' => [ "Philosophie", "Philosophy" ],
+		],
+		[
 		'book' => [ "DE", "Wie man mit Fundamentalisten diskutiert, ohne den Verstand zu verlieren", "Hubert Schleichert" ],
 		'genr' => [ "Philosophie", "Philosophy" ],
 		],
