@@ -50,8 +50,10 @@ table.courses > tbody > tr > td:last-of-type {
     -ms-hyphens: none;
     hyphens: none;
 }
-table.courses td.l, table.courses th.l { text-align:left; }
-table.courses td.r, table.courses th.r { text-align:right; }
+table.courses td.l, table.courses th.l { text-align: left; }
+table.courses td.r, table.courses th.r { text-align: right; }
+
+table#events { text-align: left; }
 
 th {
     white-space: nowrap;
