@@ -137,7 +137,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
 		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
-		'prog' => [ [106, 941, '2018-10-31'], null ],
+		'prog' => [ [242, 941, '2018-10-31'], null ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
@@ -420,6 +420,26 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "DE", "Star Trek: Voyager 2 - Ferne Ufer", "Christie Golden" ],
 		'genr' => $scifi,
 		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 3 - Geistreise 1 - Alte Wunden", "Christie Golden" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 4 - Geistreise 2 - Der Feind meines Feindes", "Christie Golden" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 5 - Projekt Full Circle", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 6 - Unwürdig", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 7 - Kinder des Sturms", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
 	];
 	### --- Voyager
 	### +++ Neal
@@ -687,6 +707,14 @@ Additional books that I read privately, which aren't text books for computer sci
 		[
 		'book' => [ "DE", "Time Out", "Andreas Eschbach" ],
 		'genr' => $thriller,
+		],
+		[
+		'book' => [ "DE", "Die Haarteppichknüpfer", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Quest", "Andreas Eschbach" ],
+		'genr' => $scifi,
 		],
 	];
 	### --- Eschbach
