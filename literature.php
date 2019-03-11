@@ -137,7 +137,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
 		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
-		'prog' => [ [242, 941, '2018-10-31'], null ],
+		'prog' => [ [242, 941, '2019-03-11'], null ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
