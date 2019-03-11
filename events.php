@@ -90,7 +90,7 @@ This site lists events that I attended, or am going to attend.
   <td>2016&#8209;12&#8209;27 &ndash; 2016&#8209;12&#8209;30</td>
 </tr>
 <tr>
-  <td><?php extern("http://www.hamburger-tactica.de/?p=11651".$rcl->lang("","&lang=en"),"Hamburger Tactica 2017"); ?></td>
+  <td><?php extern("http://www.hamburger-tactica.de/?p=11651&lang=".$rcl->lang("de","en"),"Hamburger Tactica 2017"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2017&#8209;02&#8209;18 &ndash; 2017&#8209;02&#8209;19</td>
@@ -106,6 +106,12 @@ This site lists events that I attended, or am going to attend.
   <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2017&#8209;07&#8209;01</td>
+</tr>
+<tr>
+  <td><?php extern("http://www.hamburger-tactica.de/?p=14672&lang=".$rcl->lang("de","en"),"Hamburger Tactica 2019"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2019&#8209;02&#8209;16 &ndash; 2019&#8209;02&#8209;17</td>
 </tr>
 </tbody>
 </table>
