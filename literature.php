@@ -137,7 +137,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
 		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
-		'prog' => [ [280, 941, '2019-03-24'], null ],
+		'prog' => [ [381, 941, '2019-05-17'], null ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
@@ -442,6 +442,14 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Star Trek: Voyager 8 - Ewige Gezeiten", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 9 - Bewahrer", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 10 - Erbsünde", "Kirsten Beyer" ],
 		'genr' => $scifi,
 		],
 	];
