@@ -137,7 +137,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
 		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
-		'prog' => [ [ 450, 941, '2019-06-14' ], null ],
+		'prog' => [ [ 688, 941, '2019-09-12' ], null ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
@@ -152,6 +152,11 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "JavaScript Patterns", "Stoyan Stefanov" ],
 		'desc' => [ "ISBN 978-0-59680-675-0", "", "" ],
+		'prog' => [ "100%", "100%" ],
+		],
+		[
+		'book' => [ "EN", "The Way of the Web Tester", "Jonathan Rasmusson" ],
+		'desc' => [ "ISBN 978-1-68050-183-4", "", "" ],
 		'prog' => [ "100%", "100%" ],
 		],
 		[
