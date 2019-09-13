@@ -38,6 +38,11 @@
 
 <table id="projects"><tbody>
 
+<tr class="y2019"> <th>2019</th>
+<td>
+<div><span><?php echo $rcl->lang("Webseite: ", "Website: "); extern("https://pine.blackpinguin.de/", "Pine Interactive Map"); echo ' '; extern("https://github.com/Istador/pine-interactive-map/","(Github)"); ?></span></div>
+</td> </tr>
+
 <tr class="y2018"> <th>2018</th>
 <td>
 <div><span><?php echo $rcl->lang("Add-on: ", "Add-on: "); extern("https://github.com/Istador/old-search-fixed/","Old Search Fixed 3 (Firefox)"); ?></span></div>
