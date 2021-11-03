@@ -142,6 +142,13 @@ This site lists events that I attended, or am going to attend.
   <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2019&#8209;03&#8209;23</td>
 </tr>
+<tr>
+  <td><?php extern("https://www.abendblatt.de/hamburg/article227142561/", "Alle fürs Klima"); ?></td>
+  <td><?= $rcl->lang("Demonstrant", "Protester") ?></td>
+  <td>Demonstration</td>
+  <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2019&#8209;09&#8209;20</td>
+</tr>
 </tbody>
 </table>
 
