@@ -75,6 +75,11 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		'prog' => [ "100%", "70%" ],
 		],
 		[
+		'book' => [ "EN", "Compilers: Principles, Techniques, and Tools", "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman"],
+		'desc' => [ "ISBN 978-1-292-02434-9", "Themen: Compilerbau", "" ],
+		'prog' => [ [ 504, 942, true ], null ],
+		],
+		[
 		'book' => [ "EN", "Software Engineering and Computer Games", "Rudy Rucker" ],
 		'desc' => [ "ISBN 978-0-20176-791-9", "Themen: Softwareentwicklung, Spieleentwicklung", "" ],
 		'prog' => [ "100%", "85%" ],
@@ -136,8 +141,13 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		],
 		[
 		'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
-		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
+		'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "" ],
 		'prog' => [ "100%", "85%" ],
+		],
+		[
+		'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
+		'desc' => [ "ISBN 978-0-134-75759-9", "", "" ],
+		'prog' => [ [ 374, 418, true ], null ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
@@ -160,9 +170,19 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		'prog' => [ "100%", "100%" ],
 		],
 		[
+		'book' => [ "EN", "Cloud Native DevOps with Kubernetes", "John Arundel, Justin Domingus" ],
+		'desc' => [ "ISBN 978-1-49204-076-7", "", "" ],
+		'prog' => [ [ 117, 306, true ], null ],
+		],
+		[
 		'book' => [ "DE", "Computerforensik", "Alexander Geschonneck" ],
 		'desc' => [ "ISBN 978-3-86490-133-1", "", "Subject: computer forensics" ],
 		'prog' => [ "100%", "85%" ],
+		],
+		[
+		'book' => [ "EN", "Blood, Sweat, and Pixels", "Jason Schreier" ],
+		'desc' => [ "ISBN 978-0-06265-123-5", "Thema: Spieleentwicklung", "Subject: Game Development" ],
+		'prog' => [ "100%", "100%" ],
 		],
 	];
 	
@@ -334,6 +354,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => $comic,
 		],
 		[
+		'book' => [ "EN", "How To: Absurd Scientific Advice for Common Real-World Problems", "Randall Munroe" ],
+		'genr' => [ "Wissenschaft", "Science" ],
+		],
+		[
 		'book' => [ "DE", "Das Kochbuch für Geeks", "Mela Eckenfels, Petra Hildebrandt" ],
 		'genr' => [ "Kochbuch", "Cookbook" ],
 		],
@@ -398,6 +422,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => $scifi,
 		],
 		[
+		'book' => [ "EN", "The Hive", "Orson S. Card" ],
+		'genr' => $scifi,
+		],
+		[
 		'book' => [ "EN", "First Meetings", "Orson S. Card" ],
 		'genr' => $scifi,
 		],
@@ -455,6 +483,26 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Star Trek: Voyager 10 - Erbsünde", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 11 - Sühne", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 12 - Kleine Lügen erhalten die Feindschaft 1", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 13 - Kleine Lügen erhalten die Feindschaft 2", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 14 - Architekten der Unendlichkeit 1", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 15 - Architekten der Unendlichkeit 2", "Kirsten Beyer" ],
 		'genr' => $scifi,
 		],
 	];
@@ -519,6 +567,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Die Zwerge: Band 2 - Der Thronanwärter", "Markus Heitz, Che Rossié, Yann Krehl" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Die Zwerge: Band 3 - Die Expedition", "Markus Heitz, Che Rossié, Yann Krehl" ],
 		'genr' => $comic,
 		],
 	];
@@ -733,6 +785,26 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "DE", "Quest", "Andreas Eschbach" ],
 		'genr' => $scifi,
 		],
+		[
+		'book' => [ "DE", "Das Marsprojekt 1 - Das ferne Leuchten", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Das Marsprojekt 2 - Die blauen Türme", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Das Marsprojekt 3 - Die gläsernen Höhlen", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Das Marsprojekt 4 - Die steinernen Schatten", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Das Marsprojekt 5 - Die schlafenden Hüter", "Andreas Eschbach" ],
+		'genr' => $scifi,
+		],
 	];
 	### --- Eschbach
 	### +++ Novels
@@ -751,6 +823,22 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Minigolf Paradiso", "Alexandra Tobor" ],
+		'genr' => $novel,
+		],
+		[
+		'book' => [ "DE", "Die Känguru-Chroniken", "Mark-Uwe Kling" ],
+		'genr' => $novel,
+		],
+		[
+		'book' => [ "DE", "Das Känguru-Manifest", "Mark-Uwe Kling" ],
+		'genr' => $novel,
+		],
+		[
+		'book' => [ "DE", "Die Känguru-Offenbarung", "Mark-Uwe Kling" ],
+		'genr' => $novel,
+		],
+		[
+		'book' => [ "DE", "Qualityland", "Mark-Uwe Kling" ],
 		'genr' => $novel,
 		],
 	];
@@ -813,6 +901,14 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "DE", function () use ($signed) { return "Massu Schmiedstochter" . $signed(); }, "Ines Korth" ],
 		'genr' => $comic,
 		],
+		[
+		'book' => [ "DE", "Schattenspringer 1", "Daniela Schreiter" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Schattenspringer 2", "Daniela Schreiter" ],
+		'genr' => $comic,
+		],
 	];
 	### --- Comics
 	### +++ Artbooks/Guides
@@ -823,6 +919,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Diablo 3 - Die Tyrael-Chronik", "Matt Burns, Doug Alexander" ],
+		'genr' => $fantasy,
+		],
+		[
+		'book' => [ "DE", "Diablo 3 - Die Adria-Chronik", "Robert Brooks, Matt Burns" ],
 		'genr' => $fantasy,
 		],
 		[
@@ -872,7 +972,7 @@ Additional books that I read privately, which aren't text books for computer sci
 		// title
 		$t = $b['book'][1];
 		echo "  <td>".(is_callable($t) ? $t() : $t);
-		if ($b['desc'] ?? 0) { isbn($b['desc'][0], $b['desc'][1], $b['desc'][2], $b['book'][0]); }
+		if ($b['desc'] ?? 0) { isbn($b['desc'][0], $b['desc'][1] ?? '', $b['desc'][2] ?? '', $b['book'][0]); }
 		echo "</td>";
 		
 		// author
