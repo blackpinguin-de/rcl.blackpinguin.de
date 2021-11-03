@@ -218,29 +218,33 @@ $msg   = isset($_SESSION['RCL::contact-msg'])   ? $_SESSION['RCL::contact-msg'] 
 <div id="profiles" class="clearfix">
     <div id="profiles-gaming"><div>
         <h3><?=i18n('gaming');?></h3>
-        <div>Battle.net<br/><div>D3: <?php extern('https://eu.battle.net/d3/de/profile/BlackPinguin-2234/','BlackPinguin#2234');?></div></div>
+        <div>HowLongToBeat<div><?php extern('https://howlongtobeat.com/user?n=RCL','RCL');?></div></div>
         <div>Steam<div><?php extern('https://steamcommunity.com/id/blackpinguin/','blackpinguin');?><br/><?php extern('https://steamcommunity.com/id/istador/','istador');?></div></div>
         <div>PSN<div><?php /* https://my.playstation.com/profile/BlackPinguin89/ */ extern('https://psnprofiles.com/BlackPinguin89/','BlackPinguin89');?></div></div>
+        <div class="fade">Battle.net<div>D3: <?php extern('https://eu.battle.net/d3/de/profile/BlackPinguin-2234/','BlackPinguin#2234');?></div></div>
         <div class="fade">Origin<div><a class="private">RCLadiges</a></div></div>
-        <div class="fade">UPlay<div><a class="private">Istador89</a></div></div>
+        <div class="fade">Ubisoft Connect<div><?php extern('https://ubisoftconnect.com/en-US/profile/Istador89', 'Istador89') ?></div></div>
+        <div class="fade">MobyGames<div><?php extern('https://www.mobygames.com/user/sheet/userSheetId,617035/', 'Robin C. Ladiges'); ?></div></div>
     </div></div>
 
     <div id="profiles-social-media"><div>
         <h3><?=i18n('socialmedia');?></h3>
         <div>Twitter<div><?php extern('https://twitter.com/Istador','@Istador');?></div></div>
         <div>YouTube<div><?php extern('https://youtube.com/user/15t4d0r','15t4d0r');?></div></div>
-        <div class="fade">Google+<div><?php extern('https://plus.google.com/101325682758740139657/','Robin C. Ladiges');?></div></div>
-        <div class="fade">Facebook<div><?php extern('https://www.facebook.com/robin.ladiges','robin.ladiges');?></div></div>
+        <div>Discord<div><?php extern('https://discord.com/users/495528563509035028', 'RCL#1878'); ?></div></div>
         <div class="fade">XING<div><?php extern('https://xing.com/profile/RobinChristopher_Ladiges','Robin C. Ladiges');?></div></div>
+        <div class="fade">Facebook<div><?php extern('https://www.facebook.com/robin.ladiges','robin.ladiges');?></div></div>
+        <div class="fade strike">Google+<div><?php extern('https://plus.google.com/101325682758740139657/','Robin C. Ladiges');?></div></div>
     </div></div>
 
     <div id="profiles-other"><div>
         <h3><?=i18n('other');?></h3>
-        <div>Stack Overflow<div><?php extern('https://stackoverflow.com/users/2349701/istador','Istador');?></div></div>
         <div>GitHub<div><?php extern('https://github.com/Istador','Istador');?></div></div>
+        <div>GitLab<div><?php extern('https://gitlab.com/Istador','Istador');?></div></div>
+        <div>Stack Overflow<div><?php extern('https://stackoverflow.com/users/2349701/istador','Istador');?></div></div>
         <div>Rosetta@home<div><?php extern('https://boinc.bakerlab.org/rosetta/view_profile.php?userid=184656','Istador');?></div></div>
         <div>Wikipedia<div><?php extern('https://de.wikipedia.org/wiki/User:Istador','Istador');?></div></div>
-        <div>Amazon<div><?php extern('https://www.amazon.de/gp/cdp/member-reviews/A33QJMEKGY0ADT','Robin Ladiges');?></div></div>
+        <div>Amazon<div><?php extern('https://www.amazon.de/gp/profile/amzn1.account.AECPSINP4PGTMGB4TN3GM6TKE77A','Robin Ladiges');?></div></div>
         <div>Kickstarter<div><?php extern('https://www.kickstarter.com/profile/rcl','RCL');?></div></div>
         <div class="fade">Startnext<div><?php extern('https://www.startnext.de/profile/istador','Istador');?></div></div>
     </div></div>
