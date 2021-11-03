@@ -99,7 +99,7 @@ $msg   = isset($_SESSION['RCL::contact-msg'])   ? $_SESSION['RCL::contact-msg'] 
             if(isset($contact_status)) {
                 if($contact_status === 0) { echo ' class="ok">' . i18n("succ");}
                 else {
-                    echo ' class="error">';
+                    echo ' class="error" data-error="' . $contact_status . '">';
                     if ($contact_status === 'disabled') {echo i18n("again");}
                     else if ($contact_status >= 2 && $contact_status <= 5) {echo i18n("errdata");}
                     else {echo i18n("errunkn");}
