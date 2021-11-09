@@ -147,7 +147,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		[
 		'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
 		'desc' => [ "ISBN 978-0-134-75759-9", "", "" ],
-		'prog' => [ [ 374, 418, true ], null ],
+		'prog' => [ "100%", "95%" ],
 		],
 		[
 		'book' => [ "DE", "Assembler", "Reiner Backer" ],
