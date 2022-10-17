@@ -3,7 +3,7 @@
 #  AddType application/x-httpd-php .html
 #</Files>
 
-# nicht imports direkt aufrufen können
+# nicht imports direkt aufrufen koennen
 <FilesMatch "^(include1|include2)\.php$">
     <IfVersion < 2.4>
         Order Deny,Allow
