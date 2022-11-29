@@ -145,6 +145,11 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 		'prog' => [ "100%", "85%" ],
 		],
 		[
+		'book' => [ "EN", "Domain-Driven Design: Tackling Complexity in the Heart of Software", "Eric Evans" ],
+		'desc' => [ "ISBN 978-0-321-12521-7", "", "" ],
+		'prog' => [ [ 128, 514, true ], null, "60%" ],
+		],
+		[
 		'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
 		'desc' => [ "ISBN 978-0-134-75759-9", "", "" ],
 		'prog' => [ "100%", "95%" ],
@@ -349,6 +354,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "EN", "What If? Serious Scientific Answers to Absurd Hypothetical Questions", "Randall Munroe" ],
 		'genr' => [ "Wissenschaft", "Science" ],
 		],
+#		[
+#		'book' => [ "EN", "What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions", "Randall Munroe" ],
+#		'genr' => [ "Wissenschaft", "Science" ],
+#		],
 		[
 		'book' => [ "EN", "Thing Explainer: Complicated Stuff in Simple Words", "Randall Munroe" ],
 		'genr' => $comic,
@@ -399,6 +408,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "EN", "Shadows in Flight", "Orson S. Card" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "EN", "The Last Shadow", "Orson S. Card" ],
 		'genr' => $scifi,
 		],
 		[
@@ -505,6 +518,14 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "DE", "Star Trek: Voyager 15 - Architekten der Unendlichkeit 2", "Kirsten Beyer" ],
 		'genr' => $scifi,
 		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 16 - Das Streben nach mehr 1", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
+		[
+		'book' => [ "DE", "Star Trek: Voyager 17 - Das Streben nach mehr 2", "Kirsten Beyer" ],
+		'genr' => $scifi,
+		],
 	];
 	### --- Voyager
 	### +++ Neal
@@ -554,6 +575,26 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => $fantasy,
 		],
 		[
+		'book' => [ "DE", "Die Rückkehr der Zwerge 1", "Markus Heitz" ],
+		'genr' => $fantasy,
+		],
+#		[
+#		'book' => [ "DE", "Die Rückkehr der Zwerge 2", "Markus Heitz" ],
+#		'genr' => $fantasy,
+#		],
+#		[
+#		'book' => [ "DE", "Das Herz der Zwerge 1", "Markus Heitz" ],
+#		'genr' => $fantasy,
+#		],
+#		[
+#		'book' => [ "DE", "Das Herz der Zwerge 2", "Markus Heitz" ],
+#		'genr' => $fantasy,
+#		],
+		[
+		'book' => [ "DE", "Die dritte Expedition", "Markus Heitz" ],
+		'genr' => $fantasy,
+		],
+		[
 		'book' => [ "DE", "Die Sterne der Tiefen", "Markus Heitz" ],
 		'genr' => $fantasy,
 		],
@@ -573,6 +614,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'book' => [ "DE", "Die Zwerge: Band 3 - Die Expedition", "Markus Heitz, Che Rossié, Yann Krehl" ],
 		'genr' => $comic,
 		],
+#		[
+#		'book' => [ "DE", "Die Zwerge: Band 4 - Die Feuerklinge", "Markus Heitz, Che Rossié, Yann Krehl" ],
+#		'genr' => $comic,
+#		],
 	];
 	### --- Heitz: Zwerge
 	### +++ Heitz: Albae
@@ -838,6 +883,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => $novel,
 		],
 		[
+		'book' => [ "DE", "Die Känguru-Apokryphen", "Mark-Uwe Kling" ],
+		'genr' => $novel,
+		],
+		[
 		'book' => [ "DE", "Qualityland", "Mark-Uwe Kling" ],
 		'genr' => $novel,
 		],
@@ -898,6 +947,10 @@ Additional books that I read privately, which aren't text books for computer sci
 		'genr' => $comic,
 		],
 		[
+		'book' => [ "EN", "The GaMERCaT Volume 2", "Samantha Whitten" ],
+		'genr' => $comic,
+		],
+		[
 		'book' => [ "DE", function () use ($signed) { return "Massu Schmiedstochter" . $signed(); }, "Ines Korth" ],
 		'genr' => $comic,
 		],
@@ -907,6 +960,50 @@ Additional books that I read privately, which aren't text books for computer sci
 		],
 		[
 		'book' => [ "DE", "Schattenspringer 2", "Daniela Schreiter" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Schattenspringer 3", "Daniela Schreiter" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Spider-Man liebt Mary Jane 1: Highschool-Drama", "Sean McKeever, Takeshi Miyazawa" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Spider-Man liebt Mary Jane 2: Verpasste Chancen", "Sean McKeever, Takeshi Miyazawa, Valentine de Landro" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "DE", "Spider-Man liebt Mary Jane 3: Mein Geheimleben", "Sean McKeever, Takeshi Miyazawa, Terry Moore, Craig Rousseau" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 1: Dust", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 2: Waves", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 3: Strings", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 4: Partners in Time - Tracks", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 5: Coming Home", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Life Is Strange Vol. 6: Settling Dust", "Emma Vieceli, Claudia Leonardi, Andrea Izzo" ],
+		'genr' => $comic,
+		],
+		[
+		'book' => [ "EN", "Jonesy: Nine Lives On The Nostromo", "Rory Lucey" ],
 		'genr' => $comic,
 		],
 	];
