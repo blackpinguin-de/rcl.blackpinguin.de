@@ -79,6 +79,9 @@ function youtubeStr($video, $de, $en = NULL){
 function youtube($video, $de, $en = NULL){ echo youtubeStr($video, $de, $en); }
 
 
+function github($proj, $author = 'Istador', $host = 'github.com') { return 'https://' . $host . '/' . $author . '/' . $proj; }
+function gitlab($proj, $author = 'Istador', $host = 'gitlab.com') { return 'https://' . $host . '/' . $author . '/' . $proj; }
+
 function sizeclass($url, $class, $de, $en = NULL, $size = NULL){
     if(isset($size)){
         if(isset($de)) $de = $de."<span>&nbsp;(".$size.")</span>";
