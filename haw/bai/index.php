@@ -68,7 +68,7 @@
     <tr>                             <td><?php intern("11ss/RN/","RN"); ?></td>    <td>Rechnernetze</td>  <td>6</td>  <td>14</td>  <td>1</td>  </tr>
     <tr>                             <td><?php intern("11ss/WP_SG/","WP1:SG"); ?></td>    <td>Wahlpflichtfach 1: Serious Games</td>  <td>6</td>  <td>11</td>  <td>2</td>  </tr>
     <tr>                             <td><?php pdf("11ss/GW_SdL/SdL.pdf","GW1"); ?></td>  <td>Gesellschaftswissenschaften 1: Sinn des Lebens</td>  <td>3</td>  <td colspan="2">bestanden</td>  </tr>
-    <tr>                             <td><?php pdf("11ss/GW_WK/Kommunikation.pdf","GW2"); ?></td>  <td>Gesellschaftswissenschaften 2: Gewaltfreie Kommunikation</td>  <td>3</td>  <td colspan="2">bestanden</td>  </tr>
+    <tr>                             <td><?php pdf("11ss/GW_WK/WK.pdf","GW2"); ?></td>  <td>Gesellschaftswissenschaften 2: Gewaltfreie Kommunikation</td>  <td>3</td>  <td colspan="2">bestanden</td>  </tr>
     <?php } else { ?>
     <tr>  <th rowspan="6">SuSe<br/>2011</th>  <td><?php intern("11ss/CI/","CI"); ?></td>    <td>Compilers and Interpreters</td>  <td>6</td>  <td>13</td>  <td>1-</td>  </tr>
     <tr>                             <td><?php intern("11ss/SE2/","SE2"); ?></td>  <td>Software Engineering 2</td>  <td>6</td>  <td>15</td>  <td>1+</td>  </tr>
