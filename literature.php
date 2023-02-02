@@ -147,7 +147,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     [
     'book' => [ "EN", "Domain-Driven Design: Tackling Complexity in the Heart of Software", "Eric Evans" ],
     'desc' => [ "ISBN 978-0-321-12521-7", "", "" ],
-    'prog' => [ [ 128, 514, true ], null, "60%" ],
+    'prog' => [ [ 284, 514, true ], null, "80%" ],
     ],
     [
     'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
@@ -578,18 +578,18 @@ Additional books that I read privately, which aren't text books for computer sci
     'book' => [ "DE", "Die Rückkehr der Zwerge 1", "Markus Heitz" ],
     'genr' => $fantasy,
     ],
-#   [
-#   'book' => [ "DE", "Die Rückkehr der Zwerge 2", "Markus Heitz" ],
-#   'genr' => $fantasy,
-#   ],
-#   [
-#   'book' => [ "DE", "Das Herz der Zwerge 1", "Markus Heitz" ],
-#   'genr' => $fantasy,
-#   ],
-#   [
-#   'book' => [ "DE", "Das Herz der Zwerge 2", "Markus Heitz" ],
-#   'genr' => $fantasy,
-#   ],
+    [
+    'book' => [ "DE", "Die Rückkehr der Zwerge 2", "Markus Heitz" ],
+    'genr' => $fantasy,
+    ],
+    [
+    'book' => [ "DE", "Das Herz der Zwerge 1", "Markus Heitz" ],
+    'genr' => $fantasy,
+    ],
+    [
+    'book' => [ "DE", "Das Herz der Zwerge 2", "Markus Heitz" ],
+    'genr' => $fantasy,
+    ],
     [
     'book' => [ "DE", "Die dritte Expedition", "Markus Heitz" ],
     'genr' => $fantasy,
@@ -614,10 +614,14 @@ Additional books that I read privately, which aren't text books for computer sci
     'book' => [ "DE", "Die Zwerge: Band 3 - Die Expedition", "Markus Heitz, Che Rossié, Yann Krehl" ],
     'genr' => $comic,
     ],
-#   [
-#   'book' => [ "DE", "Die Zwerge: Band 4 - Die Feuerklinge", "Markus Heitz, Che Rossié, Yann Krehl" ],
-#   'genr' => $comic,
-#   ],
+    [
+    'book' => [ "DE", "Die Zwerge: Band 4 - Die Feuerklinge", "Markus Heitz, Che Rossié, Yann Krehl" ],
+    'genr' => $comic,
+    ],
+    [
+    'book' => [ "DE", "Die Zwerge: Gesamtausgabe (1-4)", "Markus Heitz, Che Rossié, Yann Krehl" ],
+    'genr' => $comic,
+    ],
   ];
   ### --- Heitz: Zwerge
   ### +++ Heitz: Albae
