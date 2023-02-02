@@ -220,6 +220,13 @@
   <div><span>openstreetmap-tile-server:
     <?php extern(github("openstreetmap-tile-server/pull/135","Overv"),"#135"); ?>
   </span></div>
+  <div><span>gitlab-job-guard:
+    <?php extern(gitlab("gitlab-job-guard/-/issues/1","shalomb"),"Issue#1"); ?>
+  </span></div>
+  <div><span>GitLab:
+    <?php extern(gitlab("gitlab/-/issues/202186","gitlab-org"),"Issue#202186"); ?>,
+    <?php extern(gitlab("gitlab/-/issues/257411","gitlab-org"),"Issue#257411"); ?>
+  </span></div>
 </td> </tr>
 
 <tr class="y2019"> <th>2019</th> <td>
