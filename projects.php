@@ -136,6 +136,16 @@
 <table id="contributions"><tbody>
 <thead> <tr> <th colspan="2"><?php echo $rcl->lang('Open Source Beiträge', 'Open Source Contributions') ?></th> </tr> </thead>
 
+<tr class="y2023"> <th>2023</th>
+<td>
+  <div><span>SMOO Rust Server:
+    <?php extern(github("smo-multi-rs/pull/4","speyejack"),"#4"); ?>
+  </span></div>
+  <div><span>SMOO C# Server:
+    <?php extern(github("SmoOnlineServer/pull/46","Sanae6"),"#46"); ?>
+  </span></div>
+</td> </tr>
+
 <tr class="y2022"> <th>2022</th>
 <td>
   <div><span>phpstan:
@@ -146,8 +156,7 @@
   <div><span>SMOO Rust Server:
     <?php extern(github("smo-multi-rs/pull/1","speyejack"),"#1"); ?>,
     <?php extern(github("smo-multi-rs/pull/2","speyejack"),"#2"); ?>,
-    <?php extern(github("smo-multi-rs/pull/3","speyejack"),"#3"); ?>,
-    <?php extern(github("smo-multi-rs/tree/udp-json-api"),"json-api"); ?>
+    <?php extern(github("smo-multi-rs/pull/3","speyejack"),"#3"); ?>
   </span></div>
   <div><span>stripe-cli:
     <?php extern(github("stripe-cli/pull/918#issuecomment-1206245134","stripe"),"#918 (".$rcl->lang("Kommentare","Comments").")"); ?>
@@ -192,7 +201,6 @@
     <?php extern(github("openstreetmap-tile-server/pull/292","Overv"),"#292"); ?>,
     <?php extern(github("openstreetmap-tile-server/pull/308","Overv"),"#308"); ?>
   </span></div>
-</td>
 </td> </tr>
 
 <tr class="y2021"> <th>2021</th> <td>

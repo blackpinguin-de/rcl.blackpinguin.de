@@ -50,7 +50,7 @@
   <?php extern(github("SuperMarioOdysseyOnline/pulls?q=is%3Apr+author%3AIstador","CraftyBoss"), "SMOO Client"); ?>
 </td>  </tr>
 
-<tr>  <th>C#</th>  <td>2012 &ndash; 2022</td>  <td>
+<tr>  <th>C#</th>  <td>2012 &ndash; 2023</td>  <td>
   <?php privatea("/haw/bai/12ss/IS/","IS"); ?>,
   <?php extern("http://www.cocktailsandcode.de/2012/05/workshop-c-fur-java-entwickler/","Workshop: C# für Java Entwickler","Workshop: C# for Java Developers"); ?>,
   <?php extern("https://msdn.microsoft.com/en-us/library/bb200104.aspx","XNA Tutorials"); ?>,
@@ -196,7 +196,7 @@
   <?php privatea("/haw/bms/13ss/PRG/","PRG"); ?>
 </td>  </tr>
 
-<tr>  <th>Rust</th>  <td>2022</td>  <td>
+<tr>  <th>Rust</th>  <td>2022 &ndash; 2023</td>  <td>
   <?php extern(github("smo-multi-rs/pulls?q=is%3Apr+author%3AIstador","speyejack"), "SMOO Rust Server"); ?>
 </td>  </tr>
 
