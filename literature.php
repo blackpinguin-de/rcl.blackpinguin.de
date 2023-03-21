@@ -5,7 +5,7 @@
 <style type="text/css" scoped="scoped">
 table#literature  td:not(:last-of-type) { padding-right: 5px; }
 table#literature2 td:not(:last-of-type) { padding-right: 5px; }
-table#literature > tbody > tr > td:nth-of-type(5) { background-color: #0f0; color: black; text-align: center; padding: 2px; }
+table#literature > tbody > tr > td:nth-of-type(5) { color: black; text-align: center; padding: 2px; }
 table#literature > tbody > tr > td:nth-of-type(6) { color: black; text-align: center; padding: 2px; }
 table#literature > tbody > tr > td.c200 { background-color: #00cc00; }
 table#literature > tbody > tr > td.c170 { background-color: #00db00; }
@@ -43,151 +43,151 @@ It also shows an self-evaluation of how much I think I have grasped of their con
 </thead>
 <tbody>
 <?php
-  $books = [
+  $textbooks = [
     [
     'book' => [ "EN", "Design Patterns", "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides" ],
     'desc' => [ "ISBN 978-0-201-63361-0", "Thema: Entwurfsmuster", "" ],
-    'prog' => [ "200%", "100%" ],
+    'prog' => [ 'read' => "200%", 'grasp' => "100%" ],
     ],
     [
     'book' => [ "EN", "Understanding Cryptography", "Christof Paar, Jan Pelzl" ],
     'desc' => [ "ISBN 978-3-642-04100-6", "Thema: Kryptografie", "" ],
-    'prog' => [ "200%", "95%" ],
+    'prog' => [ 'read' => "200%", 'grasp' => "95%" ],
     ],
     [
     'book' => [ "EN", "Modern Operating Systems", "Andrew S. Tanenbaum" ],
     'desc' => [ "ISBN 978-0-13-813459-4", "Thema: Betriebssysteme", "" ],
-    'prog' => [ [341, 1072, false], "75%" ],
+    'prog' => [ 'read' => [ 'page' => 341, 'last_page' => 1072 ], 'grasp' => "75%" ],
     ],
     [
     'book' => [ "EN", "Computer Networks", "Andrew S. Tanenbaum, David J. Wetherall" ],
     'desc' => [ "ISBN 978-0-13-212695-3", "Thema: Netzwerke", "" ],
-    'prog' => [ "100%", "80%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "80%" ],
     ],
     [
     'book' => [ "EN", "Distributed Systems", "Andrew S. Tanenbaum, Maarten Van Steen" ],
     'desc' => ["ISBN 978-0-13-613553-1", "Thema: Verteilte Systeme", "" ],
-    'prog' => [ "100%", "85%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "85%" ],
     ],
     [
     'book' => [ "EN", "Introduction to Automata Theory, Languages, and Computation", "John E. Hopcroft, Rajeev Motwani, Jeffrey D. Ullman"],
     'desc' => [ "ISBN 978-0-321-47617-3", "Themen: Automatentheorie, Sprachen, Berechenbarkeit", "" ],
-    'prog' => [ "100%", "70%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "70%" ],
     ],
     [
     'book' => [ "EN", "Compilers: Principles, Techniques, and Tools", "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman"],
     'desc' => [ "ISBN 978-1-292-02434-9", "Themen: Compilerbau", "" ],
-    'prog' => [ [ 504, 942, true ], null ],
+    'prog' => [ 'read' => [ 'page' => 504, 'last_page' => 942, 'reading' => true ] ],
     ],
     [
     'book' => [ "EN", "Software Engineering and Computer Games", "Rudy Rucker" ],
     'desc' => [ "ISBN 978-0-20176-791-9", "Themen: Softwareentwicklung, Spieleentwicklung", "" ],
-    'prog' => [ "100%", "85%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "85%" ],
     ],
     [
     'book' => [ "DE", "Inside Microsoft DirectX 9 - Spieleprogrammierung", "Uwe Kettermann, Andreas Rohde" ],
     'desc' => [ "ISBN 978-3-86063-096-9", "", "Subjects: DirectX 9, Game Development" ],
-    'prog' => [ "100%", "85%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "85%" ],
     ],
     [
     'book' => [ "DE", "Computergrafik und Bildverarbeitung: Band I: Computergrafik", "Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher" ],
     'desc' => [ "ISBN 978-3-83481-304-6", "Themen: Computergrafik, OpenGL", "Subjects: Computer Graphics, OpenGL" ],
-    'prog' => [ "100%", "80%" ]
+    'prog' => [ 'read' => "100%", 'grasp' => "80%" ]
     ],
     [
     'book' => [ "DE", "Computergrafik und Bildverarbeitung: Band II: Bildverarbeitung", "Alfred Nischwitz, Max Fischer, Peter Haberäcker, Gudrun Socher" ],
     'desc' => [ "ISBN 978-3-83481-712-9", "", "" ],
-    'prog' => [ "100%", "70%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "70%" ],
     ],
     [
     'book' => [ "EN", "Programming Game AI by Example", "Mat Buckland" ],
     'desc' => [ "ISBN 978-1-55622-078-4", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
-    'prog' => [ "200%", "100%" ],
+    'prog' => [ 'read' => "200%", 'grasp' => "100%" ],
     ],
     [
     'book' => [ "EN", "AI Techniques for Game Programming", "Mat Buckland" ],
     'desc' => [ "ISBN 978-1-93184-108-5", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
-    'prog' => [ "100%", "90%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "90%" ],
     ],
     [
     'book' => [ "EN", "AI for Game Developers", "David M. Bourg, Glenn Seemann" ],
     'desc' => [ "ISBN 978-0-596-00555-9", "Themen: Künstliche Intelligenz, Spieleentwicklung", "" ],
-    'prog' => [ [288, 379, false], null ],
+    'prog' => [ 'read' => [ 'page' => 288, 'last_page' => 379 ] ],
     ],
     [
     'book' => [ "DE", "Grundkurs Künstliche Intelligenz", "Wolfgang Ertel" ],
     'desc' => [ "ISBN 978-3-8348-0783-0", "", "Subject: Artificial Intelligence" ],
-    'prog' => [ "100%", "90%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "90%" ],
     ],
     [
     'book' => [ "DE", "Mathematik für Informatiker", "Peter Hartmann" ],
     'desc' => [ "ISBN 978-3-8348-0096-1", "", "Subject: Mathematics" ],
-    'prog' => [ "100%", "60%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "60%" ],
     ],
     [
     'book' => [ "DE", "Logik für Informatiker", "Martin Kreuzer, Stefan Kühling" ],
     'desc' => [ "ISBN 978-3-8273-7215-4", "", "Subject: Logic" ],
-    'prog' => [ "100%", "65%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "65%" ],
     ],
     [
     'book' => [ "DE", "Graphentheoretische Konzepte und Algorithmen", "Sven Oliver Krumke, Hartmut Noltemeier" ],
     'desc' => [ "ISBN 978-3-8348-0629-1", "", "Subject: Graph Theory" ],
-    'prog' => [ "100%", "75%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "75%" ],
     ],
     [
     'book' => [ "EN", "The Mythical Man-Month", "Frederick P. Brooks, Jr." ],
     'desc' => [ "ISBN 978-0-201-83595-3", "Thema: Softwareentwicklung", "Subject: Software-Engineering" ],
-    'prog' => [ "200%", "90%" ],
+    'prog' => [ 'read' => "200%", 'grasp' => "90%" ],
     ],
     [
     'book' => [ "EN", "Software Engineering: A Practitioner's Approach", "Roger S. Pressman, Bruce R. Maxim" ],
     'desc' => [ "ISBN 978-1-259-25315-7", "Thema: Softwareentwicklung", "" ],
-    'prog' => [ "100%", "85%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "85%" ],
     ],
     [
     'book' => [ "EN", "Domain-Driven Design: Tackling Complexity in the Heart of Software", "Eric Evans" ],
     'desc' => [ "ISBN 978-0-321-12521-7", "", "" ],
-    'prog' => [ [ 443, 514, true ], null, "80%" ],
+    'prog' => [ 'read' => [ 'page' => 443, 'last_page' => 514, 'reading' => true ], 'graspX' => "80%" ],
     ],
     [
     'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
     'desc' => [ "ISBN 978-0-134-75759-9", "", "" ],
-    'prog' => [ "100%", "95%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "95%" ],
     ],
     [
     'book' => [ "DE", "Assembler", "Reiner Backer" ],
     'desc' => [ "ISBN 978-3-499-61224-4", "", "Subject: Assembly language" ],
-    'prog' => [ "100%", "95%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "95%" ],
     ],
     [
     'book' => [ "EN", "Programming in Scala", "Martin Odersky, Lex Spoon, Bill Venners" ],
     'desc' => [ "ISBN 978-0-98153-164-9", "", "" ],
-    'prog' => [ "100%", "95%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "95%" ],
     ],
     [
     'book' => [ "EN", "JavaScript Patterns", "Stoyan Stefanov" ],
     'desc' => [ "ISBN 978-0-59680-675-0", "", "" ],
-    'prog' => [ "100%", "100%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "100%" ],
     ],
     [
     'book' => [ "EN", "The Way of the Web Tester", "Jonathan Rasmusson" ],
     'desc' => [ "ISBN 978-1-68050-183-4", "", "" ],
-    'prog' => [ "100%", "100%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "100%" ],
     ],
     [
     'book' => [ "EN", "Cloud Native DevOps with Kubernetes", "John Arundel, Justin Domingus" ],
     'desc' => [ "ISBN 978-1-49204-076-7", "", "" ],
-    'prog' => [ [ 117, 306, true ], null ],
+    'prog' => [ 'read' => [ 'page' => 117, 'last_page' => 306 ] ],
     ],
     [
     'book' => [ "DE", "Computerforensik", "Alexander Geschonneck" ],
     'desc' => [ "ISBN 978-3-86490-133-1", "", "Subject: computer forensics" ],
-    'prog' => [ "100%", "85%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "85%" ],
     ],
     [
     'book' => [ "EN", "Blood, Sweat, and Pixels", "Jason Schreier" ],
     'desc' => [ "ISBN 978-0-06265-123-5", "Thema: Spieleentwicklung", "Subject: Game Development" ],
-    'prog' => [ "100%", "100%" ],
+    'prog' => [ 'read' => "100%", 'grasp' => "100%" ],
     ],
   ];
 
@@ -198,10 +198,10 @@ It also shows an self-evaluation of how much I think I have grasped of their con
       echo "  <td class='c$x'";
       if ($x == 200) { echo " title='" . $rcl->lang("zweimal gelesen", "read twice") . "'" ; }
       echo ">$prog</td>";
-    } else if (is_array($prog) && count($prog) >= 3) {
-      $a = $prog[0];
-      $b = $prog[1];
-      $reading = $prog[2];
+    } else if (is_array($prog) && count($prog) >= 2) {
+      $a = $prog['page'];
+      $b = $prog['last_page'];
+      $reading = $prog['reading'] ?? false;
       if ($a === $b) { echo "  <td class='c100'>100%</td>"; return; }
       if (is_int($a) && is_int($b)) {
         $p = (double) $a /  (double) $b;
@@ -219,11 +219,13 @@ It also shows an self-evaluation of how much I think I have grasped of their con
         else { echo $rcl->lang(" gelesen.", " read."); }
         echo "'>$out%</td>";
       }
+    } else {
+      echo "<td></td>";
     }
   };
 
   $nr = 1;
-  foreach ($books as $b) {
+  foreach ($textbooks as $b) {
     echo "\n<tr>";
 
     // Nr.
@@ -241,8 +243,8 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     echo "  <td>".$b['book'][2]."</td>";
 
     // progress
-    $color($b['prog'][0]);
-    $color($b['prog'][1]);
+    $color($b['prog']['read']  ?? null);
+    $color($b['prog']['grasp'] ?? null);
 
     echo "  </tr>";
   }
@@ -296,13 +298,13 @@ Additional books that I read privately, which aren't text books for computer sci
     'book' => [ "EN", "The God Delusion", "Richard Dawkins" ],
     'genr' => "Religion",
     'desc' => [ "ISBN 978-0-618-91824-9" ],
-    'prog' => [ "200%", null ],
+    'prog' => [ 'read' => "200%" ],
     ],
     [
     'book' => [ "EN", "Delusions of Gender", "Cordelia Fine" ],
     'genr' => [ "Geschlechterforschung", "Gender Studies" ],
     'desc' => [ "ISBN 978-184831-220-3" ],
-    'prog' => [ "100%", null ],
+    'prog' => [ 'read' => "100%" ],
     ],
     [
     'book' => [ "DE", "Artgerecht ist nur die Freiheit", "Hilal Sezgin" ],
@@ -316,7 +318,7 @@ Additional books that I read privately, which aren't text books for computer sci
       "",
       "<br/>English:<br/>Limits to Growth: The 30-Year Update<br/>ISBN 978-1-9314-9858-6<br/>" . externStr("https://www.amazon.com/s/?field-keywords=ISBN+978-1-9314-9858-6", "(amazon.com)")
     ],
-    'prog' => [ "200%", null ],
+    'prog' => [ 'read' => "200%" ],
     ],
     [
     'book' => [ "DE", "Das Kapital - Band 1", "Karl Marx" ],
@@ -1037,7 +1039,7 @@ Additional books that I read privately, which aren't text books for computer sci
   ];
   ### --- Artbooks/Guides
 
-  $books = array_merge(
+  $otherbooks = array_merge(
     $science,
     // sci-fi
     $ender,
@@ -1061,7 +1063,7 @@ Additional books that I read privately, which aren't text books for computer sci
     $artbooks,
     []
   );
-  foreach ($books as $b) {
+  foreach ($otherbooks as $b) {
     echo "\n<tr>";
 
     // Nr.
