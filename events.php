@@ -22,6 +22,13 @@ This site lists events that I attended, or am going to attend.
 <tbody>
 
 <tr>
+  <td><?php extern("http://pedia.teranas.de/GIGA_Games_Roadshow/","GIGA Games Roadshow"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td><?= $rcl->lang("Liveübertragung", "Live TV") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2005&#8209;07&#8209;22</td>
+</tr>
+<tr>
   <!-- dead link: http://www.giga.de/unternehmen/intel/leserartikel/blizzard-amp-intel-warcraft-weekend-ende-von-tag-2/ -->
   <td><?php extern("https://play.eslgaming.com/news/39977/Blizzard-Intel-Warcraft-Weekend-Seedings/","Blizzard &amp; Intel Warcraft Weekend"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
