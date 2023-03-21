@@ -37,28 +37,28 @@ This site lists events that I attended, or am going to attend.
   <td>2007&#8209;06&#8209;23</td>
 </tr>
 <tr>
-  <td><?php extern("http://www.wowwiki.com/BlizzCon_2007","BlizzCon 2007"); ?></td>
+  <td><?php extern("https://wowpedia.fandom.com/wiki/BlizzCon_2007","BlizzCon 2007"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td><?= $rcl->lang("Messe", "Convention") ?></td>
   <td>Anaheim, <?= $rcl->lang("Kalifornien", "California") ?>, USA</td>
   <td>2007&#8209;08&#8209;03 &ndash; 2007&#8209;08&#8209;04</td>
 </tr>
 <tr>
-  <td><?php extern("https://events.ccc.de/congress/2009","26th Chaos Communication Congress"); ?></td>
+  <td><?php extern("https://events.ccc.de/congress/2009/","26th Chaos Communication Congress"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td><?= $rcl->lang("Kongress", "Congress") ?></td>
   <td>Berlin, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2009&#8209;12&#8209;29</td>
 </tr>
 <tr>
-  <td><?php extern("https://www.vorratsdatenspeicherung.de/content/view/364/55/lang,".$rcl->lang("de", "en")."/", "Freiheit statt Angst 2010", "Freedom not Fear 2010"); ?></td>
+  <td><?php extern("http://www.vorratsdatenspeicherung.de/content/view/364/55/lang,".$rcl->lang("de", "en")."/", "Freiheit statt Angst 2010", "Freedom not Fear 2010"); ?></td>
   <td><?= $rcl->lang("Demonstrant", "Protester") ?></td>
   <td>Demonstration</td>
   <td>Berlin, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2010&#8209;09&#8209;11</td>
 </tr>
 <tr>
-  <td><?php extern("https://wiki.cacert.org/events/2010-11-05-ATE-Hamburg","CAcert Assurer Training Event Hamburg"); ?></td>
+  <td><?php extern("http://wiki.cacert.org/events/2010-11-05-ATE-Hamburg","CAcert Assurer Training Event Hamburg"); ?></td>
   <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
   <td>Training</td>
   <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
@@ -79,7 +79,7 @@ This site lists events that I attended, or am going to attend.
   <td>2014&#8209;12&#8209;27 &ndash; 2014&#8209;12&#8209;30</td>
 </tr>
 <tr>
-  <td><?php extern("http://www.creative-gaming.eu/blog/2015/01/21/%E2%80%9Epong-invaders-reality%E2%80%9C-in-hamburg/","Creative Gaming Show"); ?> <?= $rcl->lang("mit ", "with ") . internStr("/proj/DeathStarPD/","Death Star PD")?></td>
+  <td><?php extern("https://www.creative-gaming.eu/2015/01/21/pong-invaders-reality-in-hamburg/","Creative Gaming Show"); ?> <?= $rcl->lang("mit ", "with ") . internStr("/proj/DeathStarPD/","Death Star PD")?></td>
   <td><?= $rcl->lang("Aussteller", "Exhibitor") ?></td>
   <td><?= $rcl->lang("Ausstellung", "Exhibition") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
@@ -101,7 +101,8 @@ This site lists events that I attended, or am going to attend.
   <td>2015&#8209;12&#8209;27 &ndash; 2015&#8209;12&#8209;30</td>
 </tr>
 <tr>
-  <td><?php extern("https://www.hsh-nordbank-run.de/","HSH Nordbank Run 2016"); ?></td>
+  <!-- dead link: https://www.hsh-nordbank-run.de/ -->
+  <td><?php extern("https://de.wikipedia.org/wiki/HSH_Nordbank_Run","HSH Nordbank Run 2016"); ?></td>
   <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
   <td><?= $rcl->lang("Benefizlauf", "Walkathon") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
@@ -129,7 +130,8 @@ This site lists events that I attended, or am going to attend.
   <td>2017&#8209;06&#8209;09 &ndash; 2017&#8209;06&#8209;10</td>
 </tr>
 <tr>
-  <td><?php extern("https://www.hsh-nordbank-run.de/","HSH Nordbank Run 2017"); ?></td>
+  <!-- dead link: https://www.hsh-nordbank-run.de/ -->
+  <td><?php extern("https://de.wikipedia.org/wiki/HSH_Nordbank_Run","HSH Nordbank Run 2017"); ?></td>
   <td><?= $rcl->lang("Teilnehmer", "Participant") ?></td>
   <td><?= $rcl->lang("Benefizlauf", "Walkathon") ?></td>
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
@@ -143,7 +145,7 @@ This site lists events that I attended, or am going to attend.
   <td>2019&#8209;02&#8209;16 &ndash; 2019&#8209;02&#8209;17</td>
 </tr>
 <tr>
-  <td><?php extern("https://netpolitik.org/2019/upload-filter-alle-demos-auf-einen-blick/", "SaveYourInternet Hamburg"); ?></td>
+  <td><?php extern("https://netzpolitik.org/2019/upload-filter-alle-demos-auf-einen-blick/", "SaveYourInternet Hamburg"); ?></td>
   <td><?= $rcl->lang("Demonstrant", "Protester") ?></td>
   <td>Demonstration</td>
   <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
