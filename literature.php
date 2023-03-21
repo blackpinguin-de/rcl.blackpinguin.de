@@ -147,7 +147,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     [
     'book' => [ "EN", "Domain-Driven Design: Tackling Complexity in the Heart of Software", "Eric Evans" ],
     'desc' => [ "ISBN 978-0-321-12521-7", "", "" ],
-    'prog' => [ [ 284, 514, true ], null, "80%" ],
+    'prog' => [ [ 443, 514, true ], null, "80%" ],
     ],
     [
     'book' => [ "EN", "Refactoring: Improving the Design of Existing Code", "Martin Fowler, Kent Beck" ],
