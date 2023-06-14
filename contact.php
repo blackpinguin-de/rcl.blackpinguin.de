@@ -230,8 +230,8 @@ $msg   = isset($_SESSION['RCL::contact-msg'])   ? $_SESSION['RCL::contact-msg'] 
     <div id="profiles-social-media"><div>
         <h3><?=i18n('socialmedia');?></h3>
         <div>Twitter<div><?php extern('https://twitter.com/Istador','@Istador');?></div></div>
-        <div>YouTube<div><?php extern('https://youtube.com/@RCL89','@RCL89');?></div></div>
-        <div>Discord<div><?php extern('https://discord.com/users/495528563509035028', 'RCL#1878'); ?></div></div>
+        <div>YouTube<div><?php extern('https://youtube.com/@RCL89','@RCL89');?><br/>Old: <a class="private strike">15t4d0r</a></div></div>
+        <div>Discord<div><?php extern('https://discord.com/users/495528563509035028', '@rcl89'); ?><br/>Old: <a class="private strike">RCL#1878</a></div></div>
         <div class="fade">XING<div><?php extern('https://xing.com/profile/RobinChristopher_Ladiges','Robin C. Ladiges');?></div></div>
         <div class="fade">Facebook<div><?php extern('https://www.facebook.com/robin.ladiges','robin.ladiges');?></div></div>
         <div class="fade strike">Google+<div><?php extern('https://plus.google.com/101325682758740139657/','Robin C. Ladiges');?></div></div>
