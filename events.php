@@ -158,6 +158,13 @@ This site lists events that I attended, or am going to attend.
   <td>Hamburg, <?php echo $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2019&#8209;09&#8209;20</td>
 </tr>
+<tr>
+  <td><?php extern("https://events.ccc.de/congress/2023/","37th Chaos Communication Congress"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td><?= $rcl->lang("Kongress", "Congress") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2023&#8209;12&#8209;27 &ndash; 2023&#8209;12&#8209;30</td>
+</tr>
 </tbody>
 </table>
 
