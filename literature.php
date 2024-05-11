@@ -77,7 +77,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     [
     'book' => [ "EN", "Compilers: Principles, Techniques, and Tools", "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman"],
     'desc' => [ "ISBN 978-1-292-02434-9", "Themen: Compilerbau", "" ],
-    'prog' => [ 'read' => [ 'page' => 504, 'last_page' => 942, 'reading' => true ] ],
+    'prog' => [ 'read' => [ 'page' => 558, 'last_page' => 942, 'reading' => true ] ],
     ],
     [
     'book' => [ "EN", "Software Engineering and Computer Games", "Rudy Rucker" ],
@@ -894,6 +894,10 @@ Additional books that I read privately, which aren't text books for computer sci
     ],
     [
     'book' => [ "DE", "Qualityland", "Mark-Uwe Kling" ],
+    'genr' => $novel,
+    ],
+    [
+    'book' => [ "EN", "Voice of the Fire", "Alan Moore" ],
     'genr' => $novel,
     ],
   ];
