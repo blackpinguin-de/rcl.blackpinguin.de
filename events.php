@@ -165,6 +165,13 @@ This site lists events that I attended, or am going to attend.
   <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
   <td>2023&#8209;12&#8209;27 &ndash; 2023&#8209;12&#8209;30</td>
 </tr>
+<tr>
+  <td><?php extern("https://gamescom.global/", "Gamescom 2024"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td><?= $rcl->lang("Messe", "Convention") ?></td>
+  <td><?= $rcl->lang("Köln, Deutschland", "Cologne, Germany") ?></td>
+  <td>2024&#8209;08&#8209;22</td>
+</tr>
 </tbody>
 </table>
 
