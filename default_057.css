@@ -1,0 +1,69 @@
+/* ::::: https://rcl.blackpinguin.de/style/basic.css ::::: */
+
+body { background-color: rgb(157, 222, 255); font-family: Tahoma,Helvetica,Arial,Verdana; color: rgb(87, 106, 253); }
+.hidden { display: none; visibility: hidden; }
+.clearfix::after { clear: both; content: "."; display: block; height: 0px; visibility: hidden; font-size: 0px; }
+img, svg, .teaser, input[type="button"], input[type="submit"] { -moz-user-select: none; }
+table.course { margin: -5px -10px; border-spacing: 10px 5px; border-collapse: separate; }
+table.course th, table.course td { vertical-align: top; }
+table.courses > tbody > tr > td:nth-of-type(2) { text-align: left; }
+th { white-space: nowrap; hyphens: none; }
+a { color: rgb(0, 119, 0); text-decoration: underline; }
+a:focus, a:hover, a:not([href]) { text-decoration: none; }
+a.extern[href], a.private[href], a.pdf, a.youtube, .aicon { padding-right: 1.1em; background-position: right center; background-repeat: no-repeat; background-size: 1em 1em; }
+a.extern { color: rgb(204, 32, 221); }
+a.extern[href], .extern.aicon { background-image: url('extern.png'); }
+a.private { color: rgb(255, 128, 48); }
+a.private[href], .private.aicon { background-image: url('lock.png'); }
+a.pdf { color: red; background-image: url('pdf.png'); }
+a.pdf > span, a.private > span { font-size: 0.6em; display: inline-block; vertical-align: top; }
+nav a { text-decoration: none; }
+nav a:focus, nav a:hover { text-decoration: underline; }
+h5, h4, h3, h2, h1 { margin-bottom: 0.25em; margin-top: 0.25em; }
+#avatar { position: absolute; border: 2px outset rgb(255, 226, 152); border-radius: 58px; }
+#avatar > div { width: 100px; height: 100px; background-image: url('avatar_pingu.png'); background-size: cover; background-position: center center; border-radius: 56px; border: 6px solid rgb(255, 226, 152); }
+#top { position: absolute; top: 28px; left: 66px; width: calc(100% - 12px - 66px); min-width: 722px; border: 2px outset rgb(255, 226, 152); border-radius: 22px; }
+#top > div { height: 52px; background-color: rgb(211, 241, 255); border-radius: 20px; border: 10px solid rgb(255, 226, 152); }
+#top > div > header > h1 { margin-top: 0px; margin-bottom: 0px; margin-left: 58px; line-height: 52px; font-size: 32px; text-align: center; font-family: Comic Sans MS,Georgia; }
+#navi { position: absolute; top: 66px; left: 28px; border-radius: 22px; border: 2px outset rgb(255, 226, 152); }
+#navi > div { width: 110px; background-color: rgb(211, 241, 255); border-radius: 20px; border: 10px solid rgb(255, 226, 152); }
+#navi > div > nav { margin-top: 46px; line-height: 35px; font-size: 18px; text-align: center; font-family: Georgia,Comic Sans MS; }
+#content { position: absolute; width: calc(100% - 24px - 138px); min-width: 638px; top: 80px; left: 138px; border-radius: 22px; border: 2px outset rgb(255, 165, 62); text-align: justify; hyphens: auto; }
+#content > div { background-color: rgb(255, 242, 208); border-radius: 20px; border: 10px solid rgb(255, 165, 62); }
+#content > div > article { margin: 22px 10px 10px 22px; }
+#lang { position: absolute; top: 385px; left: 47px; }
+#de, #en { display: inline-block; width: 40px; height: 26px; vertical-align: middle; }
+div#en { background-image: url('en.png'); margin-left: 4px; }
+#lang > div { border-style: solid; border-color: rgb(47, 173, 41); border-width: 2px; }
+#profiles > div:nth-of-type(3n+1):not(:first-of-type) { clear: left; margin-top: 10px; }
+#profiles > div > div > div:not(:first-of-type) { margin-top: 10px; }
+#profiles > div > div > div::before { content: ""; display: block; position: absolute; width: 64px; height: 64px; margin-left: -72px; transform: scale(0.5); transform-origin: 100% 0px 0px; background-image: url('logos64.png'); background-repeat: no-repeat; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(1)::before { background-position: 0px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(2)::before { background-position: -64px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(3)::before { background-position: -128px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(4)::before { background-position: -192px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(5)::before { background-position: -256px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(6)::before { background-position: -320px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(7)::before { background-position: -384px 0px; }
+#profiles > div:nth-of-type(1) > div > div:nth-of-type(8)::before { background-position: -448px 0px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(1)::before { background-position: 0px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(2)::before { background-position: -64px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(3)::before { background-position: -128px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(4)::before { background-position: -192px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(5)::before { background-position: -256px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(6)::before { background-position: -320px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(7)::before { background-position: -384px -64px; }
+#profiles > div:nth-of-type(2) > div > div:nth-of-type(8)::before { background-position: -448px -64px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(1)::before { background-position: 0px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(2)::before { background-position: -64px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(3)::before { background-position: -128px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(4)::before { background-position: -192px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(5)::before { background-position: -256px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(6)::before { background-position: -320px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(7)::before { background-position: -384px -128px; }
+#profiles > div:nth-of-type(3) > div > div:nth-of-type(8)::before { background-position: -448px -128px; }
+/* ::::: https://rcl.blackpinguin.de/style/reference.css ::::: */
+
+.ref { position: relative; vertical-align: baseline; }
+.refnum { position: relative; left: 2px; bottom: 1ex; color: rgb(0, 89, 148); font-size: 0.7em; font-weight: bold; text-decoration: none; cursor: pointer; }
+.refbody { font-size: 0.7em; line-height: 1.1; display: none; min-width: 20em; position: absolute; left: 25px; bottom: 5px; border: 1px solid; padding: 5px; background-color: rgb(255, 255, 255); overflow-wrap: break-word; z-index: 9999; overflow: auto; }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Robin C. Ladiges / dHeap</title>
+
+<meta name="robots" content="all">
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://rcl.blackpinguin.de/ico/manifest.json">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/ico/mstile-144x144.png">
+<meta name="msapplication-config" content="/ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="reference.js" defer="" async=""></script>
+<script type="text/javascript" src="textarea-autoheight.js" defer="" async=""></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+<script type="text/javascript" charset="UTF-8" src="loader.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_corechart_module.js"></script>
+<link media="all" href="default_007.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css"><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js"></script></head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href="#navi"> jump to the navigation</a><br></b>
+
+
+<script type="text/javascript">
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['JavaScript', 310], ['Comments', 131], ['HTML', 48], ['CSS', 45]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type="text/javascript" src="loader_001.js" defer="" onload="init_google_loc()"></script>
+
+<a href="dheap.png" style="width: 40%; float: right; margin-left: 10px; margin-bottom: 10px;"><img src="dheap.png" alt="Screenshot of the visualization with 9 nodes and 8 edges: [2, 5, 9, 8, 11, 20, 13, 12, 4]. Two nodes are highlighted by color." title="dHeap example from the book: a 4 is inserted, but it violates the heap property. The highlighted nodes will be switched in the current algorithm step." style="width: 100%; height: auto;"></a>
+<p>There was the voluntary option to develop a visualization with <a href="http://d3js.org/" class="extern" target="_top" rel="noopener">D3</a> in JavaScript for the oral examination in the compulsory elective course <a href="default_047.html" class="private" indepth="true">Selected Topics of Media Computer Science</a><span class="ref"><span class="refnum"><span class="jsonly">[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class="refbody">The topic this semester was visualization.</span></span> of <a href="default_004.html" class="private" indepth="true">B.Sc. Media Systems (B-MS)</a> in the summer semester 2014.
+The D3 layout for the visualization had to be one that wasn't introduced in the lectures.</p>
+<p>Inspiried by the <span class="i">Attachment B - elementary data structures</span> from the textbook <span class="i">Graphentheoretische Konzepte und Algorithmen</span><span class="ref"><span class="refnum"><span class="jsonly">[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class="refbody">ISBN 978-3-8348-0629-1<br><a href="https://www.amazon.de/s/?field-keywords=ISBN+978-3-8348-0629-1" class="extern" target="_top" rel="noopener">(amazon.de)</a><br>Subject: Graph Theory</span></span> from S. O. Krumpke and H. Noltemeier, which explains <a href="https://en.wikipedia.org/wiki/D-ary_heap" class="extern" target="_top" rel="noopener">d-ary heaps</a>, I developed a stepwise visualization of the basic dHeap operations<span class="ref"><span class="refnum"><span class="jsonly">[3]</span><noscript><a class='reflink' id='reftop3' href='#ref3'>[3]</a></noscript></span><span class="refbody">The basic operations explained in the textbook are: insert a new node, reduce the value of a node, and remove the root node.<br><br>I extended the algorithms to increase the value of a node and to remove an arbitrary node. Both with an unchanged logarithmic running time.</span></span> with the <a href="https://github.com/mbostock/d3/wiki/Tree-Layout" class="extern" target="_top" rel="noopener">D3 Tree Layout</a>.</p>
+<p>The result of this work can be viewed online <a href="https://dheap.blackpinguin.de/" class="extern" target="_top" rel="noopener">here</a>.
+The loaded heap is the example from the book.
+First a 4 is inserted (right picture) and then the 2 gets removed.</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"><div style="position: relative;"><div style="position: relative; width: 400px; height: 200px;" dir="ltr"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="400" height="200" style="overflow: hidden;" aria-label="A chart."><defs id="_ABSTRACT_RENDERER_ID_0"></defs><g><path d="M200,100L154.54223661282077,22.323801922112423A90,90,0,0,1,200,10L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#109618"></path><text text-anchor="start" x="169.26154708370467" y="36.575364911167746" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">8.4%</text></g><g><path d="M200,100L120.02687766586757,58.716835100371874A90,90,0,0,1,154.54223661282077,22.323801922112423L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path><text text-anchor="start" x="141.64780449659582" y="56.09569238143736" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">9%</text></g><g><path d="M200,100L156.38257152709832,178.72432872633024A90,90,0,0,1,120.02687766586757,58.716835100371874L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="124.62006630951788" y="121.99033833976408" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">24.5%</text></g><g><path d="M200,100L200,10A90,90,0,1,1,156.38257152709832,178.72432872633024L200,100A0,0,0,1,0,200,100" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><text text-anchor="start" x="245.11100335668726" y="119.51873090287509" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">58.1%</text></g><g></g></svg></div></div><div style="display: none; position: absolute; top: 210px; left: 410px; white-space: nowrap; font-family: Arial; font-size: 11px;" aria-hidden="true">8.4%</div><div></div></div></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>JavaScript, JSON, SVG, HTML, CSS</td> </tr>
+<tr> <th>Technologies</th> <td>D3, JS Prototypes, Closures</td> </tr>
+<tr> <th>IDE</th> <td>Geany</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>The topic this semester was visualization.</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>ISBN 978-3-8348-0629-1<br/><a href='https://www.amazon.de/s/?field-keywords=ISBN+978-3-8348-0629-1' class='extern' target='_blank' rel='noopener'>(amazon.de)</a><br/>Subject: Graph Theory</td></tr><tr><th><a class='reflink' href='#reftop3' id='ref3'>[3]</a></th><td>The basic operations explained in the textbook are: insert a new node, reduce the value of a node, and remove the root node.<br/><br/>I extended the algorithms to increase the value of a node and to remove an arbitrary node. Both with an unchanged logarithmic running time.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href="#content"> jump to the top</a><br></b>
+             <a href="index.html" indepth="true">Start</a>        <br><a href="projects.html" indepth="true">Projects</a>        <br><a href="education.html" indepth="true">Education</a>        <br><a href="languages.html" indepth="true">Languages</a>        <br><a href="literature.html" indepth="true">Literature</a>        <!-- <br/><a href='/technics'>Technics</a> -->
+        <br><a href="events.html" indepth="true">Events</a>        <br><a href="contact.html" indepth="true">Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / dHeap</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href="default_087.html" title="Diese Seite auf Deutsch anzeigen" indepth="true"><img id="de" src="de.png" alt="German flag"></a><div id="en"></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+
+
+
+
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Robin C. Ladiges / Autounfall App</title>
+
+<meta name="robots" content="all">
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://rcl.blackpinguin.de/ico/manifest.json">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/ico/mstile-144x144.png">
+<meta name="msapplication-config" content="/ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="reference.js" defer="" async=""></script>
+<script type="text/javascript" src="textarea-autoheight.js" defer="" async=""></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+<script type="text/javascript" charset="UTF-8" src="loader.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_corechart_module.js"></script>
+<link media="all" href="default_093.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css"><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js"></script></head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href="#navi"> springe zur Navigation</a><br></b>
+
+
+<script type="text/javascript">
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['C++', 1928], ['Kommentare', 455], ['PHP', 146]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type="text/javascript" src="loader_001.js" defer="" onload="init_google_loc()"></script>
+
+<p>Von März bis Mai 2013 habe ich neben dem Studium für meinen Cousin eine iPhone-App entwickelt, die für einen seiner Kunden als Teil eines größeren Auftrags bestimmt war.</p>
+<p>Weil ich keinen Mac besitze, um für iOS-Geräte entwickeln zu können, erwarb mein Cousin, ohne mich vorher zu konsultieren, eine DragonFireSDK-Lizenz für mich, mit der ich die App dann unter Windows in C++ entwickelte.</p>
+<p></p>
+<div style="width: 100%; text-align: center;">
+    <a href="01.png" style="display: inline-block; width: 32%;"><img src="01.png" alt="Screenshot" title="Hauptmenü" style="width: 100%; height: auto;"></a>
+    <a href="02.png" style="display: inline-block; width: 32%;"><img src="02.png" alt="Screenshot" title="Daten des Unfallgegners" style="width: 100%; height: auto;"></a>
+    <a href="03.png" style="display: inline-block; width: 32%;"><img src="03.png" alt="Screenshot" title="Eigene Daten" style="width: 100%; height: auto;"></a>
+</div>
+<p>Die Kunden eines Gutachters für Autounfälle (Name und Firmenlogo sind in den Screenshots der App verpixelt) können mit dieser App, direkt vor Ort Unfälle eintragen und ihrem Gutachter zuschicken.</p>
+<p>Programmablauf, Gestaltung und die Grafiken<span class="ref"><span class="refnum"><span class="jsonly">[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class="refbody">Die Buttons habe ich selbst noch mal neu erstellt um den Text ändern zu können, sowie um einige Buttons Grün, Rot und Gelb hervorzuheben.</span></span> der App waren mir durch ein Storyboard und einen HTML/JavaScript-Mockup vorgegeben. Ich habe die Entwürfe in C++ umgesetzt und an die technischen Gegebenheiten angepasst.</p>
+<div style="width: 100%; text-align: center;">
+    <a href="04.png" style="display: inline-block; width: 32%;"><img src="04.png" alt="Screenshot" title="Unfallhergang" style="width: 100%; height: auto;"></a>
+    <a href="05.png" style="display: inline-block; width: 32%;"><img src="05.png" alt="Screenshot" title="Gespeichert" style="width: 100%; height: auto;"></a>
+    <a href="06.png" style="display: inline-block; width: 32%;"><img src="06.png" alt="Screenshot" title="Abschicken" style="width: 100%; height: auto;"></a>
+</div>
+<p>
+Es war ein Entgelt vereinbart, aber leider ist der Kunde vom Vertrag zurückgetreten, als die App bereits fast fertig gestellt war.
+Sie funktionierte bereits wie gewünscht, aber es waren noch ein paar grafische Details, das Hosting des Backends und die Veröffentlichung zu klären.
+</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"><div style="position: relative;"><div style="position: relative; width: 400px; height: 200px;" dir="ltr"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="400" height="200" style="overflow: hidden;" aria-label="A chart."><defs id="_ABSTRACT_RENDERER_ID_0"></defs><g><path d="M200,100L168.0654581468278,15.856164595212363A90,90,0,0,1,200,10L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path></g><g><path d="M200,100L110.27111682455093,93.01948969726331A90,90,0,0,1,168.06545814682772,15.856164595212391L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="135.4794679219758" y="63.76380756886302" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">18%</text></g><g><path d="M200,100L200,10A90,90,0,1,1,110.27111682455093,93.01948969726331L200,100A0,0,0,1,0,200,100" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><text text-anchor="start" x="228.009146203734" y="150.87542873986223" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">76.2%</text></g><g></g></svg></div></div><div style="display: none; position: absolute; top: 210px; left: 410px; white-space: nowrap; font-family: Arial; font-size: 11px;" aria-hidden="true">5.8%</div><div></div></div></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>C++, SQL, PHP</td> </tr>
+<tr> <th>Technologien</th> <td>DragonFire SDK, SQLite, Base64, E-Mail</td> </tr>
+<tr> <th>Tools</th> <td>Photoshop</td> </tr>
+<tr> <th>IDE</th> <td>Visual Studio 2012</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Die Buttons habe ich selbst noch mal neu erstellt um den Text ändern zu können, sowie um einige Buttons Grün, Rot und Gelb hervorzuheben.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href="#content"> springe zum Anfang</a><br></b>
+             <a href="default_002.html" indepth="true">Start</a>        <br><a href="projects_001.html" indepth="true">Projekte</a>        <br><a href="education_001.html" indepth="true">Ausbildung</a>        <br><a href="languages_001.html" indepth="true">Sprachen</a>        <br><a href="literature_001.html" indepth="true">Literatur</a>        <!-- <br/><a href='/technics?lang=de'>Technik</a> -->
+        <br><a href="events_001.html" indepth="true">Events</a>        <br><a href="contact_001.html" indepth="true">Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Autounfall App</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id="de"></div><a href="default_013.html" title="View this page in English" indepth="true"><img id="en" src="en.png" alt="Flagge der USA"></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+
+
+
+
+</body></html>

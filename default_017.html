@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Robin C. Ladiges / Market Checker</title>
+
+<meta name="robots" content="all">
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rcl.blackpinguin.de/ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://rcl.blackpinguin.de/ico/manifest.json">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="/ico/mstile-144x144.png">
+<meta name="msapplication-config" content="/ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="reference.js" defer="" async=""></script>
+<script type="text/javascript" src="textarea-autoheight.js" defer="" async=""></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+<script type="text/javascript" charset="UTF-8" src="loader.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="jsapi_compiled_corechart_module.js"></script>
+<link media="all" href="default_017.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/loader.js"></script><link id="load-css-0" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/core/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="https://www.gstatic.com/charts/51/css/util/util.css"><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_default_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_graphics_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_ui_module.js"></script><script type="text/javascript" charset="UTF-8" src="https://www.gstatic.com/charts/51/js/jsapi_compiled_corechart_module.js"></script></head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href="#navi"> jump to the navigation</a><br></b>
+
+
+<script type="text/javascript">
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['PHP', 10205], ['HTML', 4334], ['Comments', 4059], ['Java', 2873], ['SQL', 1267], ['XSD', 545], ['DTD', 185], ['CSS', 38]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type="text/javascript" src="loader_001.js" defer="" onload="init_google_loc()"></script>
+
+<a href="mc1.png"><img src="mc1.thumb.png" alt="App Screenshot" title="App Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;"></a>
+<p>Market Checker is a software project, that was created in the summer semester 2011 at the <a href="default_061.html" class="private" indepth="true">Software Engineering 2</a> course of <a href="default_026.html" class="private" indepth="true">B.Sc. Applied Computer Science (B-AI)</a>.</p>
+<p>It is a information platform where users can research and submit article prices in stores around their location.
+Users can insert articles, manufacturers and stores.
+Articles can be supplemented with pictures and comments.
+Pictures, comments and articles can be rated by users or, if they violate the terms of service, reported to the support.
+</p>
+<p>
+Users have to validate their e-mail address when they register their account or change it later, for which they receive an e-mail <span class="ref"><span class="refnum"><span class="jsonly">[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class="refbody">They did receive an e-mail. The mail server that was used doesn't exists anymore.</span></span>.
+In their profile, users can change their unique user name (which is different from their login name) or upload an avatar, that are both shown to other users.
+Articles or search strings that a user wants to remember can be added to an arbitrary amount of shopping lists.
+</p>
+<a href="mc2.png"><img src="mc2.thumb.png" alt="Website Screenshot" title="Website Screenshot" style="width: 35%; height: auto; float: left; margin-right: 10px; margin-bottom: 10px;"></a>
+<p>Project members were Jan Kuffer (Project lead and App), Philip Rose (Design and App), Vassilios Stavrou (App and API), Dimitri Fast (Website), Dieter Pisarewski (Website) and me (API and API tests).</p>
+<p>
+An Android app with barcode scanner was developed in Java, and a website and mobile website were developed in Ruby.
+To support app, website, mobile website, and possible future applications, a central XML API was developed in PHP that serves as an secure interface to the database.
+Prior to their implementation, all API methods were specified in detail in the <a href="https://mcheck.blackpinguin.de/api/Methodenverzeichnis.php" class="extern" target="_top" rel="noopener">API documentation</a>, which allowed their simultaneous developement with the app and websites.
+</p>
+<p>
+Except for the article search method, which various optional parameters formed complex SQL statements, the API was implemented in time.
+To test the XML API, a test system using cURL was developed in PHP. Its output for a complete test with 966 individual test cases can be visited <a href="https://mcheck.blackpinguin.de/api/test.html" class="extern" target="_top" rel="noopener">here</a>.
+Most API methods and optional parameters aren't used by the app and website, but offer the possibility to extend them.
+</p>
+<p>The websites aren't hosted anymore by their developer. I don't have access to the Ruby source code to host them by myself.</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"><div style="position: relative;"><div style="position: relative; width: 400px; height: 200px;" dir="ltr"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;"><svg width="400" height="200" style="overflow: hidden;" aria-label="A chart."><defs id="_ABSTRACT_RENDERER_ID_0"></defs><g><path d="M200,100L200,10A90,90,0,0,1,236.18679092782025,182.4045882360092L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#3366cc"></path><text text-anchor="start" x="245.83365616441148" y="90.97639718484706" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">43.4%</text></g><g><path d="M200,100L199.08584513553274,10.004642781509162A90,90,0,0,1,200,10L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#66aa00"></path></g><g><path d="M200,100L194.63843847583115,10.159843844622841A90,90,0,0,1,199.08584513553274,10.004642781509162L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#dd4477"></path></g><g><path d="M200,100L181.65362938206036,11.889781040169908A90,90,0,0,1,194.63843847583115,10.159843844622841L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#0099c6"></path></g><g><path d="M200,100L153.4225734724862,22.98997897627835A90,90,0,0,1,181.65362938206036,11.889781040169908L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#990099"></path></g><g><path d="M200,100L112.99907386605489,76.96005963905664A90,90,0,0,1,153.4225734724861,22.98997897627838L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#109618"></path><text text-anchor="start" x="133.95940834245602" y="65.9951818880354" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.2%</text></g><g><path d="M200,100L139.0022856422069,166.176119885689A90,90,0,0,1,112.99907386605489,76.96005963905664L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#ff9900"></path><text text-anchor="start" x="124.42515260046463" y="121.35961626227046" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">17.3%</text></g><g><path d="M200,100L236.18679092782025,182.4045882360092A90,90,0,0,1,139.0022856422069,166.176119885689L200,100A0,0,0,0,0,200,100" stroke="#ffffff" stroke-width="1" fill="#dc3912"></path><text text-anchor="start" x="173.01969977968886" y="172.60000606075315" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">18.4%</text></g><g></g></svg></div></div><div style="display: none; position: absolute; top: 210px; left: 410px; white-space: nowrap; font-family: Arial; font-size: 11px;" aria-hidden="true">0.2%</div><div></div></div></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>PHP, SQL, XML, HTML, CSS, Java</td> </tr>
+<tr> <th>Technologies</th> <td>XSD, DTD, MySQL, ProFTPD, E-Mail, bcrypt, Mersenne Twister, cURL, convert (ImageMagick)</td> </tr>
+<tr> <th>Tools</th> <td>Skype</td> </tr>
+<tr> <th>IDE</th> <td>Notepad++, Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>6</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>They did receive an e-mail. The mail server that was used doesn't exists anymore.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href="#content"> jump to the top</a><br></b>
+             <a href="index.html" indepth="true">Start</a>        <br><a href="projects.html" indepth="true">Projects</a>        <br><a href="education.html" indepth="true">Education</a>        <br><a href="languages.html" indepth="true">Languages</a>        <br><a href="literature.html" indepth="true">Literature</a>        <!-- <br/><a href='/technics'>Technics</a> -->
+        <br><a href="events.html" indepth="true">Events</a>        <br><a href="contact.html" indepth="true">Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Market Checker</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href="default_099.html" title="Diese Seite auf Deutsch anzeigen" indepth="true"><img id="de" src="de.png" alt="German flag"></a><div id="en"></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+
+
+
+
+</body></html>
