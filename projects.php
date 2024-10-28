@@ -136,13 +136,72 @@
 <table id="contributions"><tbody>
 <thead> <tr> <th colspan="2"><?php echo $rcl->lang('Open Source Beiträge', 'Open Source Contributions') ?></th> </tr> </thead>
 
+<tr class="y2024"> <th>2024</th>
+<td>
+  <div><span>Zohiu-Website:
+    <?php extern(github("Zohiu-Website/pull/1","Zohiu"),"#1"); ?>
+  </span></div>
+  <div><span>SMOO Client:
+    <?php extern(github("SuperMarioOdysseyOnline/pull/63","CraftyBoss"),"#63"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/64","CraftyBoss"),"#64"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/65","CraftyBoss"),"#65"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/66","CraftyBoss"),"#66"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/67","CraftyBoss"),"#67"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/68","CraftyBoss"),"#68"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/69","CraftyBoss"),"#69"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/72","CraftyBoss"),"#72"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/73","CraftyBoss"),"#73"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/74","CraftyBoss"),"#74"); ?>
+  </span></div>
+  <div><span>SMOO Map:
+    <?php extern(github("smoo-map/pull/1","speyejack"),"#1"); ?>
+  </span></div>
+  <div><span>SMOO Rust Server:
+    <?php extern(github("smo-multi-rs/pull/5","speyejack"),"#5"); ?>
+  </span></div>
+  <div><span>SMOO C# Server:
+    <?php extern(github("SmoOnlineServer/pull/52","Sanae6"),"#52"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/53","Sanae6"),"#53"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/54","Sanae6"),"#54"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/55","Sanae6"),"#55"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/56","Sanae6"),"#56"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/59","Sanae6"),"#59"); ?>
+  </span></div>
+  <div><span>openstreetmap-tile-server:
+    <?php extern(github("openstreetmap-tile-server/pull/420","Overv"),"#420"); ?>
+  </span></div>
+  <div><span>playback-i18n:
+    <?php extern(github("playback-i18n/pull/2","epilogue-co"),"#2"); ?>
+  </span></div>
+</td> </tr>
+
 <tr class="y2023"> <th>2023</th>
 <td>
+  <div><span>openstreetmap-tile-server:
+    <?php extern(github("openstreetmap-tile-server/pull/385","Overv"),"#385"); ?>
+  </span></div>
+  <div><span>SMOO Client:
+    <?php extern(github("SuperMarioOdysseyOnline/pull/53","CraftyBoss"),"#53"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/54","CraftyBoss"),"#54"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/55","CraftyBoss"),"#55"); ?>,
+    <?php extern(github("SuperMarioOdysseyOnline/pull/58","CraftyBoss"),"#58"); ?>
+  </span></div>
+  <div><span>piplup.smoo.it:
+    <?php extern(github("smoo.it/pull/2","TeamPiplup"),"#2"); ?>
+  </span></div>
+  <div><span>nxDumpMerger:
+    <?php extern(github("nxDumpMerger/pull/9","emiyl"),"#9"); ?>
+  </span></div>
   <div><span>SMOO Rust Server:
     <?php extern(github("smo-multi-rs/pull/4","speyejack"),"#4"); ?>
   </span></div>
   <div><span>SMOO C# Server:
-    <?php extern(github("SmoOnlineServer/pull/46","Sanae6"),"#46"); ?>
+    <?php extern(github("SmoOnlineServer/pull/46","Sanae6"),"#46"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/48","Sanae6"),"#48"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/49","Sanae6"),"#49"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/50","Sanae6"),"#50"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/36","TeamPiplup"),"TeamPiplup#36"); ?>,
+    <?php extern(github("SmoOnlineServer/pull/51","Sanae6"),"#51"); ?>
   </span></div>
 </td> </tr>
 
@@ -152,6 +211,9 @@
     <?php extern(github("phpstan/issues/8252","phpstan"),"Issue#8252"); ?>,
     <?php extern(github("phpstan/issues/8461","phpstan"),"Issue#8461"); ?>,
     <?php extern(github("phpstan-issue-8461"),$rcl->lang("Beispiel","Example")); ?>
+  </span></div>
+  <div><span>piplup.smoo.it:
+    <?php extern(github("smoo.it/pull/1","TeamPiplup"),"#1"); ?>
   </span></div>
   <div><span>SMOO Rust Server:
     <?php extern(github("smo-multi-rs/pull/1","speyejack"),"#1"); ?>,
