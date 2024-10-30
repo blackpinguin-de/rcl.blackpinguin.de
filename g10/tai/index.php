@@ -20,7 +20,7 @@
     <tr>  <td><?php intern("IuM/","IuM"); ?></td>       <td class="l">Installation und Montagetechnik</td>  <td>3</td>  </tr>
     <tr>  <td><?php intern("TI/","TI"); ?></td>         <td class="l">Technische Informatik</td>  <td>2</td>  </tr>
     <?php } else { ?>
-    <tr>  <td><?php intern("AE.html","AE"); ?></td>    <td class="l">Application Development</td>  <td>1</td>  </tr>
+    <tr>  <td>AE</td>    <td class="l">Application Development<br/><?php intern("AeHTML/","AeHTML"); ?>, <?php intern("AeOffice/","AeOffice"); ?>, <?php intern("AePro","AePro"); ?>, <?php intern("AeSQL","AeSQL"); ?></td>  <td>1</td>  </tr>
     <tr>  <td>BuGP</td>                                                <td class="l">Business Studies</td>  <td>3</td>  </tr>
     <tr>  <td><?php intern("BuNet/","BuNet"); ?></td>   <td class="l">Operating Systems and Networks</td>  <td>1</td>  </tr>
     <tr>  <td></td>                                                    <td class="l">Technical English</td>  <td>2</td>  </tr>
