@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / RL: Vier gewinnt</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Java', 2086], ['Kommentare', 1009]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="vg.png"><img src="vg.png" alt="Screenshot" title="Screenshot des Zustandes 6AAAF00C9B158599" style="width: 25%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>RL: Vier gewinnt ist ein Softwareprojekt, an dem ich im Wintersemester 2011/12 im Modul <a href='../../haw/bai/11ws/Proj_LA/de.html' class='private'>Projekt: Lernende Agenten</a> des Studienganges <a href='../../haw/bai/de.html' class='private'>Bachelor Angewandte Informatik (B-AI)</a> gearbeitet habe.</p>
+<p>
+Das Projekt beschäftigte sich damit mittels Verstärkendem Lernen (Englisch: Reinforcement Learning, kurz: RL) einem Computer das Spielen von <a href='https://de.wikipedia.org/wiki/Vier_gewinnt' class='extern' target='_blank' rel='noopener'>Vier gewinnt</a> beizubringen.
+Dies hat sich als unrentabel herausgestellt, weil die Datenbank die dafür notwendig wäre, durch den großen Zustandsraum, beim Training auf bis zu etwa 49,5 TiB anwachsen würde.
+</p>
+<p>
+Ursprünglich wurde RL: Vier gewinnt im Sommersemester 2011 von Daniel Wehring erstellt.
+Dabei wurde das RL-Framework von Patrick Boekhoven verwendet, welches im Rahmen seiner <a href='http://edoc.sub.uni-hamburg.de/haw/volltexte/2011/1269/' class='extern' target='_blank' rel='noopener'>Bachelor-Arbeit</a> entstanden ist und das Agenten-Framework JADE verwendet.
+</p>
+<p>Meine Arbeit an dem Projekt bestand hauptsächlich in einer ausführlichen Refaktorisierung<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Sowohl in den RL-Algorithmen des RL-Frameworkes, als auch in der Anwendung für Vier Gewinnt, befanden sich schwerwiegende Fehler, wodurch das verstärkende Lernen nicht korrekt erfolgen konnte.<br/><br/>Beispielsweise existierte in der Berechnung der Vier Gewinnt Zustands-ID ein 64-bit Ganzzahlüberlauf, wodurch nicht alle Spielzustände eineindeutig adressiert wurden.</span></span>, Optimierung und ergänzender Dokumentation des Spieles und des RL-Frameworks.</p>
+<p>Die Dokumentation meiner Arbeit für das Projekt ist <a href='https://wiki.blackpinguin.de/index.php/Vier_gewinnt' class='extern' target='_blank' rel='noopener'>hier</a> zu lesen.</p>
+<p>Am Ende des Projektes habe ich eine <a href='vg.pdf' class='pdf'>Präsentation</a> für die Kursteilnehmer des nächsten Semesters gehalten, in der ich zunächst kurz Verstärkendes Lernen erklärt habe und anschließend RL: Vier gewinnt vorstellte.</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>Java, UML</td> </tr>
+<tr> <th>Technologien</th> <td>JADE, Verstärkendes Lernen, Q-Learning, SARSA, Temporal difference learning</td> </tr>
+<tr> <th>Tools</th> <td>Dia, MediaWiki, Libre Office Impress</td> </tr>
+<tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Beteiligte</th> <td>1 (2 gesamt)</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Sowohl in den RL-Algorithmen des RL-Frameworkes, als auch in der Anwendung für Vier Gewinnt, befanden sich schwerwiegende Fehler, wodurch das verstärkende Lernen nicht korrekt erfolgen konnte.<br/><br/>Beispielsweise existierte in der Berechnung der Vier Gewinnt Zustands-ID ein 64-bit Ganzzahlüberlauf, wodurch nicht alle Spielzustände eineindeutig adressiert wurden.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / RL: Vier gewinnt</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

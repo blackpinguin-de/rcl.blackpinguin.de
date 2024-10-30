@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Robin C. Ladiges / Death Star PD</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href='#navi'> jump to the navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['C#', 4142], ['Comments', 2262], ['CSS', 555], ['HTML', 238], ['JavaScript', 53]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="build.png"><img src="build.thumb.png" alt="Screenshot" title="Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>Death Star PD is a 3D tower defense (TD) strategy game, that was created in the winter semester 2014/15 at the <a href='../../haw/bms/14ws/MG3/' class='private'>Media Design 3</a> compulsory elective course of <a href='../../haw/bms/' class='private'>B.Sc. Media Systems (B-MS)</a>.</p>
+<p>PD stands for Planetary Defense to emphasize its unique selling point, that the towers are build on a sphere in 3D space.</p>
+<p>
+The games setting is inspired by the Death Star from Star Wars.
+By building towers on its surface, the player has to defend the Death Star against its destruction by the rebels.
+</p>
+<p>Five different tower types are available for the player to build: MG-Towers (fast/weak), Laser-Towers (slow/strong), Lightning-Towers (hit several enemies at once), Rocket-Towers (shoot guided missiles with splash damage) and Power Plant (generate energy and boost nearby towers).</p>
+<p>Enemies are attacking with three different ship types <span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Fighters: default enemy.<br/>Mini-Fighters: smal and weak, but do attack in greater numbers.<br/>Bombers: slow, but strong and do attack, additionally to the primary targets, the towers of the player.</span></span>, that, because they are in space, aren't following predefined routes, like in most tower defense games, but steer toward the nearest primary target <span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>Several primary targets are distributed randomly on the sphere's surface during the start of a game. If any of the primary targets gets destroyed, the player loses.<br/><br/>This all isn't easy for the player. He doesn't know where enemies are comming from, has to defend several positions, and can't see the whole surface of the sphere at once.</span></span> as soon as they have reached the Death Star from their arbitrary random spawn point.</p>
+<a href="logo.png"><img src="logo.thumb.png" alt="Logo" title="Logo" style="width: 10%; height: auto; float: left; margin-right: 10px; margin-bottom: 10px;" /></a>
+<p>
+The game was developed together with Christopher Giese (GUI and project management), Laura Gohl (concept arts, icons and 3D modelling) and Lars Krafft (graphic programming and effects, 3D modelling, sound effects and music).
+My contribution to the project was the original game idea, programming the game mechanics, programming the A.I. for towers and enemies, operating the SVN repository, and designing the logo and the website.
+</p>
+<p>
+Because the Unity game engine was used, Death Star PD can be played directly in the browser with the Unity Web Player on <a href='https://games.blackpinguin.de/DeathStarPD/' class='extern' target='_blank' rel='noopener'>this website</a>.
+Alternatively, it can be downloaded there for Windows and GNU/Linux.
+</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>C#, CSS, HTML, JavaScript</td> </tr>
+<tr> <th>Tools</th> <td>Inkscape</td> </tr>
+<tr> <th>IDE</th> <td>Unity, MonoDevelop, Geany</td> </tr>
+<tr> <th>Participants</th> <td>4</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Fighters: default enemy.<br/>Mini-Fighters: smal and weak, but do attack in greater numbers.<br/>Bombers: slow, but strong and do attack, additionally to the primary targets, the towers of the player.</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>Several primary targets are distributed randomly on the sphere's surface during the start of a game. If any of the primary targets gets destroyed, the player loses.<br/><br/>This all isn't easy for the player. He doesn't know where enemies are comming from, has to defend several positions, and can't see the whole surface of the sphere at once.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> jump to the top</a><br/></b>
+             <a href='../../'>Start</a>        <br/><a href='../../projects'>Projects</a>        <br/><a href='../../education'>Education</a>        <br/><a href='../../languages'>Languages</a>        <br/><a href='../../literature'>Literature</a>        <!-- <br/><a href='../../technics'>Technics</a> -->
+        <br/><a href='../../events'>Events</a>        <br/><a href='../../contact'>Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Death Star PD</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href='de.html' title='Diese Seite auf Deutsch anzeigen'><img id='de' src='../../img/de.png' alt='German flag'/></a><div id='en'></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

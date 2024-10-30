@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /g10/
+Disallow: /spr/
+Disallow: /haw/
+Disallow: /internships/
+Disallow: /Anhang/

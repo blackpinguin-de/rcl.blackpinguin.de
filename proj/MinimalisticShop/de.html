@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / Minimalistic Shop</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Scala', 1460], ['Kommentare', 1252], ['Java', 689], ['XSLT', 619], ['CSS', 244], ['XSD', 192], ['JSP', 172], ['DTD', 70], ['JavaScript', 47], ['XML', 12]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="ms.png"><img src="ms.thumb.png" alt="Screenshot" title="Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>Minimalistic Shop ist eine Webseite, die im Sommersemester 2013 im Modul <a href='../../haw/bms/13ss/RDB/de.html' class='private'>Relationale Datenbanken</a> des Studienganges <a href='../../haw/bms/de.html' class='private'>Bachelor Media Systems (B-MS)</a> entstanden ist.</p>
+<p>
+In dieser technischen Demonstration eines Online-Shops werden Produkte verschiedenster Kategorien zum Kauf angeboten.
+Artikel können zum Warenkorb hinzugefügt werden und nach der Registrierung eines neuen Benutzeraccounts bzw. nach dem Login bestellt werden.
+Die Produktkategorien sind hierarchisch gegliedert, Produkte können in mehreren Kategorien stehen, und die Suche lässt sich auf bestimmte Kategorien eingrenzen.
+</p>
+<p>Vorgabe für das Projekt war es, Java-Klassen, JDBC, Tomcat und JSP zu verwenden.
+Statt Java habe ich Scala verwendet, was zu Java-Klassen kompiliert wird.
+Die JSP-Dateien enthalten keine Anwendungslogik, sondern rufen lediglich jeweils eine Scala-Methode mit den Parametern der HTTP-Verbindung auf.
+</p>
+<p>
+Aufgeteilt ist die Architektur des Scala-Projektes in drei Pakete.
+Ein Paket für den Datenbankzugriff mittels Prepared Statements, Geschäftslogik und Transaktionen, eines für die XML-Ausgabegenerierung und das letzte Paket für die Validierung der Eingabeparameter.
+Das XML, welches die Webseite ausliefert, wird vom Browser des Besuchers mittels XSLT 1.0 zu HTML geparst.
+</p>
+<p>Erreichbar ist der Minimalistic Shop <a href='https://rdb.blackpinguin.de/' class='extern' target='_blank' rel='noopener'>hier</a>.</p>
+<p>
+Seit dem Umzug von einem anderen Server tritt gelegentlich ein unbekannter Fehler im Zusammenhang mit dem Server-Cache auf, den ich mir bisher noch nicht genauer angeschaut habe.
+Der Fehler dürfte pro Besuch nur einmalig auftauchen, dann einfach die gewünschte Seite erneut aufrufen.
+</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>Scala, SQL, XML, XSLT, HTML, CSS, JavaScript, Java<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Die einzige Verwendung von Java-Quelltext in diesem Projekt ist in den JSP-Dateien und in den kopierten Klassen für bcrypt und Mersenne-Twister von einem älteren Projekt von mir.</span></span></td> </tr>
+<tr> <th>Technologien</th> <td>XSD, DTD, MySQL, Prepared Statements, JDBC, bcrypt, Mersenne-Twister, BigDecimal, Tomcat, JSP</td> </tr>
+<tr> <th>IDE</th> <td>Eclipse mit Scala IDE</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Die einzige Verwendung von Java-Quelltext in diesem Projekt ist in den JSP-Dateien und in den kopierten Klassen für bcrypt und Mersenne-Twister von einem älteren Projekt von mir.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Minimalistic Shop</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

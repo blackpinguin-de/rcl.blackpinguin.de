@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Robin C. Ladiges / Car accident app</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href='#navi'> jump to the navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['C++', 1928], ['Comments', 455], ['PHP', 146]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<p>From March to May 2013, I developed a iPhone app for my cousin besides my studies, which was part of a bigger order for one of his customers.</p>
+<p>Because I don't have a Mac to develop for iOS devices, my cousin acquired a DragonFireSDK license for me without asking, with which the app was developed then on Windows in C++.</p>
+<div style="width: 100%; text-align: center;">
+    <a href="01.png" style="display: inline-block; width: 32%;"><img src="01.png" alt="Screenshot" title="Main menu: create new accident, saved accidents overview, contact details" style="width: 100%; height: auto;" /></a>
+    <a href="02.png" style="display: inline-block; width: 32%;"><img src="02.png" alt="Screenshot" title="Data of other party: name, phone, e-mail, insurance, license plate" style="width: 100%; height: auto;" /></a>
+    <a href="03.png" style="display: inline-block; width: 32%;"><img src="03.png" alt="Screenshot" title="Own data: name, phone, e-mail, insurance, license plate" style="width: 100%; height: auto;" /></a>
+</div>
+<p>With this app, the customers of a consultant for car accidents (the company name and logo are pixelated in the screenshot of the app) can enter accident details at its location and send them directly to their consultant.</p>
+<p>Program flow, design and graphics<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>I had to redo the buttons by myself to change their text and to highlight some buttons with green, red and yellow color.</span></span> of the app were predetermined by a storyboard and a HTML/JavaScript mockup. I implemented these outlines in C++ and adapted them to the technical circumstances.</p>
+<div style="width: 100%; text-align: center;">
+    <a href="04.png" style="display: inline-block; width: 32%;"><img src="04.png" alt="Screenshot" title="Accident description" style="width: 100%; height: auto;" /></a>
+    <a href="05.png" style="display: inline-block; width: 32%;"><img src="05.png" alt="Screenshot" title="Data was successfully saved, reminder to make pictures of all damages and to send them over e-mail" style="width: 100%; height: auto;" /></a>
+    <a href="06.png" style="display: inline-block; width: 32%;"><img src="06.png" alt="Screenshot" title="Accident overview, buttons to delete it and to send the data to the consultant" style="width: 100%; height: auto;" /></a>
+</div>
+<p>
+A payment was agreed upon, but the customer sadly backed out of the contract when the app was nearly finished.
+It worked like wanted, but there were some graphical details, the hosting of the back end and the publication to consider.
+</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>C++, SQL, PHP</td> </tr>
+<tr> <th>Technologies</th> <td>DragonFire SDK, SQLite, Base64, E-Mail</td> </tr>
+<tr> <th>Tools</th> <td>Photoshop</td> </tr>
+<tr> <th>IDE</th> <td>Visual Studio 2012</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>I had to redo the buttons by myself to change their text and to highlight some buttons with green, red and yellow color.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> jump to the top</a><br/></b>
+             <a href='../../'>Start</a>        <br/><a href='../../projects'>Projects</a>        <br/><a href='../../education'>Education</a>        <br/><a href='../../languages'>Languages</a>        <br/><a href='../../literature'>Literature</a>        <!-- <br/><a href='../../technics'>Technics</a> -->
+        <br/><a href='../../events'>Events</a>        <br/><a href='../../contact'>Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Car accident app</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href='de.html' title='Diese Seite auf Deutsch anzeigen'><img id='de' src='../../img/de.png' alt='German flag'/></a><div id='en'></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / Sonic Guessture</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['C++', 1757], ['Kommentare', 399]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="plakat.png" style="width: 35%; float: right; margin-left: 10px; margin-bottom: 10px;"><img src="plakat.thumb.png" alt="Comic: bei einer falschen Geste wird der Spieler von einem Turret aus Portal erschossen. Die richtige Geste wird mit Kuchen belohnt. Als Bild ist es komisch." title="Ausstellungsplakat" style="width: 100%; height: auto;" /></a>
+<p>Sonic Guessture<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Sonic: Schall, schnell, akustisch, Vi&shy;deo&shy;spiel&shy;fi&shy;gur<br/>Guessture: Wortkombination aus 'guess' (raten) und 'gesture' (Geste)</span></span> ist ein Rätselspiel, das im Wintersemester 2014/15 im Wahlpflichtfach <a href='../../haw/bms/14ws/AVPRG/de.html' class='private'>Audio-Video-Programmierung</a> des Studienganges <a href='../../haw/bms/de.html' class='private'>Bachelor Media Systems (B-MS)</a> erstellt wurde.</p>
+<p>Aufgabe war es, ein Programm zum Thema 'Gesten steuern Musik' zu entwickeln.
+Entstanden ist ein akustisches Gestenrätsel.</p>
+<p>Der Spieler bekommt bekannte Musikstücke zu hören und muss selbstständig den Bezug zu einer zum Stück passenden Geste herstellen, welche, bei erfolgreicher Ausführung vor der Webcam, das nächste Gestenrätsel freischaltet.
+Die Leistung des Spielers wird mit Sternen belohnt.
+Schnell sein und keine optional einblendbaren Hinweise benötigen bringt zusätzliche Sterne.</p>
+<p>Beispiel<span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>Dieses Beispiel ist kein Spoiler und kommt nicht im Spiel vor. Es dient lediglich der Veranschaulichung der Spielidee.</span></span>: bei dem Overworld Theme aus The Legend of Zelda soll der Spieler mit den Händen ein <a href='https://de.wikipedia.org/wiki/The_Legend_of_Zelda#Das_Triforce' class='extern' target='_blank' rel='noopener'>Triforce</a> formen.</p>
+<p>Es wurden vier verschiedene Gesten programmiert.
+Technisch wird das Bild der Webcam mittels OpenCV abgegriffen, die Hautfarbe<span class='ref'><span class='refnum'><span class='jsonly'>[3]</span><noscript><a class='reflink' id='reftop3' href='#ref3'>[3]</a></noscript></span><span class='refbody'>Die individuelle Hautfarbe des Spielers wird zu Beginn einmalig ausgewählt.</span></span> mittels Color Keying herausgelöst und das resultierende binäre Bitmap auf die jeweilige Geste hin analyisiert.
+Zeit und Rhythmik sind ebenfalls Faktoren, die für zwei der Gesten eine Rolle spielen.
+Die Qt-Anwendung verwendet für GUI, Musiküberblendungen, Camera, Color Keying, Bildanalyse und Mediator<span class='ref'><span class='refnum'><span class='jsonly'>[4]</span><noscript><a class='reflink' id='reftop4' href='#ref4'>[4]</a></noscript></span><span class='refbody'>Mediator-Entwurfsmuster (GoF:273)</span></span> jeweils eigene Threads, die mittels Nachrichtensystem<span class='ref'><span class='refnum'><span class='jsonly'>[5]</span><noscript><a class='reflink' id='reftop5' href='#ref5'>[5]</a></noscript></span><span class='refbody'>Qt Signals und Slots</span></span> miteinander kommunizieren.</p>
+<p>Zusammen mit den Projekten der anderen Studierenden dieses Kurses wurde das Spiel am 27.01.2015 ausgestellt.
+Eine Veröffentlichung von Sonic Guessture ist aufgrund fehlender Musik- und Bildrechte<span class='ref'><span class='refnum'><span class='jsonly'>[6]</span><noscript><a class='reflink' id='reftop6' href='#ref6'>[6]</a></noscript></span><span class='refbody'>Bilder werden verwendet, um nach korrekter Erkennung der jeweiligen Geste das Rätsel aufzulösen.</span></span> nicht möglich.</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>C++, UML</td> </tr>
+<tr> <th>Technologien</th> <td>Qt 5, Multithreading, OpenCV, Color Keying, Gestenerkennung</td> </tr>
+<tr> <th>Tools</th> <td>GIMP, Dia</td> </tr>
+<tr> <th>IDE</th> <td>Qt Creator</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Sonic: Schall, schnell, akustisch, Vi&shy;deo&shy;spiel&shy;fi&shy;gur<br/>Guessture: Wortkombination aus 'guess' (raten) und 'gesture' (Geste)</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>Dieses Beispiel ist kein Spoiler und kommt nicht im Spiel vor. Es dient lediglich der Veranschaulichung der Spielidee.</td></tr><tr><th><a class='reflink' href='#reftop3' id='ref3'>[3]</a></th><td>Die individuelle Hautfarbe des Spielers wird zu Beginn einmalig ausgewählt.</td></tr><tr><th><a class='reflink' href='#reftop4' id='ref4'>[4]</a></th><td>Mediator-Entwurfsmuster (GoF:273)</td></tr><tr><th><a class='reflink' href='#reftop5' id='ref5'>[5]</a></th><td>Qt Signals und Slots</td></tr><tr><th><a class='reflink' href='#reftop6' id='ref6'>[6]</a></th><td>Bilder werden verwendet, um nach korrekter Erkennung der jeweiligen Geste das Rätsel aufzulösen.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Sonic Guessture</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

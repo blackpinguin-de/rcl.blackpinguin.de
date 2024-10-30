@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / Autounfall App</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['C++', 1928], ['Kommentare', 455], ['PHP', 146]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<p>Von März bis Mai 2013 habe ich neben dem Studium für meinen Cousin eine iPhone-App entwickelt, die für einen seiner Kunden als Teil eines größeren Auftrags bestimmt war.</p>
+<p>Weil ich keinen Mac besitze, um für iOS-Geräte entwickeln zu können, erwarb mein Cousin, ohne mich vorher zu konsultieren, eine DragonFireSDK-Lizenz für mich, mit der ich die App dann unter Windows in C++ entwickelte.</p>
+</p>
+<div style="width: 100%; text-align: center;">
+    <a href="01.png" style="display: inline-block; width: 32%;"><img src="01.png" alt="Screenshot" title="Hauptmenü" style="width: 100%; height: auto;" /></a>
+    <a href="02.png" style="display: inline-block; width: 32%;"><img src="02.png" alt="Screenshot" title="Daten des Unfallgegners" style="width: 100%; height: auto;" /></a>
+    <a href="03.png" style="display: inline-block; width: 32%;"><img src="03.png" alt="Screenshot" title="Eigene Daten" style="width: 100%; height: auto;" /></a>
+</div>
+<p>Die Kunden eines Gutachters für Autounfälle (Name und Firmenlogo sind in den Screenshots der App verpixelt) können mit dieser App, direkt vor Ort Unfälle eintragen und ihrem Gutachter zuschicken.</p>
+<p>Programmablauf, Gestaltung und die Grafiken<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Die Buttons habe ich selbst noch mal neu erstellt um den Text ändern zu können, sowie um einige Buttons Grün, Rot und Gelb hervorzuheben.</span></span> der App waren mir durch ein Storyboard und einen HTML/JavaScript-Mockup vorgegeben. Ich habe die Entwürfe in C++ umgesetzt und an die technischen Gegebenheiten angepasst.</p>
+<div style="width: 100%; text-align: center;">
+    <a href="04.png" style="display: inline-block; width: 32%;"><img src="04.png" alt="Screenshot" title="Unfallhergang" style="width: 100%; height: auto;" /></a>
+    <a href="05.png" style="display: inline-block; width: 32%;"><img src="05.png" alt="Screenshot" title="Gespeichert" style="width: 100%; height: auto;" /></a>
+    <a href="06.png" style="display: inline-block; width: 32%;"><img src="06.png" alt="Screenshot" title="Abschicken" style="width: 100%; height: auto;" /></a>
+</div>
+<p>
+Es war ein Entgelt vereinbart, aber leider ist der Kunde vom Vertrag zurückgetreten, als die App bereits fast fertig gestellt war.
+Sie funktionierte bereits wie gewünscht, aber es waren noch ein paar grafische Details, das Hosting des Backends und die Veröffentlichung zu klären.
+</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>C++, SQL, PHP</td> </tr>
+<tr> <th>Technologien</th> <td>DragonFire SDK, SQLite, Base64, E-Mail</td> </tr>
+<tr> <th>Tools</th> <td>Photoshop</td> </tr>
+<tr> <th>IDE</th> <td>Visual Studio 2012</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Die Buttons habe ich selbst noch mal neu erstellt um den Text ändern zu können, sowie um einige Buttons Grün, Rot und Gelb hervorzuheben.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Autounfall App</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

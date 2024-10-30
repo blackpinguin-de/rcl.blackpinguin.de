@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / Media Indexer</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Scala', 1374], ['XSLT', 463], ['Kommentare', 290], ['JavaScript', 144], ['CSS', 143], ['XSD', 109], ['DTD', 47], ['Java', 5]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="mindex.png"><img src="mindex.png" alt="Screenshot" title="Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>
+Prof. Dr. <a href='http://weitz.de/' class='extern' target='_blank' rel='noopener'>Edmund Weitz</a><span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Mein Dozent in: <a href='../../haw/bms/13ss/M1/de.html' class='private'>Mathematik 1</a>, <a href='../../haw/bms/13ws/M2/de.html' class='private'>Mathematik 2</a>, <a href='../../haw/bms/14ss/MINF/de.html' class='private'>Ausgewählte Themen der Medieninformatik</a> und <a href='../../haw/bms/14ws/TI/de.html' class='private'>Theoretische Informatik</a>.</span></span> begann im Wintersemester 2013/14 damit, alle seine Vorlesungen aufzuzeichnen und online zur Verfügung zu stellen.
+</p><p>
+Weil mir die <a href='http://mediathek.mt.haw-hamburg.de/' class='extern' target='_blank' rel='noopener'>ViMP-Mediathek</a> zu unübersichtlich ist, sie damals keine Downloadmöglichkeit enthielt und nicht die Features bietet die ich gerne hätte, entwickelte ich an einem Wochenende einen simplen Webcrawler, der automatisiert nach neuen Videos sucht, eine lokale Datenbank pflegt und einen übersichtlichen HTML-Index erstellt.
+Videos werden nach Vorlesung und Datum gruppiert, und sie können manuell mit einer Checkbox vom Webseitenbesucher markiert werden<span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>Die Zustände der Checkboxen, und welche Gliederungspunkte auf oder zugeklappt sind, werden selbstverständlich lokal im Browser gespeichert, nicht über Cookies oder ähnliches übertragen und sind dem Webserver deshalb unbekannt.</span></span>.
+</p><p>
+Der Media Indexer wurde zwischen dem Wintersemester 2013/14 und dem Sommersemester 2014 gegen ein kleines Honorar um folgende Features erweitert:
+<ul>
+    <li>Zusätzlicher Gliederungspunkt: Semester.</li>
+    <li>Videodauer und Anzahl der Videos aufsummieren.</li>
+    <li>Konfigurationsdatei, um einstellen zu können welche URL die Mediathek hat, wo im HTML-DOM die Informationen liegen und wie sie zu parsen sind.</li>
+    <li>Konfigurationsdatei, um die Gliederung beliebig zu ändern, sowie mittels regulärer Ausdrücke die Zugehörigkeit zu den Gliederungspunkten einzustellen.</li>
+    <li>Makros für die Konfigurationsdatei, um das Datum und das Semester vom Indexer erkennen zu lassen und in der Gliederung, beliebig verwenden zu können.</li>
+    <li>Mehr Kommandozeilenparameter<span class='ref'><span class='refnum'><span class='jsonly'>[3]</span><noscript><a class='reflink' id='reftop3' href='#ref3'>[3]</a></noscript></span><span class='refbody'>Manuell einzelne Videos löschen/aktualisieren, den Index neu generieren ohne Suche (z.B. bei geänderter Konfigurationsdatei), die Datenbank zurücksetzen und alles erneut erzeugen, usw.</span></span>.</li>
+    <li>Die interne Datenbank geändert von CSV zu XML.</li>
+    <li>Ausgabe-HTML nicht mehr fest einprogrammiert, sondern über XSLT erzeugen.</li>
+    <li>Zusätzliche Ausgabe: RSS-Feeds (ebenfalls über XSLT).</li>
+    <li>Unterseiten, für Semester und Vorlesungen, generieren, um nicht immer die riesige Startseite laden zu müssen.</li>
+    <li>Multithreading: asynchrone HTTP-Anfragen, Auswertung und Outputgenerierung alles parallelisiert<span class='ref'><span class='refnum'><span class='jsonly'>[4]</span><noscript><a class='reflink' id='reftop4' href='#ref4'>[4]</a></noscript></span><span class='refbody'>Die Zahlen sind durch die vielen neuen Funktionen nicht direkt vergleichbar, aber die Laufzeit für einen vollständigen Lauf hat sich von 6.3 Minuten bei 461 Videos auf 3.3 Minuten bei 518 Videos verbessert. In der Regel wird kein vollständiger Lauf über alle Seiten und Videos durchgeführt, sondern es werden nur die ersten etwa 1-2 Seiten und neu hinzugekommene Videos aufgerufen.</span></span>.</li>
+    <li>Verbesserter Umgang mit, sowie Protokollierung und Benachrichtigung bei, Exceptions</li>
+</ul>
+</p><p>
+Zwischen dem Sommersemester 2014 und dem Wintersemester 2014/15 wurde der Indexer erneut leicht überarbeitet:
+<ul>
+    <li>Bugfix: Betriebssystemabhängige Probleme mit Umlauten in Veranstaltungsnamen<span class='ref'><span class='refnum'><span class='jsonly'>[5]</span><noscript><a class='reflink' id='reftop5' href='#ref5'>[5]</a></noscript></span><span class='refbody'>Die Namen der Lehrveranstaltungen werden als Ordnernamen verwendet und bilden dadurch die URLs für die Unterseiten. Das Programm ist in jeder Hinsicht explizit auf UTF-8 konfiguriert, aber trotzdem sorgte auf einem von drei Computern das Dateisystem dafür, dass Unterseiten mit Umlauten nicht mehr aktualisiert wurden.</span></span>.</li>
+    <li>Manuell implementierter und optimierter Insertionsort-Sortieralgorithmus, welcher entgegen dem Quicksort von Arrays.sort besser für diese Anwendung geeignet ist <span class='ref'><span class='refnum'><span class='jsonly'>[6]</span><noscript><a class='reflink' id='reftop6' href='#ref6'>[6]</a></noscript></span><span class='refbody'>Die alten Daten sind bereits sortiert und neu hinzukommende Einträge werden meist nur hinten angehängt und untereinander sortiert.</span></span>.</li>
+    <li>weitere Ausgabeformate: XML<span class='ref'><span class='refnum'><span class='jsonly'>[7]</span><noscript><a class='reflink' id='reftop7' href='#ref7'>[7]</a></noscript></span><span class='refbody'>Basierend auf dem XML-Format hat ein Kommilitone ein <a href='https://github.com/jmnx/AL-ViDo/' class='extern' target='_blank' rel='noopener'>Python-Skript</a> erstellt, womit automatisch alle Videos einer Lehrveranstaltung heruntergeladen werden können.</span></span> und JSON (beides über XSLT).</li>
+</ul>
+</p><p>
+Im Wintersemester 2014/15 wurde der Indexer um einen Kommentarzähler ergänzt, um evtl. wichtige Anmerkungen und Korrekturen hervorzuheben.
+</p>
+<p>
+Angewendet wird der Media Indexer, einerseits von Prof. Dr. Weitz auf einem <a href='http://weitz.de/haw-videos/' class='extern' target='_blank' rel='noopener'>geschützten Bereich</a> seiner Webseite, auf den nur Studierende mit Passwort Zugriff haben, und anderseits von mir auf <a href='https://indexer.blackpinguin.de/' class='extern' target='_blank' rel='noopener'>meiner Webseite</a>.
+Beide Instanzen verwenden dieselbe Software, unterscheiden sich aber etwas in den Konfigurationsdateien<span class='ref'><span class='refnum'><span class='jsonly'>[8]</span><noscript><a class='reflink' id='reftop8' href='#ref8'>[8]</a></noscript></span><span class='refbody'>Meine Konfiguration akzeptiert prinzipiell auch Videos, die von anderen Dozenten in die Mediathek eingestellt werden, und listet Videos für die keine Regel angelegt wurde als unsortiert.</span></span>.
+</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>Scala, XML, XSLT, HTML, CSS, JavaScript, JSON</td> </tr>
+<tr> <th>Technologien</th> <td>Async Http Client, HtmlCleaner, Xerces, Xalan, EXSLT, Futures, Scala Regex, StringEscapeUtils, ThreadLocal, Java Properties, XPath, XSD, DTD, HTML5, jQuery, RSS</td> </tr>
+<tr> <th>IDE</th> <td>Eclipse mit Scala IDE</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Mein Dozent in: <a href='../../haw/bms/13ss/M1/de.html' class='private'>Mathematik 1</a>, <a href='../../haw/bms/13ws/M2/de.html' class='private'>Mathematik 2</a>, <a href='../../haw/bms/14ss/MINF/de.html' class='private'>Ausgewählte Themen der Medieninformatik</a> und <a href='../../haw/bms/14ws/TI/de.html' class='private'>Theoretische Informatik</a>.</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>Die Zustände der Checkboxen, und welche Gliederungspunkte auf oder zugeklappt sind, werden selbstverständlich lokal im Browser gespeichert, nicht über Cookies oder ähnliches übertragen und sind dem Webserver deshalb unbekannt.</td></tr><tr><th><a class='reflink' href='#reftop3' id='ref3'>[3]</a></th><td>Manuell einzelne Videos löschen/aktualisieren, den Index neu generieren ohne Suche (z.B. bei geänderter Konfigurationsdatei), die Datenbank zurücksetzen und alles erneut erzeugen, usw.</td></tr><tr><th><a class='reflink' href='#reftop4' id='ref4'>[4]</a></th><td>Die Zahlen sind durch die vielen neuen Funktionen nicht direkt vergleichbar, aber die Laufzeit für einen vollständigen Lauf hat sich von 6.3 Minuten bei 461 Videos auf 3.3 Minuten bei 518 Videos verbessert. In der Regel wird kein vollständiger Lauf über alle Seiten und Videos durchgeführt, sondern es werden nur die ersten etwa 1-2 Seiten und neu hinzugekommene Videos aufgerufen.</td></tr><tr><th><a class='reflink' href='#reftop5' id='ref5'>[5]</a></th><td>Die Namen der Lehrveranstaltungen werden als Ordnernamen verwendet und bilden dadurch die URLs für die Unterseiten. Das Programm ist in jeder Hinsicht explizit auf UTF-8 konfiguriert, aber trotzdem sorgte auf einem von drei Computern das Dateisystem dafür, dass Unterseiten mit Umlauten nicht mehr aktualisiert wurden.</td></tr><tr><th><a class='reflink' href='#reftop6' id='ref6'>[6]</a></th><td>Die alten Daten sind bereits sortiert und neu hinzukommende Einträge werden meist nur hinten angehängt und untereinander sortiert.</td></tr><tr><th><a class='reflink' href='#reftop7' id='ref7'>[7]</a></th><td>Basierend auf dem XML-Format hat ein Kommilitone ein <a href='https://github.com/jmnx/AL-ViDo/' class='extern' target='_blank' rel='noopener'>Python-Skript</a> erstellt, womit automatisch alle Videos einer Lehrveranstaltung heruntergeladen werden können.</td></tr><tr><th><a class='reflink' href='#reftop8' id='ref8'>[8]</a></th><td>Meine Konfiguration akzeptiert prinzipiell auch Videos, die von anderen Dozenten in die Mediathek eingestellt werden, und listet Videos für die keine Regel angelegt wurde als unsortiert.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Media Indexer</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

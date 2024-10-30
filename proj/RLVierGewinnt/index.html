@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Robin C. Ladiges / RL: Connect Four</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href='#navi'> jump to the navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Java', 2086], ['Comments', 1009]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="vg.png"><img src="vg.png" alt="Screenshot" title="Screenshot of the state 6AAAF00C9B158599" style="width: 25%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>RL: Connect Four is a software project that I've worked on in the winter semester 2011/12 at the <a href='../../haw/bai/11ws/Proj_LA/' class='private'>Project: Learning Agents</a> course of <a href='../../haw/bai/' class='private'>B.Sc. Applied Computer Science (B-AI)</a>.</p>
+<p>
+The project's goal was to apply Reinforcement Learning (RL) on the game <a href='https://en.wikipedia.org/wiki/Connect_Four' class='extern' target='_blank' rel='noopener'>Connect Four</a>, to teach a computer to play it successfully.
+This has turned out to be unviable, because the game's state space is too big.
+The needed database would grow on to about 49.5 TiB during the training phase.
+</p>
+<p>
+Daniel Wehring created RL: Connect Four in the summer semester 2011.
+He used the RL framework by Patrick Boekhoven, that was developed as part of his <a href='http://edoc.sub.uni-hamburg.de/haw/volltexte/2011/1269/' class='extern' target='_blank' rel='noopener'>bachelor thesis</a> with the JADE agent framework.
+</p>
+<p>My contribution mainly consisted of a detailed code refactoring<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>The RL algorithms of the RL framework, as well as the Connect Four application of the framework, contained severe bugs, that prohibited effectual learning.<br/><br/>For example: there was a 64-bit integer overflow in the calculation of the Connect Four state IDs, which prevented them to address states bijectively.</span></span>, runtime optimizations and additional documentation for the game and the RL framework.</p>
+<p>The documentation of my work for the project is available <a href='https://wiki.blackpinguin.de/index.php/Vier_gewinnt' class='extern' target='_blank' rel='noopener'>here</a>.</p>
+<p>At the end of the project, I gave a <a href='vg.pdf' class='pdf'>presentation</a> for the course participants of the next semester, in which I briefly explained Reinforcement Learning and introduced RL: Connect Four.</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>Java, UML</td> </tr>
+<tr> <th>Technologies</th> <td>JADE, Reinforcment Learning, Q-Learning, SARSA, Temporal difference learning</td> </tr>
+<tr> <th>Tools</th> <td>Dia, MediaWiki, Libre Office Impress</td> </tr>
+<tr> <th>IDE</th> <td>Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>1 (2 total)</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>The RL algorithms of the RL framework, as well as the Connect Four application of the framework, contained severe bugs, that prohibited effectual learning.<br/><br/>For example: there was a 64-bit integer overflow in the calculation of the Connect Four state IDs, which prevented them to address states bijectively.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> jump to the top</a><br/></b>
+             <a href='../../'>Start</a>        <br/><a href='../../projects'>Projects</a>        <br/><a href='../../education'>Education</a>        <br/><a href='../../languages'>Languages</a>        <br/><a href='../../literature'>Literature</a>        <!-- <br/><a href='../../technics'>Technics</a> -->
+        <br/><a href='../../events'>Events</a>        <br/><a href='../../contact'>Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / RL: Connect Four</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href='de.html' title='Diese Seite auf Deutsch anzeigen'><img id='de' src='../../img/de.png' alt='German flag'/></a><div id='en'></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

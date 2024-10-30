@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / GeoTweet</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Java', 771], ['Kommentare', 229]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="geotweet.png"><img src="geotweet.thumb.png" alt="Screenshot" title="Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>GeoTweet ist eine Java-Applikation, die im Sommersemester 2011 im Modul <a href='../../haw/bai/10ss/DB/de.html' class='private'>Datenbanken</a> des Studienganges <a href='../../haw/bai/de.html' class='private'>Bachelor Angewandte Informatik (B-AI)</a> entstanden ist.</p>
+<p>Aufgabe war es, eine eigene Applikation zu entwickeln, die eine Datenbank mit Positionsdaten verwendet. Inspiriert durch das <a href='https://support.twitter.com/articles/122236-adding-your-location-to-a-tweet' class='extern' target='_blank' rel='noopener'>Twitter-Geotagging</a> entstand ein Tool, das es erlaubt Koordinaten auf der <a href='https://openstreetmap.org/' class='extern' target='_blank' rel='noopener'>OpenStreetMap</a>-Weltkarte mit kurzen Nachrichten (Tweets) zu versehen, sowie auf Nachrichten anderer Nutzer zu antworten.</p>
+<p>Nutzen tue ich GeoTweet auch heute noch regelmäßig, um für mich selbst Orte zu markieren, an denen ich war.</p>
+<p>Eine Veröffentlichung von GeoTweet ist nicht möglich, weil bei dessen Entwicklung Sicherheit<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Die Applikation benötigt einen direkten Zugriff auf die Datenbank, mit Lese- und Schreibrechten, in der Passwörter im Klartext gespeichert sind.</span></span> und Privatsphäre<span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>Weil ich als einziger Zugriff auf die Datenbank habe, speichere ich Namen, Adressen, Geburtstage, E-Mail-Adressen oder Telefonnummern von anderen Personen an deren aktuellen (oder ehemaligen) Wohnorten.</span></span> nicht berücksichtigt wurden.</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>Java, SQL</td> </tr>
+<tr> <th>Technologien</th> <td>Swing, JDBC, MySQL</td> </tr>
+<tr> <th>IDE</th> <td>Netbeans</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Die Applikation benötigt einen direkten Zugriff auf die Datenbank, mit Lese- und Schreibrechten, in der Passwörter im Klartext gespeichert sind.</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>Weil ich als einziger Zugriff auf die Datenbank habe, speichere ich Namen, Adressen, Geburtstage, E-Mail-Adressen oder Telefonnummern von anderen Personen an deren aktuellen (oder ehemaligen) Wohnorten.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / GeoTweet</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

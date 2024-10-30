@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>Robin C. Ladiges / dHeap</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Inhalt<a href='#navi'> springe zur Navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['JavaScript', 310], ['Kommentare', 131], ['HTML', 48], ['CSS', 45]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="dheap.png" style="width: 40%; float: right; margin-left: 10px; margin-bottom: 10px;"><img src="dheap.png" alt="Screenshot der Visualisierung mit 9 Knoten und 8 Kanten: [2, 5, 9, 8, 11, 20, 13, 12, 4]. Zwei Knoten sind farblich hervorgehoben." title="dHeap-Beispiel aus dem Buch: die 4 einzufügen verletzt die Heap-Eigenschaft. Die markierten Knoten werden im aktuellen Algorithmus-Schritt vertauscht." style="width: 100%; height: auto;" /></a>
+<p>Für die mündliche Prüfung des Wahlpflichtfaches <a href='../../haw/bms/14ss/MINF/de.html' class='private'>Ausgewählte Themen der Medieninformatik</a><span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>Das Thema für MINF in diesem Semester war Visualisierung.</span></span> im Sommersemester 2014 des Studienganges <a href='../../haw/bms/de.html' class='private'>Bachelor Media Systems (B-MS)</a> bestand die Option, freiwillig eine Visualisierung mit <a href='http://d3js.org/' class='extern' target='_blank' rel='noopener'>D3</a> in JavaScript zu erstellen, wobei ein D3 Layout gewählt werden sollte, welches nicht bereits in der Vorlesung behandelt wurde.</p>
+<p>Inspiriert vom <span class="i">Anhang B - Elementare Datenstrukturen</span> des Buches <span class="i">Graphentheoretische Konzepte und Algorithmen</span><span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>ISBN 978-3-8348-0629-1<br/><a href='https://www.amazon.de/s/?field-keywords=ISBN+978-3-8348-0629-1' class='extern' target='_blank' rel='noopener'>(amazon.de)</a></span></span> von S. O. Krumpke und H. Noltemeier, in dem <a href='https://en.wikipedia.org/wiki/D-ary_heap' class='extern' target='_blank' rel='noopener'>d-näre Heaps</a><span class='ref'><span class='refnum'><span class='jsonly'>[3]</span><noscript><a class='reflink' id='reftop3' href='#ref3'>[3]</a></noscript></span><span class='refbody'>Ein binärer Heap ist z.B. ein d-närer Heap mit d=2. D-näre Heaps sind eine Verallgemeinerung von binären Heaps für beliebiges d (degree = Grad), was je nach Anwendungsfall zu einem besseren Laufzeitverhalten führen kann.</span></span> erläutert werden, entwickelte ich mittels des <a href='https://github.com/mbostock/d3/wiki/Tree-Layout' class='extern' target='_blank' rel='noopener'>D3 Tree Layouts</a> eine schrittweise Visualisierung für die grundlegenden dHeap-Operationen<span class='ref'><span class='refnum'><span class='jsonly'>[4]</span><noscript><a class='reflink' id='reftop4' href='#ref4'>[4]</a></noscript></span><span class='refbody'>Die grundlegenden Operationen, die im Buch beschrieben werden, sind: einen neuen Knoten einfügen, den Wert eines Knoten verringern und die Wurzel entfernen.<br/><br/>Darüber hinaus habe ich die Algorithmen erweitert, um die Werte von Knoten erhöhen zu können, sowie einen beliebigen Knoten, statt nur der Wurzel, entfernen zu können. Beides bei gleichbleibender logarithmischer Laufzeit.</span></span>.</p>
+<p>Das Ergebnis dieser Arbeit kann online <a href='https://dheap.blackpinguin.de/de.html' class='extern' target='_blank' rel='noopener'>hier</a> betrachtet werden.
+Der geladene Heap ist das Beispiel aus dem Buch, in dem erst eine 4 eingefügt (Bild rechts) und anschließend die 2 entfernt wird.</p>
+<div id="loc" class="jsonly" title="Codezeilen" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Sprachen</th> <td>JavaScript, JSON, SVG, HTML, CSS</td> </tr>
+<tr> <th>Technologien</th> <td>D3, JS Prototypen, Closures</td> </tr>
+<tr> <th>IDE</th> <td>Geany</td> </tr>
+<tr> <th>Beteiligte</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Fußnoten</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>Das Thema für MINF in diesem Semester war Visualisierung.</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>ISBN 978-3-8348-0629-1<br/><a href='https://www.amazon.de/s/?field-keywords=ISBN+978-3-8348-0629-1' class='extern' target='_blank' rel='noopener'>(amazon.de)</a></td></tr><tr><th><a class='reflink' href='#reftop3' id='ref3'>[3]</a></th><td>Ein binärer Heap ist z.B. ein d-närer Heap mit d=2. D-näre Heaps sind eine Verallgemeinerung von binären Heaps für beliebiges d (degree = Grad), was je nach Anwendungsfall zu einem besseren Laufzeitverhalten führen kann.</td></tr><tr><th><a class='reflink' href='#reftop4' id='ref4'>[4]</a></th><td>Die grundlegenden Operationen, die im Buch beschrieben werden, sind: einen neuen Knoten einfügen, den Wert eines Knoten verringern und die Wurzel entfernen.<br/><br/>Darüber hinaus habe ich die Algorithmen erweitert, um die Werte von Knoten erhöhen zu können, sowie einen beliebigen Knoten, statt nur der Wurzel, entfernen zu können. Beides bei gleichbleibender logarithmischer Laufzeit.</td></tr></tbody></table><p class='c'>Empfehlung: JavaScript aktivieren, um Fußnoten nur bei Bedarf einzublenden.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> springe zum Anfang</a><br/></b>
+             <a href='../../de.html'>Start</a>        <br/><a href='../../projects/de.html'>Projekte</a>        <br/><a href='../../education/de.html'>Ausbildung</a>        <br/><a href='../../languages/de.html'>Sprachen</a>        <br/><a href='../../literature/de.html'>Literatur</a>        <!-- <br/><a href='../../technics/de.html'>Technik</a> -->
+        <br/><a href='../../events/de.html'>Events</a>        <br/><a href='../../contact/de.html'>Impressum</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / dHeap</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <div id='de'></div><a href='.' title='View this page in English'><img id='en' src='../../img/en.png' alt='Flagge der USA'/></a>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

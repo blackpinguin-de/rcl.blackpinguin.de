@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Robin C. Ladiges / Market Checker</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href='#navi'> jump to the navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['PHP', 10205], ['HTML', 4334], ['Comments', 4059], ['Java', 2873], ['SQL', 1267], ['XSD', 545], ['DTD', 185], ['CSS', 38]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<a href="mc1.png"><img src="mc1.thumb.png" alt="App Screenshot" title="App Screenshot" style="width: 40%; height: auto; float: right; margin-left: 10px; margin-bottom: 10px;" /></a>
+<p>Market Checker is a software project, that was created in the summer semester 2011 at the <a href='../../haw/bai/11ss/SE2/' class='private'>Software Engineering 2</a> course of <a href='../../haw/bai/' class='private'>B.Sc. Applied Computer Science (B-AI)</a>.</p>
+<p>It is a information platform where users can research and submit article prices in stores around their location.
+Users can insert articles, manufacturers and stores.
+Articles can be supplemented with pictures and comments.
+Pictures, comments and articles can be rated by users or, if they violate the terms of service, reported to the support.
+</p>
+<p>
+Users have to validate their e-mail address when they register their account or change it later, for which they receive an e-mail <span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>They did receive an e-mail. The mail server that was used doesn't exists anymore.</span></span>.
+In their profile, users can change their unique user name (which is different from their login name) or upload an avatar, that are both shown to other users.
+Articles or search strings that a user wants to remember can be added to an arbitrary amount of shopping lists.
+</p>
+<a href="mc2.png"><img src="mc2.thumb.png" alt="Website Screenshot" title="Website Screenshot" style="width: 35%; height: auto; float: left; margin-right: 10px; margin-bottom: 10px;" /></a>
+<p>Project members were Jan Kuffer (Project lead and App), Philip Rose (Design and App), Vassilios Stavrou (App and API), Dimitri Fast (Website), Dieter Pisarewski (Website) and me (API and API tests).</p>
+<p>
+An Android app with barcode scanner was developed in Java, and a website and mobile website were developed in Ruby.
+To support app, website, mobile website, and possible future applications, a central XML API was developed in PHP that serves as an secure interface to the database.
+Prior to their implementation, all API methods were specified in detail in the <a href='https://mcheck.blackpinguin.de/api/Methodenverzeichnis.php' class='extern' target='_blank' rel='noopener'>API documentation</a>, which allowed their simultaneous developement with the app and websites.
+</p>
+<p>
+Except for the article search method, which various optional parameters formed complex SQL statements, the API was implemented in time.
+To test the XML API, a test system using cURL was developed in PHP. Its output for a complete test with 966 individual test cases can be visited <a href='https://mcheck.blackpinguin.de/api/test.html' class='extern' target='_blank' rel='noopener'>here</a>.
+Most API methods and optional parameters aren't used by the app and website, but offer the possibility to extend them.
+</p>
+<p>The websites aren't hosted anymore by their developer. I don't have access to the Ruby source code to host them by myself.</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>PHP, SQL, XML, HTML, CSS, Java</td> </tr>
+<tr> <th>Technologies</th> <td>XSD, DTD, MySQL, ProFTPD, E-Mail, bcrypt, Mersenne Twister, cURL, convert (ImageMagick)</td> </tr>
+<tr> <th>Tools</th> <td>Skype</td> </tr>
+<tr> <th>IDE</th> <td>Notepad++, Eclipse</td> </tr>
+<tr> <th>Participants</th> <td>6</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>They did receive an e-mail. The mail server that was used doesn't exists anymore.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> jump to the top</a><br/></b>
+             <a href='../../'>Start</a>        <br/><a href='../../projects'>Projects</a>        <br/><a href='../../education'>Education</a>        <br/><a href='../../languages'>Languages</a>        <br/><a href='../../literature'>Literature</a>        <!-- <br/><a href='../../technics'>Technics</a> -->
+        <br/><a href='../../events'>Events</a>        <br/><a href='../../contact'>Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Market Checker</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href='de.html' title='Diese Seite auf Deutsch anzeigen'><img id='de' src='../../img/de.png' alt='German flag'/></a><div id='en'></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>

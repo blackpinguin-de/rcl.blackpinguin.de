@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Robin C. Ladiges / Are we there yet?</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="all" />
+
+<!-- http://realfavicongenerator.net -->
+<link rel="apple-touch-icon" sizes="57x57" href="../../ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="../../ico/manifest.json">
+<link rel="shortcut icon" href="../../ico/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-TileImage" content="../../ico/mstile-144x144.png">
+<meta name="msapplication-config" content="../../ico/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" type="text/css" href="../../style/basic.css" title="Default (blue / orange)" />
+<link rel="stylesheet" type="text/css" href="../../style/reference.css" />
+<script type="text/javascript" src="../../scripts/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../../scripts/reference.js" defer async></script>
+<script type="text/javascript" src="../../scripts/textarea-autoheight.js" defer async></script>
+<noscript><style type="text/css">.jsonly{display: none !important; visibility: hidden !important;}</style></noscript>
+<script type="text/javascript">$(function(){$('noscript').remove();});</script>
+</head>
+<body>
+
+<div>
+
+    <div id="content"><div><article><b class="hidden">Content<a href='#navi'> jump to the navigation</a><br/></b>
+
+
+<script type='text/javascript'>
+function init_google_loc() {
+  google.charts.load('current', {packages:['corechart']});
+  google.charts.setOnLoadCallback(function(){
+    var data = google.visualization.arrayToDataTable([['Language', 'Lines of Code'], ['Scala', 1090], ['Comments', 251]]);
+    var options = {legend:'none', backgroundColor:'none', chartArea:{left:'5%', top:'5%', width:'90%', height:'90%'}};
+    var chart = new google.visualization.PieChart(document.getElementById('loc'));
+    window.onresize = function(){chart.draw(data, options);};
+    window.onresize();
+  });
+};
+</script>
+<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js' defer onload='init_google_loc()'></script>
+
+<p>Are we there yet? is an Android-App that was created in the summer semester 2014 at the <a href='../../haw/bms/14ss/MOSY/' class='private'>Mobile Systems</a> compulsory elective course of <a href='../../haw/bms/' class='private'>B.Sc. Media Systems (B-MS)</a>.</p>
+<p>The task was to develop a native app for an arbitrary mobile operating system, acting as a measuring device that uses its embedded sensors.
+An Android-App was made to try to answer the age-old question from bored kids on the backseat: Are we there yet?</p>
+<p>It answers this question at three aspects: distance, speed and time<span class='ref'><span class='refnum'><span class='jsonly'>[1]</span><noscript><a class='reflink' id='reftop1' href='#ref1'>[1]</a></noscript></span><span class='refbody'>How far is it away?<br/>How fast are we moving?<br/>How long until we are there?</span></span>, calculating one of them with the remaining two.
+Besides entering values manually or choosing from some predefined constants, it's possible to measure each quantity manually.
+Time by the internal clock, distance by the device's location provider, and speed as the combination of both.</p>
+<div style="width: 100%; text-align: center;">
+    <a href="calc.png" style="display: inline-block; width: 32%;"><img src="calc.thumb.png" alt="Screenshot of the calculate time activity" title="calculate time activity (german): How long? Distance ÷ Velocity = Time" style="width: 100%; height: auto;" /></a>
+    <a href="choose.png" style="display: inline-block; width: 32%;"><img src="choose.thumb.png" alt="Screenshot of the choose velocity activity" title="choose velocity activity (english)" style="width: 100%; height: auto;" /></a>
+    <a href="measure.png" style="display: inline-block; width: 32%;"><img src="measure.thumb.png" alt="Screenshot of the measure velocity activity" title="measure velocity activity (german)" style="width: 100%; height: auto;" /></a>
+</div>
+<p>It has a german and an english user interface, which is selected by the system language<span class='ref'><span class='refnum'><span class='jsonly'>[2]</span><noscript><a class='reflink' id='reftop2' href='#ref2'>[2]</a></noscript></span><span class='refbody'>Changing the system language while it's running results in a restart of the App. Its internal state will be lost.</span></span>.
+It was developed in Scala, uses custom Views and an own implementation for units<span class='ref'><span class='refnum'><span class='jsonly'>[3]</span><noscript><a class='reflink' id='reftop3' href='#ref3'>[3]</a></noscript></span><span class='refbody'>The user can change between units of the same type (distance, velocity and time) at will. The values will be converted from unit to unit for display purposes, but the calculations are done in the corresponding SI units. Errors of accuracy are to be expected.</span></span> and values.</p>
+<p>Together with projects from other students of this course, the App was exhibited on 2014-06-24.
+The APK of Are we there yet? for Android 4.0 or higher can be downloaded by <a href="SindWirSchonDa.apk">clicking here</a>.</p>
+<div id="loc" class="jsonly" title="Lines of Code" style="width: 20vw; height: 20vw; float: right; display: block; clear: right;"></div>
+<table><tbody>
+<tr> <th>Languages</th> <td>Scala, UML</td> </tr>
+<tr> <th>Technologies</th> <td>Android, AndroidScalaProguard, Google Play Fused Location Provider, Activities, Custom Views, SI-Units</td> </tr>
+<tr> <th>Tools</th> <td>Dia</td> </tr>
+<tr> <th>IDE</th> <td>ADT Eclipse with Scala IDE</td> </tr>
+<tr> <th>Participants</th> <td>1</td> </tr>
+</tbody></table>
+<div style="clear: both;"></div>
+
+<noscript><hr/><table id='reftable'><caption>Footnotes</caption><tbody><tr><th><a class='reflink' href='#reftop1' id='ref1'>[1]</a></th><td>How far is it away?<br/>How fast are we moving?<br/>How long until we are there?</td></tr><tr><th><a class='reflink' href='#reftop2' id='ref2'>[2]</a></th><td>Changing the system language while it's running results in a restart of the App. Its internal state will be lost.</td></tr><tr><th><a class='reflink' href='#reftop3' id='ref3'>[3]</a></th><td>The user can change between units of the same type (distance, velocity and time) at will. The values will be converted from unit to unit for display purposes, but the calculations are done in the corresponding SI units. Errors of accuracy are to be expected.</td></tr></tbody></table><p class='c'>Suggestion: enable JavaScript to display footnotes only when needed.</p></noscript>    </article></div></div>
+
+    <div id="navi"><div><nav>
+        <b class="hidden">Navigation<a href='#content'> jump to the top</a><br/></b>
+             <a href='../../'>Start</a>        <br/><a href='../../projects'>Projects</a>        <br/><a href='../../education'>Education</a>        <br/><a href='../../languages'>Languages</a>        <br/><a href='../../literature'>Literature</a>        <!-- <br/><a href='../../technics'>Technics</a> -->
+        <br/><a href='../../events'>Events</a>        <br/><a href='../../contact'>Contact</a>    </nav></div></div>
+
+    <div id="top"><div><header><!-- Yes, that's Comic Sans. Deal with it :P -->
+        <h1>Robin C. Ladiges / Are we there yet?</h1>
+    </header></div></div>
+
+    <div id="lang">
+        <a href='de.html' title='Diese Seite auf Deutsch anzeigen'><img id='de' src='../../img/de.png' alt='German flag'/></a><div id='en'></div>    </div>
+
+    <div id="avatar"><div></div></div>
+</div>
+</body>
+</html>
