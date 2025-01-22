@@ -172,6 +172,13 @@ This site lists events that I attended, or am going to attend.
   <td><?= $rcl->lang("Köln, Deutschland", "Cologne, Germany") ?></td>
   <td>2024&#8209;08&#8209;22</td>
 </tr>
+<tr>
+  <td><?php extern("http://www.hamburger-tactica.de/?p=18203","Hamburger Tactica 2025"); ?></td>
+  <td><?= $rcl->lang("Besucher", "Attendee") ?></td>
+  <td><?= $rcl->lang("Messe", "Convention") ?></td>
+  <td>Hamburg, <?= $rcl->lang("Deutschland", "Germany") ?></td>
+  <td>2025&#8209;02&#8209;22 &ndash; 2025&#8209;02&#8209;23</td>
+</tr>
 </tbody>
 </table>
 
