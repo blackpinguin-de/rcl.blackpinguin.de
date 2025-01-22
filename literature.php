@@ -57,7 +57,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     [
     'book' => [ "EN", "Modern Operating Systems", "Andrew S. Tanenbaum" ],
     'desc' => [ "ISBN 978-0-13-813459-4", "Thema: Betriebssysteme", "" ],
-    'prog' => [ 'read' => [ 'page' => 341, 'last_page' => 1072 ], 'grasp' => "75%" ],
+    'prog' => [ 'read' => [ 'page' => 341, 'last_page' => 1072, 'reading' => true ], 'grasp' => "75%" ],
     ],
     [
     'book' => [ "EN", "Computer Networks", "Andrew S. Tanenbaum, David J. Wetherall" ],
@@ -77,7 +77,7 @@ It also shows an self-evaluation of how much I think I have grasped of their con
     [
     'book' => [ "EN", "Compilers: Principles, Techniques, and Tools", "Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman"],
     'desc' => [ "ISBN 978-1-292-02434-9", "Themen: Compilerbau", "" ],
-    'prog' => [ 'read' => [ 'page' => 662, 'last_page' => 942, 'reading' => true ] ],
+    'prog' => [ 'read' => "100%", 'grasp' => "90%" ],
     ],
     [
     'book' => [ "EN", "Software Engineering and Computer Games", "Rudy Rucker" ],
