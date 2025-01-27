@@ -46,6 +46,17 @@
 <p>The page you requested could not be found on this server.</p>
 </div>
 
+<script>
+  // redirect /l/ to ext.blackpinguin.de
+  var path  = window.location.pathname;
+  if (/^\/l\//.test(path)) {
+    var base  = 'https://ext.blackpinguin.de';
+    var query = window.location.search;
+    var hash  = window.location.hash;
+    window.location.href = base + path.substr(2) + query + hash;
+  }
+</script>
+
     </article></div></div>
 
     <div id="navi"><div><nav>
