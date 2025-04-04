@@ -91,7 +91,7 @@
 <form id="contact-form" class="jsform" method="post" action="/contact" style="">
     <h3>Contact Form</h3>
     <noscript>
-        <div><input type="text" placeholder="Your email address" disabled="disabled" value=""/></div>
+        <!-- <div><input type="text" placeholder="Your email address" disabled="disabled" value=""/></div> -->
         <div><input type="text" placeholder="Subject" disabled="disabled" value=""/></div>
         <div><textarea placeholder="Message content" rows="4" disabled="disabled"></textarea></div>
         <div class="clearfix">
@@ -100,7 +100,7 @@
         </div>
     </noscript>
     <div class="jsonly">
-        <div><input id="contact-email" name="email" type="text" placeholder="Your email address"  value=""/></div>
+        <!-- <div><input id="contact-email" name="email" type="text" placeholder="Your email address"  value=""/></div> -->
         <div><input id="contact-subject" name="subject" type="text" placeholder="Subject"  value=""/></div>
         <div><textarea id="contact-msg" name="msg" placeholder="Message content" class="autoheight" rows="4" data-min-rows="4" data-max-rows="14" ></textarea></div>
         <div class="clearfix">
@@ -132,7 +132,7 @@
                 }
                 // en-/disable submit button
                 var green = $('input.green, textarea.green', form);
-                submit.prop('disabled', green.length !== 3);
+                submit.prop('disabled', green.length !== 2);
             };
             // is string str a valid email?
             var valid = function(str){
@@ -163,13 +163,21 @@
             form.submit(function(){
                 // abort if invalid input
                 var green = $('input.green, textarea.green', form);
-                if(green.length !== 3){return false;}
+                if(green.length !== 2){return false;}
 
                 // do submit
                 if($('input[name="id"], input[name="secret"]', form).length === 2){
                     return true;
                 }
-                submit.prop('disabled', true);
+
+                /* mailto for static website */
+                window.location.href = (
+                    (function() { function r (a, b) { return ++b ? String.fromCharCode((a < "[" ? 91 : 123) > (a = a.charCodeAt() + 13) ? a : a - 26) : a.replace(/[A-z]/g, r) }; return r; }())(("znv" + "ygb" + ":Eb" + "ova" + "%20" + "Pue" + "vfg" + "bcu" + "re%" + "20Y" + "nqv" + "trf" + "%20" + "<ep" + "y%4" + "0oy" + "npx" + "cva" + "thv" + "a.q" + "r>"))
+                    + '?subject=' + encodeURIComponent(subject.val())
+                    + '&body=' + encodeURIComponent(msg.val())
+                );
+
+                /*submit.prop('disabled', true);
                 setInterval(function(){
                     var n = 4;
                     var d = true;
@@ -196,7 +204,7 @@
                         .val(function (n,s) {s = s.trim().replace(/[^a-z0-9]/gi, '');var c = n;for(var i=0; i < s.length; i++){c ^= (c << 8 & 0x7fffffff) ^ s.charCodeAt(i);}return Math.abs(c ^ ~n);}(Number(data[1]), msg.val()))
                     ;
                     setTimeout(function(){form.submit();}, 2000); // sleep 2s
-                }, 'text');
+                }, 'text');*/
 
                 return false;
             });
