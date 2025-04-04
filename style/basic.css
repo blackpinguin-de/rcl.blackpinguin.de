@@ -78,8 +78,8 @@ a.extern[href], a.private[href], a.pdf, a.youtube, .aicon {
 }
 a.extern { color: #cc20dd; }
 a.extern[href], .extern.aicon { background-image: url(../img/extern.png); }
-a.private { color: #ff8030; }
-a.private[href], .private.aicon { background-image: url(../img/lock.png); }
+/*a.private { color: #ff8030; }*/
+/*a.private[href], .private.aicon { background-image: url(../img/lock.png); }*/
 a.youtube { color: red; }
 a.youtube[href], .youtube.aicon { background-image: url(../img/yt.png); }
 a.pdf { color: red; background-image: url(../img/pdf.png); }
