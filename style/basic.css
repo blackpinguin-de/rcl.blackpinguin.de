@@ -70,7 +70,7 @@ th {
 a { color: #007700; text-decoration: underline; }
 a:focus, a:hover, a:not([href]) { text-decoration: none; }
 /* a with classes */
-a.extern[href], a.private[href], a.pdf, a.youtube, .aicon {
+a.extern[href], /*a.private[href],*/ a.pdf, a.youtube, .aicon {
     padding-right: 1.1em;
     background-position: right center;
     background-repeat: no-repeat;
